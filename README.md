@@ -16,8 +16,8 @@ The following repository offers the BlueBoat simulation SITL with GazeboSim. Use
 
 - Download and Install [QGroundControl](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html) (optional).
 - Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) to support Docker to access GPU (required).
-- Repository has been tested on: Ubuntu 22.04, Ubuntu 24.04, ArchLinux (Kernel 6.8). 
-
+- Repository has been tested on: Ubuntu 22.04, Ubuntu 24.04, ArchLinux (Kernel 6.8).
+   
 
 ## Build
 
@@ -30,7 +30,16 @@ sudo ./build.sh
 
 ```
 
-## Build in Docker
+## Run
+
+Note:
+
+Adjust these lines in ```run.sh```
+
+```bash
+local_gz_ws="/home/markus/blueboat_ardupilot_SITL/gz_ws"
+local_SITL_Models="/home/markus/blueboat_ardupilot_SITL/SITL_Models"
+```
 
 
 ```bash
