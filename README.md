@@ -22,9 +22,9 @@ The following repository offers the BlueBoat simulation SITL with GazeboSim. Use
 ## Build
 
 ```bash
-git clone https://github.com/oceansystemslab/blueboat_ardupilot_SITL
+git clone https://github.com/markusbuchholz/gazebosim_blueboat_ardupilot_sitl.git
 
-cd blueboat_ardupilot_SITL/blueboat_ardupilot_SITL/docker
+cd https://github.com/markusbuchholz/gazebosim_blueboat_ardupilot_sitl.git/docker
 
 sudo ./build.sh
 
