@@ -129,6 +129,44 @@ cd extras_boat
 python3 loop_mission_planner_gps.py
 
 ```
+
+---
+
+## Start BlueBoat simulation with ArduPilot and simple ROS 2 interface
+
+ROS 2 interface provides two common topics (ROS 2 is a function wrapper for Mavlink protocol):
+
+```bash
+/bluerov2/odometry
+/bluerov2/cmd_vel
+/bluerov2/servo_outputs
+/blueboat/send_port_motor_0_100_thrust
+/blueboat/send_stbd_motor_0_100_thrust
+```
+
+All steps as follows:
+
+```bash
+#Termminal 1
+ros2 launch move_blueboat launch_robot_simulation.launch.py
+
+#Termminal 2
+sim_vehicle.py -v Rover -f gazebo-rover --model JSON --map --console -l 55.99541530863445,-3.3010225004910683,0,0
+
+#Termminal 3
+cd /home/gz_ws/src/extras_interface
+python3 ros2_blueboat_interface.py
+
+```
+Run the motors individually.
+
+```bash
+ros2 topic pub /blueboat/send_port_motor_0_100_thrust std_msgs/msg/Float32 "{data: 25.0}"
+ros2 topic pub /blueboat/send_stbd_motor_0_100_thrust std_msgs/msg/Float32 "{data: 30.0}"
+``
+
+---
+
 ## Guided mode with Dynamic Position
 
 Following the program accepts the X and Y coordinates of the desired waypoint through terminal input. The vehicle navigates to position and maintains its ```dynamic position```, ensuring stability between waypoints despite external disturbances.
