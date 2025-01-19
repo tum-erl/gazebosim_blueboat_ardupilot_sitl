@@ -14,8 +14,8 @@ then
     chmod a+r $XAUTH
 fi
 
-local_gz_ws="/home/markus/blueboat_ardupilot_SITL/gz_ws"
-local_SITL_Models="/home/markus/blueboat_ardupilot_SITL/SITL_Models"
+local_gz_ws="/home/markus/underwater/gazebosim_blueboat_ardupilot_sitl/gz_ws"
+local_SITL_Models="/home/markus/underwater/gazebosim_blueboat_ardupilot_sitl/SITL_Models"
 docker run -it \
     --rm \
     --name blueboat_sitl \
