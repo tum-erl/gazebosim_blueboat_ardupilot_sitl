@@ -210,13 +210,13 @@ ros2 topic pub -1 /waypoints std_msgs/Float64MultiArray "{data: [5.0, 5.0]}" -1
 
 ## Control BlueBoat using joystick
 
-Launching the interface provides possibility to contrreol BlueBoat using joystick,
+Launching the interface allows control of BlueBoat using a joystick.
 
 ```bash
 cd /home/gz_ws/src/extras_interface
 python3 ros2_blueboat_interface.py
 ```
-Joystick left/right handler are mapped to topics,
+The joystick left/right handler is mapped to topics,
 
 ```bash
 /blueboat/send_port_motor_0_100_thrust
