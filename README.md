@@ -222,15 +222,13 @@ The joystick left/right handler is mapped to topics,
 /blueboat/send_port_motor_0_100_thrust
 /blueboat/send_stbd_motor_0_100_thrust
 ```
-Launching the interface enables control of BlueBoat using a differential drive.<br>,
+Launching the interface enables control of BlueBoat using a differential drive.<br>
 The RIGHT axis of the joystick is responsible for moving forward and backward, while the other LEFT axis of the joystick controls movement to the left/right, 
 
 ```bash
 cd /home/gz_ws/src/extras_interface
 python3 ros2_blueboat_interface_diff.py
 ```
-
-
 
 ## ROS 2 topics
 
