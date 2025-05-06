@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="lidar">
+    <link name="link">
+      <visual name="visual">
+        <geometry><box><size>0.1 0.1 0.05</size></box></geometry>
+      </visual>
+      <collision name="collision">
+        <geometry><box><size>0.1 0.1 0.05</size></box></geometry>
+      </collision>
+      <inertial>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>1e-4</ixx><iyy>1e-4</iyy><izz>1e-4</izz>
+        </inertia>
+      </inertial>
+
+      <sensor name="gpu_lidar" type="gpu_lidar">
+        <pose>0 0 0 0 0 0</pose>
+        <update_rate>10</update_rate>
+        <topic>laser_scan</topic>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>1800</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.1459</min_angle>
+              <max_angle>3.1459</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>16</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.261799</min_angle>
+              <max_angle>0.261799</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.05</min>
+            <max>100</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+        <visualize>true</visualize>
+      </sensor>
+    </link>
+  </model>
+</sdf>
