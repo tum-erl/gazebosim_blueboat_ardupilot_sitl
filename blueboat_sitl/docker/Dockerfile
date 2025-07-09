@@ -79,12 +79,11 @@ ENV USER=$USERNAME
 ENV GZ_VERSION=garden
 
 # Clone ArduSub code
+# Clone ArduSub code
 WORKDIR /home/$USERNAME
-RUN git clone https://github.com/ArduPilot/ardupilot.git --recurse-submodules
-
-# Checkout the commit which works for BlueROV2
+RUN git clone --branch ArduSub-4.5.3 https://github.com/ArduPilot/ardupilot.git --recurse-submodules
 WORKDIR /home/$USERNAME/ardupilot
-RUN git checkout aca9940534
+#RUN git checkout aca9940534
 
 
 # Install ArduSub prereqs (this also appends to .bashrc)
