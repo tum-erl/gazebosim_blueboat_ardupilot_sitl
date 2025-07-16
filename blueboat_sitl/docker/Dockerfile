@@ -80,11 +80,12 @@ ENV GZ_VERSION=garden
 
 # Clone ArduSub code
 WORKDIR /home/$USERNAME
-RUN git clone https://github.com/ArduPilot/ardupilot.git --recurse-submodules
+RUN git clone https://github.com/ArduPilot/ardupilot.git
 
 # Checkout the commit which works for BlueROV2
 WORKDIR /home/$USERNAME/ardupilot
-RUN git checkout aca9940534
+RUN git checkout aca9940534 \
+  && git submodule update --init --recursive 
 
 
 # Install ArduSub prereqs (this also appends to .bashrc)
@@ -101,13 +102,14 @@ RUN modules/waf/waf-light configure --board sitl \
 WORKDIR /home/$USERNAME
 RUN git clone https://github.com/ArduPilot/ardupilot_gazebo.git
 
+
 # Build ardupilot_gazebo
 RUN [ "/bin/bash" , "-c" , " \
   cd ardupilot_gazebo \
   && mkdir build \
   && cd build \
   && cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  && make -j4" ]
+  && make -j2" ]
 
 # Create colcon workspace and copy workspace.repos file
 WORKDIR /home/$USERNAME
@@ -128,10 +130,11 @@ RUN python3 -m pip install --upgrade pip setuptools==59.6.0
 RUN rosdep install -y --from-paths . --ignore-src --skip-keys="gz-transport12 gz-sim7 gz-math7 gz-msgs9"
 
 # Build everything so far
+ENV MAKEFLAGS="-j1 -l1"
 WORKDIR /home/$USERNAME/colcon_ws
 RUN [ "/bin/bash" , "-c" , "\
   source /opt/ros/humble/setup.bash \
-  && colcon build" ]
+  && colcon build --executor sequential --parallel-workers 1" ]
 
 # Run rosdep over blueboat package.xml files
 RUN rosdep update \

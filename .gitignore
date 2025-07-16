@@ -1,0 +1,5 @@
+gz_ws/build/**
+gz_ws/install/**
+gz_ws/log/**
+gz_ws/src/move_blueboat/move_blueboat/__pycache__/**
+gz_ws/src/move_blueboat/move_blueboat/__pycache__/__init__.cpython-310.pyc
