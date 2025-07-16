@@ -134,7 +134,7 @@ ENV MAKEFLAGS="-j1 -l1"
 WORKDIR /home/$USERNAME/colcon_ws
 RUN [ "/bin/bash" , "-c" , "\
   source /opt/ros/humble/setup.bash \
-  && colcon build --executor sequential --parallel-workers 1" ]
+  && colcon build --executor sequential --parallel-workers 3" ]
 
 # Run rosdep over blueboat package.xml files
 RUN rosdep update \
@@ -200,3 +200,5 @@ USER root
 RUN apt-get update && apt-get install -y ros-humble-joint-state-publisher
 
 USER $USERNAME
+
+
