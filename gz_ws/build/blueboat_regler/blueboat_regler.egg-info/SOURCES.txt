@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+blueboat_regler/__init__.py
+blueboat_regler/regler_node.py
+blueboat_regler/regler_node_Ackermann.py
+blueboat_regler.egg-info/PKG-INFO
+blueboat_regler.egg-info/SOURCES.txt
+blueboat_regler.egg-info/dependency_links.txt
+blueboat_regler.egg-info/entry_points.txt
+blueboat_regler.egg-info/requires.txt
+blueboat_regler.egg-info/top_level.txt
+blueboat_regler.egg-info/zip-safe
+resource/blueboat_regler

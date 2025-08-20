@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/lennart/gazebosim_blueboat_ardupilot_sitl/gz_ws/install/include/**",
+        "/home/lennart/fav/ros2/install/scenario_msgs/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/lennart/gazebosim_blueboat_ardupilot_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

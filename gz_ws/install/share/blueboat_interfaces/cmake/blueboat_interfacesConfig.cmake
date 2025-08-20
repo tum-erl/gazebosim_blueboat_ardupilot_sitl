@@ -1,0 +1,1 @@
+/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/ament_cmake_core/blueboat_interfacesConfig.cmake

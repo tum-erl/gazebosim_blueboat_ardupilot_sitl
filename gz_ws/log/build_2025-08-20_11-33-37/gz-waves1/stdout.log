@@ -1,0 +1,182 @@
+[  2%] Built target gtest
+[  4%] Built target gtest_main
+[  5%] [32m[1mLinking CXX shared library ../lib/libgz-waves1.so[0m
+[ 26%] Built target gz-waves1
+[ 26%] [32m[1mLinking CXX executable ../bin/UNIT_Algorithm_TEST[0m
+[ 27%] [32m[1mLinking CXX executable ../bin/UNIT_WaveSpectrum_TEST[0m
+[ 29%] [32m[1mLinking CXX executable ../bin/UNIT_EigenFFTW_TEST[0m
+[ 30%] [32m[1mLinking CXX executable ../bin/UNIT_LinearRandomFFTWaveSimulation_TEST[0m
+[ 31%] [32m[1mLinking CXX executable ../bin/UNIT_LinearRegularWaveSimulation_TEST[0m
+[ 32%] [32m[1mLinking CXX executable ../bin/UNIT_Grid_TEST[0m
+[ 33%] [32m[1mLinking CXX executable ../bin/UNIT_MeshTools_TEST[0m
+[ 34%] [32m[1mLinking CXX executable ../bin/UNIT_Geometry_TEST[0m
+[ 35%] [32m[1mLinking CXX executable ../bin/UNIT_TriangulatedGrid_TEST[0m
+[ 36%] [32m[1mLinking CXX executable ../bin/UNIT_Wavefield_TEST[0m
+[ 37%] [32m[1mLinking CXX executable ../bin/UNIT_CGAL_TEST[0m
+[ 38%] [32m[1mLinking CXX executable ../bin/UNIT_Physics_TEST[0m
+[ 39%] Built target UNIT_Algorithm_TEST
+[ 40%] Built target UNIT_EigenFFTW_TEST
+[ 40%] [32m[1mLinking CXX executable ../bin/UNIT_WaveSpreadingFunction_TEST[0m
+[ 41%] Built target UNIT_Wavefield_TEST
+[ 43%] [32m[1mLinking CXX shared library ../../../lib/libgz-waves1-dynamic-geometry-system.so[0m
+[ 44%] Built target UNIT_WaveSpectrum_TEST
+[ 45%] Built target UNIT_TriangulatedGrid_TEST
+[ 45%] Built target UNIT_LinearRegularWaveSimulation_TEST
+[ 47%] [32m[1mLinking CXX shared library ../../../lib/libgz-waves1-hydrodynamics-system.so[0m
+[ 47%] Built target UNIT_Physics_TEST
+[ 48%] Built target UNIT_Geometry_TEST
+[ 49%] Built target UNIT_MeshTools_TEST
+[ 50%] [32m[1mLinking CXX executable ../../bin/PERFORMANCE_EigenReturnByValue[0m
+[ 51%] Built target UNIT_Grid_TEST
+[ 51%] [32m[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimBaseAmplitudes[0m
+[ 52%] [32m[1mLinking CXX shared library ../../../lib/libgz-waves1-waves-model-system.so[0m
+[ 53%] Built target UNIT_LinearRandomFFTWaveSimulation_TEST
+[ 54%] [32m[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimCurrentAmplitudes[0m
+[ 55%] [32m[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimDisplacements[0m
+[ 56%] [32m[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimElevationAt[0m
+[ 58%] [32m[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRegularWaveSimDisplacements[0m
+[ 59%] [32m[1mLinking CXX shared library ../../../lib/libgz-waves1-rendering.so[0m
+[ 60%] Built target UNIT_CGAL_TEST
+[ 61%] Built target UNIT_WaveSpreadingFunction_TEST
+[ 62%] [32m[1mLinking CXX executable ../../bin/PERFORMANCE_WaveSpectrumECKV[0m
+[ 63%] Built target PERFORMANCE_EigenReturnByValue
+[ 64%] [32m[1mLinking CXX executable ../../bin/PLOT_GnuPlotExample[0m
+[ 65%] [32m[1mLinking CXX executable ../../bin/PLOT_LinearRandomFFTWaves[0m
+[ 74%] Built target gz-waves1-rendering
+[ 75%] Built target PERFORMANCE_LinearRandomFFTWaveSimCurrentAmplitudes
+[ 76%] Built target PERFORMANCE_LinearRandomFFTWaveSimDisplacements
+[ 77%] Built target PERFORMANCE_LinearRandomFFTWaveSimBaseAmplitudes
+[ 78%] [32m[1mLinking CXX executable ../../bin/PLOT_LinearRandomWaves[0m
+[ 79%] Built target PERFORMANCE_LinearRandomFFTWaveSimElevationAt
+[ 80%] [32m[1mLinking CXX executable ../../bin/PLOT_LinearRegularWaves[0m
+[ 81%] Built target PERFORMANCE_LinearRegularWaveSimDisplacements
+[ 82%] [32m[1mLinking CXX executable ../../bin/PLOT_WaveSpectrum[0m
+[ 83%] Built target gz-waves1-waves-model-system
+[ 84%] [32m[1mLinking CXX shared library ../../../lib/libgz-waves1-waves-visual-system.so[0m
+[ 86%] [32m[1mLinking CXX shared library ../../../lib/libgz-waves1-rendering-ogre2.so[0m
+[ 86%] Built target PLOT_GnuPlotExample
+[ 87%] Built target PLOT_LinearRandomFFTWaves
+[ 88%] Built target PERFORMANCE_WaveSpectrumECKV
+[ 89%] Built target gz-waves1-hydrodynamics-system
+[ 90%] Built target gz-waves1-dynamic-geometry-system
+[ 91%] Built target PLOT_LinearRandomWaves
+[ 92%] Built target PLOT_WaveSpectrum
+[ 93%] Built target PLOT_LinearRegularWaves
+[ 94%] Built target gz-waves1-waves-visual-system
+[100%] Built target gz-waves1-rendering-ogre2
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-all/gz-waves1-all-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-all/gz-waves1-all-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-all/gz-waves1-all-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/detail/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1.so.1.0.0
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1.so.1
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1.so
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-targets-relwithdebinfo.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1.pc
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/dynamic-geometry-system/detail/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/dynamic-geometry-system/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so.1.0.0
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so.1
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so.1.0.0" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-targets-relwithdebinfo.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-dynamic-geometry-system.pc
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/hydrodynamics-system/detail/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/hydrodynamics-system/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so.1.0.0
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so.1
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so.1.0.0" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-targets-relwithdebinfo.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-hydrodynamics-system.pc
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering/detail/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so.1.0.0
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so.1
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so.1.0.0" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-targets-relwithdebinfo.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-rendering.pc
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering-ogre2/detail/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering-ogre2/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so.1.0.0
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so.1
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so.1.0.0" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-targets-relwithdebinfo.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-rendering-ogre2.pc
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-visual-system/detail/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-visual-system/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so.1.0.0
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so.1
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so.1.0.0" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-targets-relwithdebinfo.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-waves-visual-system.pc
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-model-system/detail/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-model-system/Export.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so.1.0.0
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so.1
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so.1.0.0" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-config.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-config-version.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-targets.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-targets-relwithdebinfo.cmake
+-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-waves-model-system.pc
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/components/Wavefield.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Algorithm.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/CGALTypes.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Convert.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Geometry.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Grid.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/LinearRandomFFTWaveSimulation.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/LinearRandomWaveSimulation.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/LinearRegularWaveSimulation.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/MeshTools.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/OceanTile.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/PhysicalConstants.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Physics.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/TriangulatedGrid.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/TrochoidIrregularWaveSimulation.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Types.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Utilities.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveParameters.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveSimulation.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveSpectrum.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveSpreadingFunction.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Wavefield.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WavefieldSampler.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/config.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/components.hh
+-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_GnuPlotExample
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_GnuPlotExample" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomFFTWaves
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomFFTWaves" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomWaves
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomWaves" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRegularWaves
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRegularWaves" to ""
+-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_WaveSpectrum
+-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_WaveSpectrum" to ""

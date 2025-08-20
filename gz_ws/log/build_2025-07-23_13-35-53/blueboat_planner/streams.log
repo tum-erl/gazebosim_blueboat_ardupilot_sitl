@@ -1,0 +1,21 @@
+[0.311s] Invoking command in '/home/blueboat_sitl/gz_ws/build/blueboat_planner': AMENT_PREFIX_PATH=/home/blueboat_sitl/gz_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blueboat_sitl/gz_ws/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/blueboat_sitl/gz_ws/install/lib:${LD_LIBRARY_PATH} PATH=/home/blueboat_sitl/gz_ws/install/bin:${PATH} PYTHONPATH=/home/blueboat_sitl/gz_ws/build/blueboat_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages:/home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages:/home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/blueboat_sitl/gz_ws/build/blueboat_planner/build --no-deps symlink_data
+[0.439s] running develop
+[0.501s] running egg_info
+[0.501s] creating blueboat_planner.egg-info
+[0.501s] writing blueboat_planner.egg-info/PKG-INFO
+[0.501s] writing dependency_links to blueboat_planner.egg-info/dependency_links.txt
+[0.501s] writing entry points to blueboat_planner.egg-info/entry_points.txt
+[0.501s] writing requirements to blueboat_planner.egg-info/requires.txt
+[0.501s] writing top-level names to blueboat_planner.egg-info/top_level.txt
+[0.501s] writing manifest file 'blueboat_planner.egg-info/SOURCES.txt'
+[0.502s] reading manifest file 'blueboat_planner.egg-info/SOURCES.txt'
+[0.503s] writing manifest file 'blueboat_planner.egg-info/SOURCES.txt'
+[0.503s] running build_ext
+[0.503s] Creating /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/blueboat-planner.egg-link (link to .)
+[0.504s] Installing blueboat_planner script to /home/blueboat_sitl/gz_ws/install/lib/blueboat_planner
+[0.504s] 
+[0.504s] Installed /home/blueboat_sitl/gz_ws/build/blueboat_planner
+[0.504s] running symlink_data
+[0.504s] symbolically linking /home/blueboat_sitl/gz_ws/build/blueboat_planner/resource/blueboat_planner -> /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/packages
+[0.504s] symbolically linking /home/blueboat_sitl/gz_ws/build/blueboat_planner/package.xml -> /home/blueboat_sitl/gz_ws/install/share/blueboat_planner
+[0.519s] Invoked command in '/home/blueboat_sitl/gz_ws/build/blueboat_planner' returned '0': AMENT_PREFIX_PATH=/home/blueboat_sitl/gz_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blueboat_sitl/gz_ws/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/blueboat_sitl/gz_ws/install/lib:${LD_LIBRARY_PATH} PATH=/home/blueboat_sitl/gz_ws/install/bin:${PATH} PYTHONPATH=/home/blueboat_sitl/gz_ws/build/blueboat_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages:/home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages:/home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/blueboat_sitl/gz_ws/build/blueboat_planner/build --no-deps symlink_data

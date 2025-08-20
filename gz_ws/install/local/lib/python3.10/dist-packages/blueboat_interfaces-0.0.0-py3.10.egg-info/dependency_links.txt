@@ -1,0 +1,1 @@
+/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/ament_cmake_python/blueboat_interfaces/blueboat_interfaces.egg-info/dependency_links.txt

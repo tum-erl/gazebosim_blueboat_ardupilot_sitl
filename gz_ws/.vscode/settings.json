@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/blueboat_sitl/gz_ws/build/move_blueboat",
+        "/home/blueboat_sitl/gz_ws/build/blueboat_regler",
+        "/home/blueboat_sitl/gz_ws/build/blueboat_planner",
+        "/home/lennart/gazebosim_blueboat_ardupilot_sitl/gz_ws/install/lib/python3.10/site-packages",
+        "/home/lennart/fav/ros2/install/scenario_msgs/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/blueboat_sitl/gz_ws/build/move_blueboat",
+        "/home/blueboat_sitl/gz_ws/build/blueboat_regler",
+        "/home/blueboat_sitl/gz_ws/build/blueboat_planner",
+        "/home/lennart/gazebosim_blueboat_ardupilot_sitl/gz_ws/install/lib/python3.10/site-packages",
+        "/home/lennart/fav/ros2/install/scenario_msgs/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

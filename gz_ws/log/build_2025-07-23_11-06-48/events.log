@@ -1,0 +1,1434 @@
+[0.000000] (-) TimerEvent: {}
+[0.000161] (gz-waves1) JobQueued: {'identifier': 'gz-waves1', 'dependencies': OrderedDict()}
+[0.000273] (move_blueboat) JobQueued: {'identifier': 'move_blueboat', 'dependencies': OrderedDict()}
+[0.000299] (gz-waves1) JobStarted: {'identifier': 'gz-waves1'}
+[0.004442] (move_blueboat) JobStarted: {'identifier': 'move_blueboat'}
+[0.008465] (gz-waves1) JobProgress: {'identifier': 'gz-waves1', 'progress': 'cmake'}
+[0.008699] (gz-waves1) Command: {'cmd': ['/usr/bin/cmake', '/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DBUILD_TESTING=ON', '-DCMAKE_CXX_STANDARD=17', '-DCMAKE_INSTALL_PREFIX=/home/blueboat_sitl/gz_ws/install'], 'cwd': '/home/blueboat_sitl/gz_ws/build/gz-waves1', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/blueboat_sitl/ardupilot_gazebo/build:'), ('GZ_SIM_RESOURCE_PATH', '/home/blueboat_sitl/ardupilot_gazebo/models:/home/blueboat_sitl/ardupilot_gazebo/worlds:'), ('USER', 'blueboat_sitl'), ('HOSTNAME', 'frl-gpu-2'), ('SKIP_AP_GRAPHIC_ENV', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/blueboat_sitl'), ('OLDPWD', '/home/blueboat_sitl'), ('SKIP_AP_EXT_ENV', '1'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/blueboat_sitl/ardupilot/Tools/autotest:/home/blueboat_sitl/ardupilot/build/sitl/bin:/home/blueboat_sitl/.local/lib/python3.10/site-packages:/home/blueboat_sitl/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos/share'), ('DIST', 'humble'), ('GZ_VERSION', 'garden'), ('PWD', '/home/blueboat_sitl/gz_ws/build/gz-waves1'), ('LC_ALL', 'C.UTF-8'), ('SKIP_AP_GIT_CHECK', '1'), ('PYTHONPATH', '/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/local/lib/python3.10/dist-packages:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('SKIP_AP_COV_ENV', '1'), ('CMAKE_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared')]), 'shell': False}
+[0.048681] (gz-waves1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.080826] (gz-waves1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.085230] (gz-waves1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099542] (-) TimerEvent: {}
+[0.129094] (gz-waves1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.132982] (gz-waves1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.133084] (gz-waves1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.133283] (gz-waves1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.134980] (gz-waves1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.182686] (gz-waves1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.186621] (gz-waves1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.186770] (gz-waves1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.187021] (gz-waves1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.193859] (gz-waves1) StdoutLine: {'line': b'-- gz-waves1 version 1.0.0\n'}
+[0.193896] (gz-waves1) StdoutLine: {'line': b'-- Operating system is Linux\n'}
+[0.196727] (gz-waves1) StdoutLine: {'line': b'-- Found CPack generators: DEB\n'}
+[0.199597] (-) TimerEvent: {}
+[0.299793] (-) TimerEvent: {}
+[0.321518] (move_blueboat) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/blueboat_sitl/gz_ws/build/move_blueboat/build', '--no-deps', 'symlink_data'], 'cwd': '/home/blueboat_sitl/gz_ws/build/move_blueboat', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/blueboat_sitl/ardupilot_gazebo/build:', 'GZ_SIM_RESOURCE_PATH': '/home/blueboat_sitl/ardupilot_gazebo/models:/home/blueboat_sitl/ardupilot_gazebo/worlds:', 'USER': 'blueboat_sitl', 'HOSTNAME': 'frl-gpu-2', 'SKIP_AP_GRAPHIC_ENV': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/blueboat_sitl', 'OLDPWD': '/home/blueboat_sitl', 'SKIP_AP_EXT_ENV': '1', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/blueboat_sitl/colcon_ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/home/blueboat_sitl/ardupilot/Tools/autotest:/home/blueboat_sitl/ardupilot/build/sitl/bin:/home/blueboat_sitl/.local/lib/python3.10/site-packages:/home/blueboat_sitl/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'XAUTHORITY': '/tmp/.docker.xauth', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared:/opt/ros/humble', 'IGN_GAZEBO_RESOURCE_PATH': '/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos/share', 'DIST': 'humble', 'GZ_VERSION': 'garden', 'PWD': '/home/blueboat_sitl/gz_ws/build/move_blueboat', 'LC_ALL': 'C.UTF-8', 'SKIP_AP_GIT_CHECK': '1', 'PYTHONPATH': '/home/blueboat_sitl/gz_ws/build/move_blueboat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/local/lib/python3.10/dist-packages:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'SKIP_AP_COV_ENV': '1', 'CMAKE_PREFIX_PATH': '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared'}, 'shell': False}
+[0.399912] (-) TimerEvent: {}
+[0.450827] (move_blueboat) StdoutLine: {'line': b'running develop\n'}
+[0.500021] (-) TimerEvent: {}
+[0.511706] (move_blueboat) StdoutLine: {'line': b'running egg_info\n'}
+[0.511817] (move_blueboat) StdoutLine: {'line': b'creating move_blueboat.egg-info\n'}
+[0.511846] (move_blueboat) StdoutLine: {'line': b'writing move_blueboat.egg-info/PKG-INFO\n'}
+[0.511879] (move_blueboat) StdoutLine: {'line': b'writing dependency_links to move_blueboat.egg-info/dependency_links.txt\n'}
+[0.511973] (move_blueboat) StdoutLine: {'line': b'writing entry points to move_blueboat.egg-info/entry_points.txt\n'}
+[0.512009] (move_blueboat) StdoutLine: {'line': b'writing requirements to move_blueboat.egg-info/requires.txt\n'}
+[0.512039] (move_blueboat) StdoutLine: {'line': b'writing top-level names to move_blueboat.egg-info/top_level.txt\n'}
+[0.512137] (move_blueboat) StdoutLine: {'line': b"writing manifest file 'move_blueboat.egg-info/SOURCES.txt'\n"}
+[0.513079] (move_blueboat) StdoutLine: {'line': b"reading manifest file 'move_blueboat.egg-info/SOURCES.txt'\n"}
+[0.513362] (move_blueboat) StdoutLine: {'line': b"writing manifest file 'move_blueboat.egg-info/SOURCES.txt'\n"}
+[0.514156] (move_blueboat) StdoutLine: {'line': b'running build_ext\n'}
+[0.514229] (move_blueboat) StdoutLine: {'line': b'Creating /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/move-blueboat.egg-link (link to .)\n'}
+[0.514702] (move_blueboat) StdoutLine: {'line': b'Installing dp_beacon_dvl_run_boat_waypoint script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514746] (move_blueboat) StdoutLine: {'line': b'Installing dp_run script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514781] (move_blueboat) StdoutLine: {'line': b'Installing gui_joy_controller script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514818] (move_blueboat) StdoutLine: {'line': b'Installing joy_sim_controller script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514847] (move_blueboat) StdoutLine: {'line': b'Installing key_controller script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514868] (move_blueboat) StdoutLine: {'line': b'Installing mission_planner_blueboat script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514899] (move_blueboat) StdoutLine: {'line': b'Installing mpc_controller_for_boat_mission script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514932] (move_blueboat) StdoutLine: {'line': b'Installing pid_controller_for_boat_mission script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514964] (move_blueboat) StdoutLine: {'line': b'Installing robot_controller script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.514996] (move_blueboat) StdoutLine: {'line': b'Installing run_blueboat_mission script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515031] (move_blueboat) StdoutLine: {'line': b'Installing run_horizion_mpc script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515054] (move_blueboat) StdoutLine: {'line': b'Installing run_mission script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515089] (move_blueboat) StdoutLine: {'line': b'Installing run_mpc script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515112] (move_blueboat) StdoutLine: {'line': b'Installing thread_dp_run_with_heading script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515146] (move_blueboat) StdoutLine: {'line': b'Installing thrust_allocator script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515174] (move_blueboat) StdoutLine: {'line': b'Installing watchdog script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515194] (move_blueboat) StdoutLine: {'line': b'Installing way_controller_for_boat_mission script to /home/blueboat_sitl/gz_ws/install/lib/move_blueboat\n'}
+[0.515225] (move_blueboat) StdoutLine: {'line': b'\n'}
+[0.515249] (move_blueboat) StdoutLine: {'line': b'Installed /home/blueboat_sitl/gz_ws/build/move_blueboat\n'}
+[0.515280] (move_blueboat) StdoutLine: {'line': b'running symlink_data\n'}
+[0.515312] (move_blueboat) StdoutLine: {'line': b'creating /home/blueboat_sitl/gz_ws/install/share/ament_index\n'}
+[0.515352] (move_blueboat) StdoutLine: {'line': b'creating /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index\n'}
+[0.515383] (move_blueboat) StdoutLine: {'line': b'creating /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/packages\n'}
+[0.515422] (move_blueboat) StdoutLine: {'line': b'symbolically linking /home/blueboat_sitl/gz_ws/build/move_blueboat/resource/move_blueboat -> /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/packages\n'}
+[0.515445] (move_blueboat) StdoutLine: {'line': b'symbolically linking /home/blueboat_sitl/gz_ws/build/move_blueboat/package.xml -> /home/blueboat_sitl/gz_ws/install/share/move_blueboat\n'}
+[0.515469] (move_blueboat) StdoutLine: {'line': b'creating /home/blueboat_sitl/gz_ws/install/share/move_blueboat/launch\n'}
+[0.515500] (move_blueboat) StdoutLine: {'line': b'symbolically linking /home/blueboat_sitl/gz_ws/build/move_blueboat/launch/launch_robot_simulation.launch.py -> /home/blueboat_sitl/gz_ws/install/share/move_blueboat/launch\n'}
+[0.515533] (move_blueboat) StdoutLine: {'line': b'symbolically linking /home/blueboat_sitl/gz_ws/build/move_blueboat/launch/manual_control_boat_sim.launch.py -> /home/blueboat_sitl/gz_ws/install/share/move_blueboat/launch\n'}
+[0.529623] (move_blueboat) CommandEnded: {'returncode': 0}
+[0.535833] (move_blueboat) JobEnded: {'identifier': 'move_blueboat', 'rc': 0}
+[0.600222] (-) TimerEvent: {}
+[0.700552] (-) TimerEvent: {}
+[0.800867] (-) TimerEvent: {}
+[0.901064] (-) TimerEvent: {}
+[1.001345] (-) TimerEvent: {}
+[1.084137] (gz-waves1) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: iostreams system filesystem \n'}
+[1.087767] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.087999] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.091108] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.091416] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.091635] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[1.094609] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.5.1\n'}
+[1.094846] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[1.101381] (-) TimerEvent: {}
+[1.101496] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 - found\n'}
+[1.101529] (gz-waves1) StdoutLine: {'line': b'\n'}
+[1.104799] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.104933] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.105127] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.105532] (gz-waves1) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.109360] (gz-waves1) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.110177] (gz-waves1) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.113899] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.122751] (gz-waves1) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.144338] (gz-waves1) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.144609] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.147786] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.7.1\n'}
+[1.147987] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[1.148178] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.155207] (gz-waves1) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.2.0") \n'}
+[1.155416] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.158538] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.7.1\n'}
+[1.158761] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[1.158976] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.159251] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 - found\n'}
+[1.159276] (gz-waves1) StdoutLine: {'line': b'\n'}
+[1.162477] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.162703] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.162913] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.163116] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.163197] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[1.166163] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[1.166373] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[1.166794] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[1.169871] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[1.170070] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[1.170300] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[1.173497] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[1.173738] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[1.173959] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2 - found\n'}
+[1.174016] (gz-waves1) StdoutLine: {'line': b'\n'}
+[1.177168] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[1.177351] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs9\n'}
+[1.201527] (-) TimerEvent: {}
+[1.293893] (gz-waves1) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.294318] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.297523] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.301601] (-) TimerEvent: {}
+[1.305644] (gz-waves1) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.328758] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 - found\n'}
+[1.328928] (gz-waves1) StdoutLine: {'line': b'\n'}
+[1.332803] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[1.333046] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[1.358040] (gz-waves1) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.361348] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.371290] (gz-waves1) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.396332] (gz-waves1) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.401439] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.401651] (-) TimerEvent: {}
+[1.401860] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[1.402311] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-transport12 - found\n'}
+[1.402372] (gz-waves1) StdoutLine: {'line': b'\n'}
+[1.407495] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[1.407712] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7\n'}
+[1.407907] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.408139] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.408348] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.408521] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.408597] (gz-waves1) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.408633] (gz-waves1) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.412674] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.412879] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.413103] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[1.416356] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.7.1\n'}
+[1.416543] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[1.416768] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.416991] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.417506] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.417729] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.417911] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.417984] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[1.421066] (gz-waves1) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[1.421292] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.422164] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.425309] (gz-waves1) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[1.425743] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-rendering7 - found\n'}
+[1.425768] (gz-waves1) StdoutLine: {'line': b'\n'}
+[1.429406] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sim7 -- found version 7.9.0\n'}
+[1.429626] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim7\n'}
+[1.432650] (gz-waves1) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[1.432851] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of sdformat13\n'}
+[1.436701] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.436868] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.437419] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.437576] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[1.437805] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[1.464974] (gz-waves1) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.467868] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.477718] (gz-waves1) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.501759] (-) TimerEvent: {}
+[1.508343] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.508501] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[1.508551] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [log]\n'}
+[1.511905] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-transport12-log -- found version 12.2.2\n'}
+[1.512100] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-log\n'}
+[1.512365] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [parameters]\n'}
+[1.515551] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-transport12-parameters -- found version 12.2.2\n'}
+[1.515771] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-parameters\n'}
+[1.516303] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[1.516527] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.516773] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.516968] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.517053] (gz-waves1) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.517093] (gz-waves1) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.522445] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.528066] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.7.1\n'}
+[1.528527] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[1.528825] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.529038] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[1.532120] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.7.1\n'}
+[1.532319] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[1.535876] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[1.546037] (gz-waves1) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[1.569985] (gz-waves1) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[1.573469] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[1.582788] (gz-waves1) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[1.601860] (-) TimerEvent: {}
+[1.608209] (gz-waves1) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[1.611931] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.620884] (gz-waves1) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[1.645747] (gz-waves1) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.649723] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.659300] (gz-waves1) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[1.683601] (gz-waves1) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.687455] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.696929] (gz-waves1) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[1.701940] (-) TimerEvent: {}
+[1.719892] (gz-waves1) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.720393] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[1.725443] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.7.1\n'}
+[1.725678] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[1.729185] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-fuel_tools8 -- found version 8.2.0\n'}
+[1.729352] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools8\n'}
+[1.787440] (gz-waves1) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.794790] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.802046] (-) TimerEvent: {}
+[1.804374] (gz-waves1) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.827629] (gz-waves1) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.834134] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.843006] (gz-waves1) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.865733] (gz-waves1) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.866012] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.866393] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.866789] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.867035] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.867197] (gz-waves1) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.867234] (gz-waves1) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.872078] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[1.875281] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.7.1\n'}
+[1.875507] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[1.876078] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.876219] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[1.879674] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-gui7 -- found version 7.2.2\n'}
+[1.879885] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui7\n'}
+[1.899089] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.899496] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.899711] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.900061] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.900406] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[1.900780] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[1.901096] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[1.902130] (-) TimerEvent: {}
+[1.918411] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-physics6 -- found version 6.7.0\n'}
+[1.918616] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6\n'}
+[1.918804] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.919008] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.919234] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.919412] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.920012] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [heightmap]\n'}
+[1.923030] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-physics6-heightmap -- found version 6.7.0\n'}
+[1.923262] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-heightmap\n'}
+[1.923477] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.923701] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [mesh]\n'}
+[1.926745] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-physics6-mesh -- found version 6.7.0\n'}
+[1.926954] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-mesh\n'}
+[1.927144] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.927377] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [sdf]\n'}
+[1.930397] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-physics6-sdf -- found version 6.7.0\n'}
+[1.930614] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-sdf\n'}
+[1.930841] (gz-waves1) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[1.934238] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[1.934583] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7\n'}
+[1.950650] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[1.950837] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.1\n'}
+[1.951057] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[1.951224] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[1.951467] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[1.951725] (gz-waves1) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[1.952014] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_pressure]\n'}
+[1.955429] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_pressure -- found version 7.3.1\n'}
+[1.955707] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_pressure\n'}
+[1.955975] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_speed]\n'}
+[1.959168] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_speed -- found version 7.3.1\n'}
+[1.959407] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_speed\n'}
+[1.959655] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [altimeter]\n'}
+[1.962708] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-altimeter -- found version 7.3.1\n'}
+[1.962906] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-altimeter\n'}
+[1.963151] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [imu]\n'}
+[1.966218] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-imu -- found version 7.3.1\n'}
+[1.966405] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-imu\n'}
+[1.966650] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [force_torque]\n'}
+[1.969787] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-force_torque -- found version 7.3.1\n'}
+[1.970025] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-force_torque\n'}
+[1.970273] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [logical_camera]\n'}
+[1.973366] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-logical_camera -- found version 7.3.1\n'}
+[1.973557] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-logical_camera\n'}
+[1.973845] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [magnetometer]\n'}
+[1.976891] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-magnetometer -- found version 7.3.1\n'}
+[1.977096] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-magnetometer\n'}
+[1.977345] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [navsat]\n'}
+[1.980376] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-navsat -- found version 7.3.1\n'}
+[1.980581] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-navsat\n'}
+[1.980855] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rendering]\n'}
+[1.983880] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-rendering -- found version 7.3.1\n'}
+[1.984061] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rendering\n'}
+[1.984311] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [lidar]\n'}
+[1.987426] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-lidar -- found version 7.3.1\n'}
+[1.987642] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-lidar\n'}
+[1.987854] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[1.988132] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [gpu_lidar]\n'}
+[1.991171] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-gpu_lidar -- found version 7.3.1\n'}
+[1.991375] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-gpu_lidar\n'}
+[1.991587] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[1.991863] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [camera]\n'}
+[1.994903] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-camera -- found version 7.3.1\n'}
+[1.995101] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-camera\n'}
+[1.995325] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[1.995590] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [boundingbox_camera]\n'}
+[1.998709] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-boundingbox_camera -- found version 7.3.1\n'}
+[1.998914] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-boundingbox_camera\n'}
+[1.999195] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [segmentation_camera]\n'}
+[2.002232] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-segmentation_camera -- found version 7.3.1\n'}
+[2.002288] (-) TimerEvent: {}
+[2.002444] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-segmentation_camera\n'}
+[2.002754] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [depth_camera]\n'}
+[2.005854] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-depth_camera -- found version 7.3.1\n'}
+[2.005996] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-depth_camera\n'}
+[2.006192] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[2.006479] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rgbd_camera]\n'}
+[2.009565] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-rgbd_camera -- found version 7.3.1\n'}
+[2.009758] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rgbd_camera\n'}
+[2.009957] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[2.010236] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [thermal_camera]\n'}
+[2.013302] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-thermal_camera -- found version 7.3.1\n'}
+[2.013468] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-thermal_camera\n'}
+[2.013680] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[2.013972] (gz-waves1) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [wide_angle_camera]\n'}
+[2.016970] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sensors7-wide_angle_camera -- found version 7.3.1\n'}
+[2.017162] (gz-waves1) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-wide_angle_camera\n'}
+[2.017747] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[2.017904] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[2.018219] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[2.033774] (gz-waves1) StdoutLine: {'line': b'-- Looking for gz-sim7 - found\n'}
+[2.033909] (gz-waves1) StdoutLine: {'line': b'\n'}
+[2.034085] (gz-waves1) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[2.034139] (gz-waves1) StdoutLine: {'line': b'-- Looking for sdformat13 - found\n'}
+[2.034192] (gz-waves1) StdoutLine: {'line': b'\n'}
+[2.034258] (gz-waves1) StdoutLine: {'line': b'-- Compiling against Gazebo Garden\n'}
+[2.078123] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'OGRE-RTShaderSystem >= 1.9'\n"}
+[2.087555] (gz-waves1) StdoutLine: {'line': b'--   Found OGRE-RTShaderSystem , version 1.9.0\n'}
+[2.102374] (-) TimerEvent: {}
+[2.114816] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'OGRE-Terrain >= 1.9'\n"}
+[2.123208] (gz-waves1) StdoutLine: {'line': b'--   Found OGRE-Terrain , version 1.9.0\n'}
+[2.151161] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'OGRE-Overlay >= 1.9'\n"}
+[2.159986] (gz-waves1) StdoutLine: {'line': b'--   Found OGRE-Overlay , version 1.9.0\n'}
+[2.187698] (gz-waves1) StdoutLine: {'line': b"-- Checking for module 'OGRE-Paging >= 1.9'\n"}
+[2.196428] (gz-waves1) StdoutLine: {'line': b'--   Found OGRE-Paging , version 1.9.0\n'}
+[2.202432] (-) TimerEvent: {}
+[2.222656] (gz-waves1) StdoutLine: {'line': b'-- Looking for GzOGRE - found\n'}
+[2.222736] (gz-waves1) StdoutLine: {'line': b'\n'}
+[2.226621] (gz-waves1) StdoutLine: {'line': b'-- Looking for OGRE using the name: OGRE2\n'}
+[2.266874] (gz-waves1) StdoutLine: {'line': b'--   + component HlmsPbs: found\n'}
+[2.268215] (gz-waves1) StdoutLine: {'line': b'--   + component HlmsUnlit: found\n'}
+[2.269319] (gz-waves1) StdoutLine: {'line': b'--   + component Overlay: found\n'}
+[2.270449] (gz-waves1) StdoutLine: {'line': b'--   + component PlanarReflections: found\n'}
+[2.271034] (gz-waves1) StdoutLine: {'line': b'-- Looking for GzOGRE2 - found\n'}
+[2.271089] (gz-waves1) StdoutLine: {'line': b'\n'}
+[2.274969] (gz-waves1) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALConfig.cmake:92 (message):\n'}
+[2.275041] (gz-waves1) StderrLine: {'line': b'  CGAL_DATA_DIR cannot be deduced, set the variable CGAL_DATA_DIR to set the\n'}
+[2.275069] (gz-waves1) StderrLine: {'line': b'  default value of CGAL::data_file_path()\n'}
+[2.275091] (gz-waves1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.275112] (gz-waves1) StderrLine: {'line': b'  CMakeLists.txt:168 (find_package)\n'}
+[2.275132] (gz-waves1) StderrLine: {'line': b'\n'}
+[2.275153] (gz-waves1) StderrLine: {'line': b'\x1b[0m\n'}
+[2.276183] (gz-waves1) StdoutLine: {'line': b'-- Using header-only CGAL\n'}
+[2.277093] (gz-waves1) StdoutLine: {'line': b'-- Targetting Unix Makefiles\n'}
+[2.277150] (gz-waves1) StdoutLine: {'line': b'-- Using /usr/bin/c++ compiler.\n'}
+[2.278730] (gz-waves1) StdoutLine: {'line': b'-- Found GMP: /usr/lib/x86_64-linux-gnu/libgmp.so  \n'}
+[2.279976] (gz-waves1) StdoutLine: {'line': b'-- Found MPFR: /usr/lib/x86_64-linux-gnu/libmpfr.so  \n'}
+[2.284009] (gz-waves1) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.48")  \n'}
+[2.284255] (gz-waves1) StdoutLine: {'line': b'-- Boost include dirs: /usr/include\n'}
+[2.284280] (gz-waves1) StdoutLine: {'line': b'-- Boost libraries:    \n'}
+[2.284514] (gz-waves1) StdoutLine: {'line': b'-- Using gcc version 4 or later. Adding -frounding-math\n'}
+[2.285825] (gz-waves1) StdoutLine: {'line': b'-- Build type: RelWithDebInfo\n'}
+[2.285852] (gz-waves1) StdoutLine: {'line': b"-- USING CXXFLAGS = ' -O2 -g -DNDEBUG'\n"}
+[2.285873] (gz-waves1) StdoutLine: {'line': b"-- USING EXEFLAGS = ' '\n"}
+[2.286010] (gz-waves1) StdoutLine: {'line': b'-- Requested component: Core\n'}
+[2.302507] (-) TimerEvent: {}
+[2.402712] (-) TimerEvent: {}
+[2.502981] (-) TimerEvent: {}
+[2.603246] (-) TimerEvent: {}
+[2.703512] (-) TimerEvent: {}
+[2.803790] (-) TimerEvent: {}
+[2.904056] (-) TimerEvent: {}
+[2.945579] (gz-waves1) StdoutLine: {'line': b'-- \n'}
+[2.945745] (gz-waves1) StdoutLine: {'line': b'-- Searching for host SSE information\n'}
+[2.965008] (gz-waves1) StdoutLine: {'line': b'-- SSE2 found\n'}
+[2.965143] (gz-waves1) StdoutLine: {'line': b'-- SSE3 found\n'}
+[2.965173] (gz-waves1) StdoutLine: {'line': b'-- SSE4.1 found\n'}
+[2.965196] (gz-waves1) StdoutLine: {'line': b'-- SSE4.2 found\n'}
+[2.981319] (gz-waves1) StdoutLine: {'line': b'-- Configuring library: gz-waves1-dynamic-geometry-system\n'}
+[2.982449] (gz-waves1) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY\n'}
+[3.004158] (-) TimerEvent: {}
+[3.031920] (gz-waves1) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success\n'}
+[3.032282] (gz-waves1) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY\n'}
+[3.082987] (gz-waves1) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success\n'}
+[3.083155] (gz-waves1) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR\n'}
+[3.104277] (-) TimerEvent: {}
+[3.132896] (gz-waves1) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success\n'}
+[3.135687] (gz-waves1) StdoutLine: {'line': b'-- Configuring library: gz-waves1-hydrodynamics-system\n'}
+[3.138231] (gz-waves1) StdoutLine: {'line': b'-- Configuring library: gz-waves1-rendering\n'}
+[3.140192] (gz-waves1) StdoutLine: {'line': b'-- Configuring library: gz-waves1-rendering-ogre2\n'}
+[3.142178] (gz-waves1) StdoutLine: {'line': b'-- Configuring library: gz-waves1-waves-visual-system\n'}
+[3.144040] (gz-waves1) StdoutLine: {'line': b'-- Configuring library: gz-waves1-waves-model-system\n'}
+[3.145948] (gz-waves1) StdoutLine: {'line': b'-- Configuring library: gz-waves1\n'}
+[3.147935] (gz-waves1) StdoutLine: {'line': b'-- Adding 13 UNIT tests\n'}
+[3.204375] (-) TimerEvent: {}
+[3.267084] (gz-waves1) StdoutLine: {'line': b'-- Adding 7 PERFORMANCE tests\n'}
+[3.304464] (-) TimerEvent: {}
+[3.319819] (gz-waves1) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: iostreams \n'}
+[3.369952] (gz-waves1) StdoutLine: {'line': b'-- Adding codecheck target\n'}
+[3.370089] (gz-waves1) StdoutLine: {'line': b'-- Build configuration successful\n'}
+[3.370119] (gz-waves1) StdoutLine: {'line': b'-- Build type: RelWithDebInfo\n'}
+[3.370143] (gz-waves1) StdoutLine: {'line': b'-- Install prefix: /home/blueboat_sitl/gz_ws/install\n'}
+[3.370778] (gz-waves1) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.404536] (-) TimerEvent: {}
+[3.444402] (gz-waves1) StdoutLine: {'line': b'-- Generating done\n'}
+[3.464160] (gz-waves1) StdoutLine: {'line': b'-- Build files have been written to: /home/blueboat_sitl/gz_ws/build/gz-waves1\n'}
+[3.476329] (gz-waves1) CommandEnded: {'returncode': 0}
+[3.477009] (gz-waves1) JobProgress: {'identifier': 'gz-waves1', 'progress': 'build'}
+[3.477778] (gz-waves1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blueboat_sitl/gz_ws/build/gz-waves1', '--', '-j24', '-l24'], 'cwd': '/home/blueboat_sitl/gz_ws/build/gz-waves1', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/blueboat_sitl/ardupilot_gazebo/build:'), ('GZ_SIM_RESOURCE_PATH', '/home/blueboat_sitl/ardupilot_gazebo/models:/home/blueboat_sitl/ardupilot_gazebo/worlds:'), ('USER', 'blueboat_sitl'), ('HOSTNAME', 'frl-gpu-2'), ('SKIP_AP_GRAPHIC_ENV', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/blueboat_sitl'), ('OLDPWD', '/home/blueboat_sitl'), ('SKIP_AP_EXT_ENV', '1'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/blueboat_sitl/ardupilot/Tools/autotest:/home/blueboat_sitl/ardupilot/build/sitl/bin:/home/blueboat_sitl/.local/lib/python3.10/site-packages:/home/blueboat_sitl/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos/share'), ('DIST', 'humble'), ('GZ_VERSION', 'garden'), ('PWD', '/home/blueboat_sitl/gz_ws/build/gz-waves1'), ('LC_ALL', 'C.UTF-8'), ('SKIP_AP_GIT_CHECK', '1'), ('PYTHONPATH', '/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/local/lib/python3.10/dist-packages:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('SKIP_AP_COV_ENV', '1'), ('CMAKE_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared')]), 'shell': False}
+[3.504627] (-) TimerEvent: {}
+[3.514853] (gz-waves1) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object test/gtest_vendor/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[3.515150] (gz-waves1) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/Algorithm.cc.o\x1b[0m\n'}
+[3.516717] (gz-waves1) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/MeshTools.cc.o\x1b[0m\n'}
+[3.516952] (gz-waves1) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/OceanTile.cc.o\x1b[0m\n'}
+[3.517016] (gz-waves1) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/PhysicalConstants.cc.o\x1b[0m\n'}
+[3.517058] (gz-waves1) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/Physics.cc.o\x1b[0m\n'}
+[3.517727] (gz-waves1) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/TriangulatedGrid.cc.o\x1b[0m\n'}
+[3.518546] (gz-waves1) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/Utilities.cc.o\x1b[0m\n'}
+[3.518771] (gz-waves1) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/Convert.cc.o\x1b[0m\n'}
+[3.519150] (gz-waves1) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/Geometry.cc.o\x1b[0m\n'}
+[3.519353] (gz-waves1) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/Grid.cc.o\x1b[0m\n'}
+[3.519451] (gz-waves1) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/WaveSimulation.cc.o\x1b[0m\n'}
+[3.519587] (gz-waves1) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/LinearRandomFFTWaveSimulationRef.cc.o\x1b[0m\n'}
+[3.519629] (gz-waves1) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/WaveParameters.cc.o\x1b[0m\n'}
+[3.519933] (gz-waves1) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/LinearRandomWaveSimulation.cc.o\x1b[0m\n'}
+[3.520177] (gz-waves1) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/LinearRandomFFTWaveSimulation.cc.o\x1b[0m\n'}
+[3.520454] (gz-waves1) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/Wavefield.cc.o\x1b[0m\n'}
+[3.520570] (gz-waves1) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/SubMeshWithTangents.cc.o\x1b[0m\n'}
+[3.520618] (gz-waves1) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/TrochoidIrregularWaveSimulation.cc.o\x1b[0m\n'}
+[3.520660] (gz-waves1) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/WaveSpectrum.cc.o\x1b[0m\n'}
+[3.521260] (gz-waves1) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/LinearRegularWaveSimulation.cc.o\x1b[0m\n'}
+[3.521767] (gz-waves1) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/WavefieldSampler.cc.o\x1b[0m\n'}
+[3.522655] (gz-waves1) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object src/CMakeFiles/gz-waves1.dir/WaveSpreadingFunction.cc.o\x1b[0m\n'}
+[3.605531] (-) TimerEvent: {}
+[3.709480] (-) TimerEvent: {}
+[3.810013] (-) TimerEvent: {}
+[3.910602] (-) TimerEvent: {}
+[4.011156] (-) TimerEvent: {}
+[4.111836] (-) TimerEvent: {}
+[4.212416] (-) TimerEvent: {}
+[4.312972] (-) TimerEvent: {}
+[4.416521] (-) TimerEvent: {}
+[4.517110] (-) TimerEvent: {}
+[4.617698] (-) TimerEvent: {}
+[4.718250] (-) TimerEvent: {}
+[4.818825] (-) TimerEvent: {}
+[4.920483] (-) TimerEvent: {}
+[5.021001] (-) TimerEvent: {}
+[5.044429] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid gz::waves::TrochoidIrregularWaveSimulation::Impl::Pressure(double, double, double, double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.044869] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:187:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.044948] (gz-waves1) StderrLine: {'line': b'  187 |     \x1b[01;35m\x1b[Kdouble x\x1b[m\x1b[K, double y, double z,\n'}
+[5.044994] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~^\x1b[m\x1b[K\n'}
+[5.045040] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:187:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.045113] (gz-waves1) StderrLine: {'line': b'  187 |     double x, \x1b[01;35m\x1b[Kdouble y\x1b[m\x1b[K, double z,\n'}
+[5.045152] (gz-waves1) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~~~~^\x1b[m\x1b[K\n'}
+[5.045192] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:187:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kz\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.045238] (gz-waves1) StderrLine: {'line': b'  187 |     double x, double y, \x1b[01;35m\x1b[Kdouble z\x1b[m\x1b[K,\n'}
+[5.045277] (gz-waves1) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~^\x1b[m\x1b[K\n'}
+[5.045318] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:188:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpressure\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.045391] (gz-waves1) StderrLine: {'line': b'  188 |     \x1b[01;35m\x1b[Kdouble &pressure\x1b[m\x1b[K)\n'}
+[5.045436] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.045475] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid gz::waves::TrochoidIrregularWaveSimulation::Impl::Pressure(const Eigen::Ref<const Eigen::Array<double, -1, 1> >&, const Eigen::Ref<const Eigen::Array<double, -1, 1> >&, const Eigen::Ref<const Eigen::Array<double, -1, 1> >&, Eigen::Ref<Eigen::Array<double, -1, 1> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.045526] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:196:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.045567] (gz-waves1) StderrLine: {'line': b'  196 |     \x1b[01;35m\x1b[Kconst Eigen::Ref<const Eigen::ArrayXd>& x\x1b[m\x1b[K,\n'}
+[5.045610] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[5.045651] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:197:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.045694] (gz-waves1) StderrLine: {'line': b'  197 |     \x1b[01;35m\x1b[Kconst Eigen::Ref<const Eigen::ArrayXd>& y\x1b[m\x1b[K,\n'}
+[5.045741] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[5.045783] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:198:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kz\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.045824] (gz-waves1) StderrLine: {'line': b'  198 |     \x1b[01;35m\x1b[Kconst Eigen::Ref<const Eigen::ArrayXd>& z\x1b[m\x1b[K,\n'}
+[5.045869] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[5.045907] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:199:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpressure\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.045953] (gz-waves1) StderrLine: {'line': b'  199 |     \x1b[01;35m\x1b[KEigen::Ref<Eigen::ArrayXd> pressure\x1b[m\x1b[K)\n'}
+[5.045996] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.070124] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[5.070510] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRandomFFTWaveSimulation.cc:28\x1b[m\x1b[K:\n'}
+[5.070592] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.070651] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[5.070725] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.082355] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid gz::waves::TrochoidIrregularWaveSimulation::Impl::ElevationAt(gz::waves::Index, gz::waves::Index, double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.082852] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:377:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kix\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.082928] (gz-waves1) StderrLine: {'line': b'  377 |     \x1b[01;35m\x1b[KIndex ix\x1b[m\x1b[K, Index iy,\n'}
+[5.082982] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.083035] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:377:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.083086] (gz-waves1) StderrLine: {'line': b'  377 |     Index ix, \x1b[01;35m\x1b[KIndex iy\x1b[m\x1b[K,\n'}
+[5.083137] (gz-waves1) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.083185] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:378:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kh\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.083234] (gz-waves1) StderrLine: {'line': b'  378 |     \x1b[01;35m\x1b[Kdouble &h\x1b[m\x1b[K)\n'}
+[5.083280] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~^\x1b[m\x1b[K\n'}
+[5.083327] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid gz::waves::TrochoidIrregularWaveSimulation::Impl::DisplacementAt(gz::waves::Index, gz::waves::Index, double&, double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.083392] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:386:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kix\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.083442] (gz-waves1) StderrLine: {'line': b'  386 |     \x1b[01;35m\x1b[KIndex ix\x1b[m\x1b[K, Index iy,\n'}
+[5.083491] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.083562] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:386:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.083611] (gz-waves1) StderrLine: {'line': b'  386 |     Index ix, \x1b[01;35m\x1b[KIndex iy\x1b[m\x1b[K,\n'}
+[5.083661] (gz-waves1) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.083710] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:387:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.083760] (gz-waves1) StderrLine: {'line': b'  387 |     \x1b[01;35m\x1b[Kdouble& sx\x1b[m\x1b[K, double& sy)\n'}
+[5.083812] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.083865] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:387:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.083920] (gz-waves1) StderrLine: {'line': b'  387 |     double& sx, \x1b[01;35m\x1b[Kdouble& sy\x1b[m\x1b[K)\n'}
+[5.083969] (gz-waves1) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.084019] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid gz::waves::TrochoidIrregularWaveSimulation::Impl::PressureAt(gz::waves::Index, gz::waves::Index, gz::waves::Index, double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.084074] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:395:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kix\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.084130] (gz-waves1) StderrLine: {'line': b'  395 |     \x1b[01;35m\x1b[KIndex ix\x1b[m\x1b[K, Index iy, Index iz,\n'}
+[5.084184] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.084237] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:395:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.084288] (gz-waves1) StderrLine: {'line': b'  395 |     Index ix, \x1b[01;35m\x1b[KIndex iy\x1b[m\x1b[K, Index iz,\n'}
+[5.084346] (gz-waves1) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.084405] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:395:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiz\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.084462] (gz-waves1) StderrLine: {'line': b'  395 |     Index ix, Index iy, \x1b[01;35m\x1b[KIndex iz\x1b[m\x1b[K,\n'}
+[5.084514] (gz-waves1) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.084569] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:396:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpressure\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.084635] (gz-waves1) StderrLine: {'line': b'  396 |     \x1b[01;35m\x1b[Kdouble &pressure\x1b[m\x1b[K)\n'}
+[5.084693] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.084748] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid gz::waves::TrochoidIrregularWaveSimulation::Impl::PressureAt(gz::waves::Index, Eigen::Ref<Eigen::Array<double, -1, -1> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.084804] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:404:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiz\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.084861] (gz-waves1) StderrLine: {'line': b'  404 |     \x1b[01;35m\x1b[KIndex iz\x1b[m\x1b[K,\n'}
+[5.084920] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.084973] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/TrochoidIrregularWaveSimulation.cc:405:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpressure\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.085030] (gz-waves1) StderrLine: {'line': b'  405 |     \x1b[01;35m\x1b[KEigen::Ref<Eigen::ArrayXXd> pressure\x1b[m\x1b[K)\n'}
+[5.085090] (gz-waves1) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.121202] (-) TimerEvent: {}
+[5.167916] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[5.168131] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRandomWaveSimulation.cc:24\x1b[m\x1b[K:\n'}
+[5.168162] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.168188] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[5.168212] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.221335] (-) TimerEvent: {}
+[5.267374] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[5.267648] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRandomFFTWaveSimulationRef.cc:40\x1b[m\x1b[K:\n'}
+[5.267711] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.267753] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[5.267815] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.318976] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRandomWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void gz::waves::LinearRandomWaveSimulation::SetSteepness(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.319356] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRandomWaveSimulation.cc:494:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.319475] (gz-waves1) StderrLine: {'line': b'  494 | void LinearRandomWaveSimulation::SetSteepness(\x1b[01;35m\x1b[Kdouble value\x1b[m\x1b[K)\n'}
+[5.319525] (gz-waves1) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[5.321475] (-) TimerEvent: {}
+[5.422089] (-) TimerEvent: {}
+[5.522753] (-) TimerEvent: {}
+[5.623404] (-) TimerEvent: {}
+[5.724026] (-) TimerEvent: {}
+[5.824570] (-) TimerEvent: {}
+[5.925105] (-) TimerEvent: {}
+[6.025703] (-) TimerEvent: {}
+[6.126331] (-) TimerEvent: {}
+[6.226925] (-) TimerEvent: {}
+[6.327454] (-) TimerEvent: {}
+[6.427974] (-) TimerEvent: {}
+[6.528515] (-) TimerEvent: {}
+[6.629100] (-) TimerEvent: {}
+[6.729593] (-) TimerEvent: {}
+[6.830053] (-) TimerEvent: {}
+[6.930450] (-) TimerEvent: {}
+[7.030895] (-) TimerEvent: {}
+[7.131409] (-) TimerEvent: {}
+[7.231956] (-) TimerEvent: {}
+[7.332482] (-) TimerEvent: {}
+[7.372832] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[7.373124] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[7.373200] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/OceanTile.cc:16\x1b[m\x1b[K:\n'}
+[7.373259] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.373317] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[7.373399] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[7.432638] (-) TimerEvent: {}
+[7.533152] (-) TimerEvent: {}
+[7.633666] (-) TimerEvent: {}
+[7.734179] (-) TimerEvent: {}
+[7.834651] (-) TimerEvent: {}
+[7.870605] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[7.870869] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/MeshTools.hh:28\x1b[m\x1b[K,\n'}
+[7.870944] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/MeshTools.cc:16\x1b[m\x1b[K:\n'}
+[7.871007] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.871097] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[7.871159] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[7.934815] (-) TimerEvent: {}
+[8.035366] (-) TimerEvent: {}
+[8.135876] (-) TimerEvent: {}
+[8.236371] (-) TimerEvent: {}
+[8.336821] (-) TimerEvent: {}
+[8.437314] (-) TimerEvent: {}
+[8.537782] (-) TimerEvent: {}
+[8.638209] (-) TimerEvent: {}
+[8.738711] (-) TimerEvent: {}
+[8.839222] (-) TimerEvent: {}
+[8.939699] (-) TimerEvent: {}
+[9.040143] (-) TimerEvent: {}
+[9.140617] (-) TimerEvent: {}
+[9.241109] (-) TimerEvent: {}
+[9.276501] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[9.276814] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/Grid.cc:28\x1b[m\x1b[K:\n'}
+[9.276924] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.276999] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[9.277061] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.341253] (-) TimerEvent: {}
+[9.441750] (-) TimerEvent: {}
+[9.542189] (-) TimerEvent: {}
+[9.642684] (-) TimerEvent: {}
+[9.743175] (-) TimerEvent: {}
+[9.809797] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[9.810050] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/Utilities.cc:22\x1b[m\x1b[K:\n'}
+[9.810115] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.810172] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[9.810225] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.843426] (-) TimerEvent: {}
+[9.943838] (-) TimerEvent: {}
+[10.044307] (-) TimerEvent: {}
+[10.144770] (-) TimerEvent: {}
+[10.241176] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[10.241478] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/WaveParameters.cc:23\x1b[m\x1b[K:\n'}
+[10.241556] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.241620] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[10.241680] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.244867] (-) TimerEvent: {}
+[10.345312] (-) TimerEvent: {}
+[10.445752] (-) TimerEvent: {}
+[10.447655] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[10.447851] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[10.447914] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/Wavefield.cc:27\x1b[m\x1b[K:\n'}
+[10.447970] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.448027] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[10.448079] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.545868] (-) TimerEvent: {}
+[10.587604] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[10.587852] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/WavefieldSampler.cc:25\x1b[m\x1b[K:\n'}
+[10.587913] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.587973] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[10.588024] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.645999] (-) TimerEvent: {}
+[10.656060] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRegularWaveSimulation.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void gz::waves::LinearRegularWaveSimulation::SetSteepness(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.656320] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRegularWaveSimulation.cc:581:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[10.656409] (gz-waves1) StderrLine: {'line': b'  581 | void LinearRegularWaveSimulation::SetSteepness(\x1b[01;35m\x1b[Kdouble value\x1b[m\x1b[K)\n'}
+[10.656471] (gz-waves1) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[10.746134] (-) TimerEvent: {}
+[10.846561] (-) TimerEvent: {}
+[10.947027] (-) TimerEvent: {}
+[10.986670] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[10.986911] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/Physics.cc:31\x1b[m\x1b[K:\n'}
+[10.986979] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.987061] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[10.987117] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[11.047224] (-) TimerEvent: {}
+[11.147729] (-) TimerEvent: {}
+[11.248219] (-) TimerEvent: {}
+[11.348697] (-) TimerEvent: {}
+[11.449174] (-) TimerEvent: {}
+[11.549660] (-) TimerEvent: {}
+[11.650134] (-) TimerEvent: {}
+[11.750626] (-) TimerEvent: {}
+[11.851066] (-) TimerEvent: {}
+[11.951483] (-) TimerEvent: {}
+[12.051996] (-) TimerEvent: {}
+[12.152505] (-) TimerEvent: {}
+[12.253067] (-) TimerEvent: {}
+[12.353489] (-) TimerEvent: {}
+[12.453913] (-) TimerEvent: {}
+[12.554455] (-) TimerEvent: {}
+[12.654863] (-) TimerEvent: {}
+[12.755271] (-) TimerEvent: {}
+[12.855678] (-) TimerEvent: {}
+[12.956083] (-) TimerEvent: {}
+[13.056557] (-) TimerEvent: {}
+[13.156976] (-) TimerEvent: {}
+[13.257408] (-) TimerEvent: {}
+[13.357751] (-) TimerEvent: {}
+[13.458101] (-) TimerEvent: {}
+[13.558572] (-) TimerEvent: {}
+[13.658938] (-) TimerEvent: {}
+[13.759282] (-) TimerEvent: {}
+[13.859756] (-) TimerEvent: {}
+[13.960162] (-) TimerEvent: {}
+[14.060655] (-) TimerEvent: {}
+[14.151517] (gz-waves1) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX static library ../../lib/libgtest.a\x1b[0m\n'}
+[14.160784] (-) TimerEvent: {}
+[14.210775] (gz-waves1) StdoutLine: {'line': b'[ 23%] Built target gtest\n'}
+[14.226220] (gz-waves1) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object test/gtest_vendor/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[14.260933] (-) TimerEvent: {}
+[14.361375] (-) TimerEvent: {}
+[14.461692] (-) TimerEvent: {}
+[14.561989] (-) TimerEvent: {}
+[14.662264] (-) TimerEvent: {}
+[14.762606] (-) TimerEvent: {}
+[14.780655] (gz-waves1) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX static library ../../lib/libgtest_main.a\x1b[0m\n'}
+[14.803900] (gz-waves1) StdoutLine: {'line': b'[ 25%] Built target gtest_main\n'}
+[14.862727] (-) TimerEvent: {}
+[14.963071] (-) TimerEvent: {}
+[15.062468] (gz-waves1) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking CXX shared library ../lib/libgz-waves1.so\x1b[0m\n'}
+[15.063150] (-) TimerEvent: {}
+[15.163421] (-) TimerEvent: {}
+[15.263833] (-) TimerEvent: {}
+[15.344115] (gz-waves1) StdoutLine: {'line': b'[ 26%] Built target gz-waves1\n'}
+[15.361702] (gz-waves1) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_Physics_TEST.dir/Physics_TEST.cc.o\x1b[0m\n'}
+[15.361932] (gz-waves1) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_MeshTools_TEST.dir/MeshTools_TEST.cc.o\x1b[0m\n'}
+[15.362736] (gz-waves1) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_Grid_TEST.dir/Grid_TEST.cc.o\x1b[0m\n'}
+[15.362862] (gz-waves1) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_TriangulatedGrid_TEST.dir/TriangulatedGrid_TEST.cc.o\x1b[0m\n'}
+[15.363373] (gz-waves1) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_LinearRandomFFTWaveSimulation_TEST.dir/LinearRandomFFTWaveSimulation_TEST.cc.o\x1b[0m\n'}
+[15.364450] (-) TimerEvent: {}
+[15.364707] (gz-waves1) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_LinearRegularWaveSimulation_TEST.dir/LinearRegularWaveSimulation_TEST.cc.o\x1b[0m\n'}
+[15.364825] (gz-waves1) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_Algorithm_TEST.dir/Algorithm_TEST.cc.o\x1b[0m\n'}
+[15.366229] (gz-waves1) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_EigenFFTW_TEST.dir/EigenFFTW_TEST.cc.o\x1b[0m\n'}
+[15.366424] (gz-waves1) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_WaveSpectrum_TEST.dir/WaveSpectrum_TEST.cc.o\x1b[0m\n'}
+[15.367275] (gz-waves1) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object test/performance/CMakeFiles/PERFORMANCE_LinearRandomFFTWaveSimCurrentAmplitudes.dir/LinearRandomFFTWaveSimCurrentAmplitudes.cc.o\x1b[0m\n'}
+[15.368203] (gz-waves1) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/BaseRenderEngineExtension.cc.o\x1b[0m\n'}
+[15.368975] (gz-waves1) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object test/performance/CMakeFiles/PERFORMANCE_EigenReturnByValue.dir/EigenReturnByValue.cc.o\x1b[0m\n'}
+[15.369119] (gz-waves1) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object test/performance/CMakeFiles/PERFORMANCE_LinearRandomFFTWaveSimDisplacements.dir/LinearRandomFFTWaveSimDisplacements.cc.o\x1b[0m\n'}
+[15.369172] (gz-waves1) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_Wavefield_TEST.dir/Wavefield_TEST.cc.o\x1b[0m\n'}
+[15.369210] (gz-waves1) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_CGAL_TEST.dir/CGAL_TEST.cc.o\x1b[0m\n'}
+[15.369247] (gz-waves1) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object src/systems/dynamic/CMakeFiles/gz-waves1-dynamic-geometry-system.dir/DynamicGeometry.cc.o\x1b[0m\n'}
+[15.369286] (gz-waves1) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object src/systems/hydrodynamics/CMakeFiles/gz-waves1-hydrodynamics-system.dir/Collision.cc.o\x1b[0m\n'}
+[15.369324] (gz-waves1) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object test/performance/CMakeFiles/PERFORMANCE_LinearRandomFFTWaveSimElevationAt.dir/LinearRandomFFTWaveSimElevationAt.cc.o\x1b[0m\n'}
+[15.369376] (gz-waves1) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object test/performance/CMakeFiles/PERFORMANCE_WaveSpectrumECKV.dir/WaveSpectrumECKV.cc.o\x1b[0m\n'}
+[15.369424] (gz-waves1) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-waves-model-system.dir/WavesModel.cc.o\x1b[0m\n'}
+[15.369527] (gz-waves1) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_WaveSpreadingFunction_TEST.dir/WaveSpreadingFunction_TEST.cc.o\x1b[0m\n'}
+[15.369706] (gz-waves1) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object test/performance/CMakeFiles/PERFORMANCE_LinearRandomFFTWaveSimBaseAmplitudes.dir/LinearRandomFFTWaveSimBaseAmplitudes.cc.o\x1b[0m\n'}
+[15.370220] (gz-waves1) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object src/CMakeFiles/UNIT_Geometry_TEST.dir/Geometry_TEST.cc.o\x1b[0m\n'}
+[15.370558] (gz-waves1) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object test/performance/CMakeFiles/PERFORMANCE_LinearRegularWaveSimDisplacements.dir/LinearRegularWaveSimDisplacements.cc.o\x1b[0m\n'}
+[15.467424] (-) TimerEvent: {}
+[15.567838] (-) TimerEvent: {}
+[15.668294] (-) TimerEvent: {}
+[15.768941] (-) TimerEvent: {}
+[15.869567] (-) TimerEvent: {}
+[15.970214] (-) TimerEvent: {}
+[16.070892] (-) TimerEvent: {}
+[16.172391] (-) TimerEvent: {}
+[16.273542] (-) TimerEvent: {}
+[16.377841] (-) TimerEvent: {}
+[16.478572] (-) TimerEvent: {}
+[16.579168] (-) TimerEvent: {}
+[16.679737] (-) TimerEvent: {}
+[16.740462] (gz-waves1) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PERFORMANCE_EigenReturnByValue\x1b[0m\n'}
+[16.783533] (-) TimerEvent: {}
+[16.884170] (-) TimerEvent: {}
+[16.985061] (-) TimerEvent: {}
+[17.085257] (gz-waves1) StdoutLine: {'line': b'[ 52%] Built target PERFORMANCE_EigenReturnByValue\n'}
+[17.085633] (-) TimerEvent: {}
+[17.117191] (gz-waves1) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object test/plots/CMakeFiles/PLOT_GnuPlotExample.dir/PLOT_GnuPlotExample.cc.o\x1b[0m\n'}
+[17.185832] (-) TimerEvent: {}
+[17.289486] (-) TimerEvent: {}
+[17.390086] (-) TimerEvent: {}
+[17.490763] (-) TimerEvent: {}
+[17.591446] (-) TimerEvent: {}
+[17.694396] (-) TimerEvent: {}
+[17.760875] (gz-waves1) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimBaseAmplitudes\x1b[0m\n'}
+[17.796512] (-) TimerEvent: {}
+[17.897200] (-) TimerEvent: {}
+[17.948114] (gz-waves1) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_Algorithm_TEST\x1b[0m\n'}
+[17.960144] (gz-waves1) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimCurrentAmplitudes\x1b[0m\n'}
+[17.999528] (-) TimerEvent: {}
+[18.086717] (gz-waves1) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRegularWaveSimDisplacements\x1b[0m\n'}
+[18.087195] (gz-waves1) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimDisplacements\x1b[0m\n'}
+[18.099726] (-) TimerEvent: {}
+[18.161742] (gz-waves1) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PERFORMANCE_LinearRandomFFTWaveSimElevationAt\x1b[0m\n'}
+[18.201527] (-) TimerEvent: {}
+[18.268690] (gz-waves1) StdoutLine: {'line': b'[ 56%] Built target UNIT_Algorithm_TEST\n'}
+[18.285502] (gz-waves1) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/DisplacementMap.cc.o\x1b[0m\n'}
+[18.303682] (-) TimerEvent: {}
+[18.319921] (gz-waves1) StdoutLine: {'line': b'[ 58%] Built target PERFORMANCE_LinearRandomFFTWaveSimBaseAmplitudes\n'}
+[18.334838] (gz-waves1) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/OceanGeometry.cc.o\x1b[0m\n'}
+[18.403858] (-) TimerEvent: {}
+[18.469499] (gz-waves1) StdoutLine: {'line': b'[ 59%] Built target PERFORMANCE_LinearRandomFFTWaveSimCurrentAmplitudes\n'}
+[18.485363] (gz-waves1) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/OceanVisual.cc.o\x1b[0m\n'}
+[18.505494] (-) TimerEvent: {}
+[18.563209] (gz-waves1) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_EigenFFTW_TEST\x1b[0m\n'}
+[18.576251] (gz-waves1) StdoutLine: {'line': b'[ 61%] Built target PERFORMANCE_LinearRegularWaveSimDisplacements\n'}
+[18.590635] (gz-waves1) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object src/systems/hydrodynamics/CMakeFiles/gz-waves1-hydrodynamics-system.dir/Hydrodynamics.cc.o\x1b[0m\n'}
+[18.608452] (gz-waves1) StdoutLine: {'line': b'[ 61%] Built target PERFORMANCE_LinearRandomFFTWaveSimDisplacements\n'}
+[18.608810] (-) TimerEvent: {}
+[18.625551] (gz-waves1) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/RenderEngineExtension.cc.o\x1b[0m\n'}
+[18.690414] (gz-waves1) StdoutLine: {'line': b'[ 62%] Built target PERFORMANCE_LinearRandomFFTWaveSimElevationAt\n'}
+[18.695576] (gz-waves1) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object test/plots/CMakeFiles/PLOT_LinearRandomFFTWaves.dir/PLOT_LinearRandomFFTWaves.cc.o\x1b[0m\n'}
+[18.709024] (-) TimerEvent: {}
+[18.726102] (gz-waves1) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object test/plots/CMakeFiles/PLOT_LinearRandomWaves.dir/PLOT_LinearRandomWaves.cc.o\x1b[0m\n'}
+[18.809387] (-) TimerEvent: {}
+[18.886459] (gz-waves1) StdoutLine: {'line': b'[ 64%] Built target UNIT_EigenFFTW_TEST\n'}
+[18.891442] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_GnuPlotExample.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, const char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.891778] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_GnuPlotExample.cc:30:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99 declared with attribute \xe2\x80\x98\x1b[01m\x1b[Kwarn_unused_result\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-result\x1b[m\x1b[K]\n'}
+[18.891842] (gz-waves1) StderrLine: {'line': b'   30 |       \x1b[01;35m\x1b[Kstd::system(s.c_str())\x1b[m\x1b[K;\n'}
+[18.891883] (gz-waves1) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.912446] (-) TimerEvent: {}
+[18.934663] (gz-waves1) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object test/plots/CMakeFiles/PLOT_LinearRegularWaves.dir/PLOT_LinearRegularWaves.cc.o\x1b[0m\n'}
+[19.015507] (-) TimerEvent: {}
+[19.072985] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePrerequisites.h:30\x1b[m\x1b[K,\n'}
+[19.075566] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgreItem.h:31\x1b[m\x1b[K,\n'}
+[19.075874] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/dynamic/DynamicGeometry.cc:43\x1b[m\x1b[K:\n'}
+[19.075951] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePlatform.h:360:102:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: Ogre can\'t tell whether this is a debug build. If it is, please add _DEBUG to the preprocessor definitions. Otherwise, you can set OGRE_IGNORE_UNKNOWN_DEBUG to suppress this warning. Ogre will assume this is not a debug build by default. To add _DEBUG with g++, invoke g++ with the argument -D_DEBUG. To add it in CMake, include set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG=1 -D_DEBUG=1" ) at the top of your CMakeLists.txt file. IDEs usually provide the possibility to add preprocessor definitions in the build settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.076015] (gz-waves1) StderrLine: {'line': b'  360 |     "settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG." \x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[19.076058] (gz-waves1) StderrLine: {'line': b'      |                                                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[19.115684] (-) TimerEvent: {}
+[19.216285] (-) TimerEvent: {}
+[19.319089] (-) TimerEvent: {}
+[19.419591] (-) TimerEvent: {}
+[19.520479] (-) TimerEvent: {}
+[19.621021] (-) TimerEvent: {}
+[19.721933] (-) TimerEvent: {}
+[19.734826] (gz-waves1) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object test/plots/CMakeFiles/PLOT_WaveSpectrum.dir/PLOT_WaveSpectrum.cc.o\x1b[0m\n'}
+[19.822094] (-) TimerEvent: {}
+[19.875060] (gz-waves1) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_WaveSpectrum_TEST\x1b[0m\n'}
+[19.922280] (-) TimerEvent: {}
+[19.956652] (gz-waves1) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PERFORMANCE_WaveSpectrumECKV\x1b[0m\n'}
+[20.022468] (-) TimerEvent: {}
+[20.123269] (-) TimerEvent: {}
+[20.150169] (gz-waves1) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PLOT_GnuPlotExample\x1b[0m\n'}
+[20.223500] (-) TimerEvent: {}
+[20.324246] (-) TimerEvent: {}
+[20.378956] (gz-waves1) StdoutLine: {'line': b'[ 69%] Built target PLOT_GnuPlotExample\n'}
+[20.392490] (gz-waves1) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/RenderEngineExtensionManager.cc.o\x1b[0m\n'}
+[20.394883] (gz-waves1) StdoutLine: {'line': b'[ 70%] Built target PERFORMANCE_WaveSpectrumECKV\n'}
+[20.402240] (gz-waves1) StdoutLine: {'line': b'[ 70%] Built target UNIT_WaveSpectrum_TEST\n'}
+[20.405338] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[20.405675] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/MeshTools_TEST.cc:21\x1b[m\x1b[K:\n'}
+[20.405782] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.405864] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[20.405931] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[20.410478] (gz-waves1) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/RenderEngineExtensionPlugin.cc.o\x1b[0m\n'}
+[20.414073] (gz-waves1) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering.dir/SceneNodeFactory.cc.o\x1b[0m\n'}
+[20.424439] (-) TimerEvent: {}
+[20.449088] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[20.449609] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/Physics_TEST.cc:23\x1b[m\x1b[K:\n'}
+[20.449731] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.449811] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[20.449879] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[20.524618] (-) TimerEvent: {}
+[20.625260] (-) TimerEvent: {}
+[20.725859] (-) TimerEvent: {}
+[20.828483] (-) TimerEvent: {}
+[20.929063] (-) TimerEvent: {}
+[21.029658] (-) TimerEvent: {}
+[21.130285] (-) TimerEvent: {}
+[21.233489] (-) TimerEvent: {}
+[21.284519] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[21.284876] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[21.284962] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/LinearRegularWaveSimulation_TEST.cc:24\x1b[m\x1b[K:\n'}
+[21.285030] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[21.285095] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[21.285155] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[21.333638] (-) TimerEvent: {}
+[21.385687] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[21.388811] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[21.388942] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.hh:29\x1b[m\x1b[K,\n'}
+[21.389017] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/SceneNodeFactory.hh:27\x1b[m\x1b[K,\n'}
+[21.389084] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/RenderEngineExtension.hh:45\x1b[m\x1b[K,\n'}
+[21.389146] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/BaseRenderEngineExtension.hh:27\x1b[m\x1b[K,\n'}
+[21.389204] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/BaseRenderEngineExtension.cc:16\x1b[m\x1b[K:\n'}
+[21.389272] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[21.389332] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[21.389412] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[21.433814] (-) TimerEvent: {}
+[21.534392] (-) TimerEvent: {}
+[21.635053] (-) TimerEvent: {}
+[21.661471] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_LinearRandomFFTWaves.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, const char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.661795] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_LinearRandomFFTWaves.cc:39:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99 declared with attribute \xe2\x80\x98\x1b[01m\x1b[Kwarn_unused_result\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-result\x1b[m\x1b[K]\n'}
+[21.661887] (gz-waves1) StderrLine: {'line': b'   39 |       \x1b[01;35m\x1b[Kstd::system(s.c_str())\x1b[m\x1b[K;\n'}
+[21.661972] (gz-waves1) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.662037] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_LinearRandomWaves.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, const char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.662099] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_LinearRandomWaves.cc:39:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99 declared with attribute \xe2\x80\x98\x1b[01m\x1b[Kwarn_unused_result\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-result\x1b[m\x1b[K]\n'}
+[21.662161] (gz-waves1) StderrLine: {'line': b'   39 |       \x1b[01;35m\x1b[Kstd::system(s.c_str())\x1b[m\x1b[K;\n'}
+[21.662218] (gz-waves1) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.735256] (-) TimerEvent: {}
+[21.835941] (-) TimerEvent: {}
+[21.930418] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_LinearRegularWaves.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, const char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.930802] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_LinearRegularWaves.cc:39:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99 declared with attribute \xe2\x80\x98\x1b[01m\x1b[Kwarn_unused_result\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-result\x1b[m\x1b[K]\n'}
+[21.930892] (gz-waves1) StderrLine: {'line': b'   39 |       \x1b[01;35m\x1b[Kstd::system(s.c_str())\x1b[m\x1b[K;\n'}
+[21.930960] (gz-waves1) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.938254] (-) TimerEvent: {}
+[22.004713] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[22.005082] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/MeshTools.hh:28\x1b[m\x1b[K,\n'}
+[22.005167] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/Geometry_TEST.cc:25\x1b[m\x1b[K:\n'}
+[22.005231] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.005294] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[22.005362] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[22.027683] (gz-waves1) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_LinearRandomFFTWaveSimulation_TEST\x1b[0m\n'}
+[22.041532] (-) TimerEvent: {}
+[22.142287] (-) TimerEvent: {}
+[22.228781] (gz-waves1) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_WaveSpreadingFunction_TEST\x1b[0m\n'}
+[22.242499] (-) TimerEvent: {}
+[22.344507] (-) TimerEvent: {}
+[22.445186] (-) TimerEvent: {}
+[22.519038] (gz-waves1) StdoutLine: {'line': b'[ 74%] Built target UNIT_LinearRandomFFTWaveSimulation_TEST\n'}
+[22.545408] (-) TimerEvent: {}
+[22.648211] (-) TimerEvent: {}
+[22.691506] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_WaveSpectrum.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, const char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[22.691865] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/test/plots/PLOT_WaveSpectrum.cc:50:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99 declared with attribute \xe2\x80\x98\x1b[01m\x1b[Kwarn_unused_result\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-result\x1b[m\x1b[K]\n'}
+[22.691966] (gz-waves1) StderrLine: {'line': b'   50 |       \x1b[01;35m\x1b[Kstd::system(s.c_str())\x1b[m\x1b[K;\n'}
+[22.692012] (gz-waves1) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.721123] (gz-waves1) StdoutLine: {'line': b'[ 74%] Built target UNIT_WaveSpreadingFunction_TEST\n'}
+[22.748416] (-) TimerEvent: {}
+[22.849519] (-) TimerEvent: {}
+[22.950170] (-) TimerEvent: {}
+[23.044491] (gz-waves1) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PLOT_LinearRandomFFTWaves\x1b[0m\n'}
+[23.050322] (-) TimerEvent: {}
+[23.150824] (-) TimerEvent: {}
+[23.156582] (gz-waves1) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PLOT_LinearRandomWaves\x1b[0m\n'}
+[23.252544] (-) TimerEvent: {}
+[23.265457] (gz-waves1) StdoutLine: {'line': b'[ 76%] Built target PLOT_LinearRandomFFTWaves\n'}
+[23.352687] (-) TimerEvent: {}
+[23.366401] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[23.366734] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[23.366852] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.hh:29\x1b[m\x1b[K,\n'}
+[23.366906] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.cc:16\x1b[m\x1b[K:\n'}
+[23.366947] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.366989] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[23.367035] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[23.439884] (gz-waves1) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PLOT_LinearRegularWaves\x1b[0m\n'}
+[23.454122] (-) TimerEvent: {}
+[23.554696] (-) TimerEvent: {}
+[23.617391] (gz-waves1) StdoutLine: {'line': b'[ 77%] Built target PLOT_LinearRandomWaves\n'}
+[23.654850] (-) TimerEvent: {}
+[23.735213] (gz-waves1) StderrLine: {'line': b"\x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/RenderEngineExtensionManager.cc:463:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K'GZ_RENDERING_ENGINE_INSTALL_DIR' macro is deprecated, use gz::rendering::getEngineInstallDir() function instead. \n"}
+[23.735534] (gz-waves1) StderrLine: {'line': b'  463 |   systemPath\x1b[01;35m\x1b[Ks.AddPluginPaths({GZ_RENDERING_ENGINE_INSTALL_DIR});\x1b[m\x1b[K\n'}
+[23.735610] (gz-waves1) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                                                \n'}
+[23.755016] (-) TimerEvent: {}
+[23.855578] (-) TimerEvent: {}
+[23.875023] (gz-waves1) StdoutLine: {'line': b'[ 77%] Built target PLOT_LinearRegularWaves\n'}
+[23.955729] (-) TimerEvent: {}
+[24.056271] (-) TimerEvent: {}
+[24.125973] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[24.126297] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[24.126436] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.hh:29\x1b[m\x1b[K,\n'}
+[24.126488] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/SceneNodeFactory.hh:27\x1b[m\x1b[K,\n'}
+[24.126531] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/RenderEngineExtension.hh:45\x1b[m\x1b[K,\n'}
+[24.126574] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/RenderEngineExtension.cc:16\x1b[m\x1b[K:\n'}
+[24.126613] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.126658] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[24.126696] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[24.156454] (-) TimerEvent: {}
+[24.256932] (-) TimerEvent: {}
+[24.357452] (-) TimerEvent: {}
+[24.457942] (-) TimerEvent: {}
+[24.558448] (-) TimerEvent: {}
+[24.606061] (gz-waves1) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/PLOT_WaveSpectrum\x1b[0m\n'}
+[24.658601] (-) TimerEvent: {}
+[24.759151] (-) TimerEvent: {}
+[24.782492] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[24.782859] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[24.782940] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.hh:29\x1b[m\x1b[K,\n'}
+[24.782998] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/SceneNodeFactory.hh:27\x1b[m\x1b[K,\n'}
+[24.783050] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/SceneNodeFactory.cc:16\x1b[m\x1b[K:\n'}
+[24.783095] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.783142] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[24.783187] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[24.859320] (-) TimerEvent: {}
+[24.930070] (gz-waves1) StdoutLine: {'line': b'[ 78%] Built target PLOT_WaveSpectrum\n'}
+[24.959477] (-) TimerEvent: {}
+[25.059953] (-) TimerEvent: {}
+[25.160453] (-) TimerEvent: {}
+[25.200045] (gz-waves1) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_TriangulatedGrid_TEST\x1b[0m\n'}
+[25.260606] (-) TimerEvent: {}
+[25.361116] (-) TimerEvent: {}
+[25.410689] (gz-waves1) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_Grid_TEST\x1b[0m\n'}
+[25.453114] (gz-waves1) StdoutLine: {'line': b'[ 80%] Built target UNIT_TriangulatedGrid_TEST\n'}
+[25.461273] (-) TimerEvent: {}
+[25.561786] (-) TimerEvent: {}
+[25.655509] (gz-waves1) StdoutLine: {'line': b'[ 80%] Built target UNIT_Grid_TEST\n'}
+[25.661935] (-) TimerEvent: {}
+[25.733139] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[25.733405] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/MeshTools.hh:28\x1b[m\x1b[K,\n'}
+[25.733463] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/CGAL_TEST.cc:48\x1b[m\x1b[K:\n'}
+[25.733503] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.733530] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[25.733554] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[25.762064] (-) TimerEvent: {}
+[25.862473] (-) TimerEvent: {}
+[25.962955] (-) TimerEvent: {}
+[26.013224] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[26.013563] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[26.013631] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.hh:29\x1b[m\x1b[K,\n'}
+[26.013673] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/SceneNodeFactory.hh:27\x1b[m\x1b[K,\n'}
+[26.013720] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/RenderEngineExtension.hh:45\x1b[m\x1b[K,\n'}
+[26.013756] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/RenderEngineExtensionManager.cc:44\x1b[m\x1b[K:\n'}
+[26.013796] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.013859] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[26.013909] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[26.063104] (-) TimerEvent: {}
+[26.163597] (-) TimerEvent: {}
+[26.264068] (-) TimerEvent: {}
+[26.364551] (-) TimerEvent: {}
+[26.465028] (-) TimerEvent: {}
+[26.565563] (-) TimerEvent: {}
+[26.619332] (gz-waves1) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_Geometry_TEST\x1b[0m\n'}
+[26.634562] (gz-waves1) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_Wavefield_TEST\x1b[0m\n'}
+[26.665733] (-) TimerEvent: {}
+[26.766268] (-) TimerEvent: {}
+[26.790799] (gz-waves1) StdoutLine: {'line': b'[ 82%] Built target UNIT_Wavefield_TEST\n'}
+[26.866433] (-) TimerEvent: {}
+[26.875760] (gz-waves1) StdoutLine: {'line': b'[ 82%] Built target UNIT_Geometry_TEST\n'}
+[26.966569] (-) TimerEvent: {}
+[27.067040] (-) TimerEvent: {}
+[27.167492] (-) TimerEvent: {}
+[27.267988] (-) TimerEvent: {}
+[27.368465] (-) TimerEvent: {}
+[27.468958] (-) TimerEvent: {}
+[27.569504] (-) TimerEvent: {}
+[27.669998] (-) TimerEvent: {}
+[27.770466] (-) TimerEvent: {}
+[27.870909] (-) TimerEvent: {}
+[27.971411] (-) TimerEvent: {}
+[28.071907] (-) TimerEvent: {}
+[28.155668] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[28.155936] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/MeshTools.hh:28\x1b[m\x1b[K,\n'}
+[28.156014] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/hydrodynamics/Hydrodynamics.cc:54\x1b[m\x1b[K:\n'}
+[28.156086] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[28.156146] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[28.156202] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[28.172066] (-) TimerEvent: {}
+[28.272538] (-) TimerEvent: {}
+[28.372960] (-) TimerEvent: {}
+[28.473412] (-) TimerEvent: {}
+[28.573901] (-) TimerEvent: {}
+[28.674415] (-) TimerEvent: {}
+[28.774906] (-) TimerEvent: {}
+[28.875383] (-) TimerEvent: {}
+[28.975858] (-) TimerEvent: {}
+[29.076373] (-) TimerEvent: {}
+[29.176836] (-) TimerEvent: {}
+[29.263257] (gz-waves1) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library ../../../lib/libgz-waves1-waves-model-system.so\x1b[0m\n'}
+[29.276991] (-) TimerEvent: {}
+[29.377461] (-) TimerEvent: {}
+[29.414465] (gz-waves1) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_LinearRegularWaveSimulation_TEST\x1b[0m\n'}
+[29.477640] (-) TimerEvent: {}
+[29.481226] (gz-waves1) StdoutLine: {'line': b'[ 84%] Built target gz-waves1-waves-model-system\n'}
+[29.577764] (-) TimerEvent: {}
+[29.606234] (gz-waves1) StdoutLine: {'line': b'[ 84%] Built target UNIT_LinearRegularWaveSimulation_TEST\n'}
+[29.677906] (-) TimerEvent: {}
+[29.778382] (-) TimerEvent: {}
+[29.878739] (-) TimerEvent: {}
+[29.979193] (-) TimerEvent: {}
+[30.079655] (-) TimerEvent: {}
+[30.180000] (-) TimerEvent: {}
+[30.280393] (-) TimerEvent: {}
+[30.380820] (-) TimerEvent: {}
+[30.393288] (gz-waves1) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_MeshTools_TEST\x1b[0m\n'}
+[30.481061] (-) TimerEvent: {}
+[30.558479] (gz-waves1) StdoutLine: {'line': b'[ 86%] Built target UNIT_MeshTools_TEST\n'}
+[30.581200] (-) TimerEvent: {}
+[30.681643] (-) TimerEvent: {}
+[30.782096] (-) TimerEvent: {}
+[30.882552] (-) TimerEvent: {}
+[30.982933] (-) TimerEvent: {}
+[31.083416] (-) TimerEvent: {}
+[31.183793] (-) TimerEvent: {}
+[31.284272] (-) TimerEvent: {}
+[31.384668] (-) TimerEvent: {}
+[31.485141] (-) TimerEvent: {}
+[31.585477] (-) TimerEvent: {}
+[31.620068] (gz-waves1) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_Physics_TEST\x1b[0m\n'}
+[31.685692] (-) TimerEvent: {}
+[31.775877] (gz-waves1) StdoutLine: {'line': b'[ 87%] Built target UNIT_Physics_TEST\n'}
+[31.785829] (-) TimerEvent: {}
+[31.886250] (-) TimerEvent: {}
+[31.986593] (-) TimerEvent: {}
+[32.086973] (-) TimerEvent: {}
+[32.187326] (-) TimerEvent: {}
+[32.287758] (-) TimerEvent: {}
+[32.388095] (-) TimerEvent: {}
+[32.488549] (-) TimerEvent: {}
+[32.516099] (gz-waves1) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX shared library ../../../lib/libgz-waves1-rendering.so\x1b[0m\n'}
+[32.588765] (-) TimerEvent: {}
+[32.607589] (gz-waves1) StdoutLine: {'line': b'[ 88%] Built target gz-waves1-rendering\n'}
+[32.622606] (gz-waves1) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering-ogre2.dir/Ogre2SceneNodeFactory.cc.o\x1b[0m\n'}
+[32.622828] (gz-waves1) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering-ogre2.dir/Ogre2OceanGeometry.cc.o\x1b[0m\n'}
+[32.622911] (gz-waves1) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering-ogre2.dir/Ogre2OceanVisual.cc.o\x1b[0m\n'}
+[32.623494] (gz-waves1) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering-ogre2.dir/Ogre2DisplacementMap.cc.o\x1b[0m\n'}
+[32.623640] (gz-waves1) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering-ogre2.dir/Ogre2DynamicMesh.cc.o\x1b[0m\n'}
+[32.624113] (gz-waves1) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-waves-visual-system.dir/WavesVisual.cc.o\x1b[0m\n'}
+[32.624190] (gz-waves1) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object src/systems/waves/CMakeFiles/gz-waves1-rendering-ogre2.dir/Ogre2RenderEngineExtension.cc.o\x1b[0m\n'}
+[32.688901] (-) TimerEvent: {}
+[32.789267] (-) TimerEvent: {}
+[32.889662] (-) TimerEvent: {}
+[32.990040] (-) TimerEvent: {}
+[33.090445] (-) TimerEvent: {}
+[33.190834] (-) TimerEvent: {}
+[33.218667] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[33.218902] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2OceanGeometry.cc:18\x1b[m\x1b[K:\n'}
+[33.218982] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[33.219037] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[33.219087] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.237423] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePrerequisites.h:30\x1b[m\x1b[K,\n'}
+[33.237642] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/OGRE-2.3/Hlms/Pbs/OgreHlmsPbsPrerequisites.h:31\x1b[m\x1b[K,\n'}
+[33.237698] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2/Ogre2Material.hh:29\x1b[m\x1b[K,\n'}
+[33.237748] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2OceanGeometry.cc:19\x1b[m\x1b[K:\n'}
+[33.237817] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePlatform.h:360:102:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: Ogre can\'t tell whether this is a debug build. If it is, please add _DEBUG to the preprocessor definitions. Otherwise, you can set OGRE_IGNORE_UNKNOWN_DEBUG to suppress this warning. Ogre will assume this is not a debug build by default. To add _DEBUG with g++, invoke g++ with the argument -D_DEBUG. To add it in CMake, include set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG=1 -D_DEBUG=1" ) at the top of your CMakeLists.txt file. IDEs usually provide the possibility to add preprocessor definitions in the build settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[33.237873] (gz-waves1) StderrLine: {'line': b'  360 |     "settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG." \x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[33.237922] (gz-waves1) StderrLine: {'line': b'      |                                                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.290994] (-) TimerEvent: {}
+[33.391453] (-) TimerEvent: {}
+[33.491901] (-) TimerEvent: {}
+[33.592430] (-) TimerEvent: {}
+[33.692868] (-) TimerEvent: {}
+[33.793372] (-) TimerEvent: {}
+[33.893000] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePrerequisites.h:30\x1b[m\x1b[K,\n'}
+[33.893248] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/OGRE-2.3/Ogre.h:31\x1b[m\x1b[K,\n'}
+[33.893322] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2/Ogre2Includes.hh:32\x1b[m\x1b[K,\n'}
+[33.893391] (-) TimerEvent: {}
+[33.893520] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2/Ogre2BoundingBoxCamera.hh:32\x1b[m\x1b[K,\n'}
+[33.893582] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2.hh:25\x1b[m\x1b[K,\n'}
+[33.893636] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2DisplacementMap.hh:28\x1b[m\x1b[K,\n'}
+[33.893688] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2DisplacementMap.cc:16\x1b[m\x1b[K:\n'}
+[33.893740] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePlatform.h:360:102:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: Ogre can\'t tell whether this is a debug build. If it is, please add _DEBUG to the preprocessor definitions. Otherwise, you can set OGRE_IGNORE_UNKNOWN_DEBUG to suppress this warning. Ogre will assume this is not a debug build by default. To add _DEBUG with g++, invoke g++ with the argument -D_DEBUG. To add it in CMake, include set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG=1 -D_DEBUG=1" ) at the top of your CMakeLists.txt file. IDEs usually provide the possibility to add preprocessor definitions in the build settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[33.893809] (gz-waves1) StderrLine: {'line': b'  360 | GRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG." \x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[33.893866] (gz-waves1) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.893917] (gz-waves1) StderrLine: {'line': b'\n'}
+[33.920504] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePrerequisites.h:30\x1b[m\x1b[K,\n'}
+[33.920742] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePixelFormatGpu.h:31\x1b[m\x1b[K,\n'}
+[33.920798] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgreHlmsPso.h:31\x1b[m\x1b[K,\n'}
+[33.920851] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2DynamicMesh.hh:52\x1b[m\x1b[K,\n'}
+[33.920902] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2DynamicMesh.cc:35\x1b[m\x1b[K:\n'}
+[33.920951] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePlatform.h:360:102:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: Ogre can\'t tell whether this is a debug build. If it is, please add _DEBUG to the preprocessor definitions. Otherwise, you can set OGRE_IGNORE_UNKNOWN_DEBUG to suppress this warning. Ogre will assume this is not a debug build by default. To add _DEBUG with g++, invoke g++ with the argument -D_DEBUG. To add it in CMake, include set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG=1 -D_DEBUG=1" ) at the top of your CMakeLists.txt file. IDEs usually provide the possibility to add preprocessor definitions in the build settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[33.921036] (gz-waves1) StderrLine: {'line': b'  360 |     "settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG." \x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[33.921084] (gz-waves1) StderrLine: {'line': b'      |                                                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[33.993595] (-) TimerEvent: {}
+[34.094022] (-) TimerEvent: {}
+[34.194509] (-) TimerEvent: {}
+[34.295000] (-) TimerEvent: {}
+[34.395453] (-) TimerEvent: {}
+[34.495916] (-) TimerEvent: {}
+[34.596379] (-) TimerEvent: {}
+[34.696787] (-) TimerEvent: {}
+[34.797232] (-) TimerEvent: {}
+[34.897762] (-) TimerEvent: {}
+[34.998255] (-) TimerEvent: {}
+[35.098750] (-) TimerEvent: {}
+[35.199261] (-) TimerEvent: {}
+[35.292479] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[35.292689] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[35.292744] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2OceanVisual.hh:24\x1b[m\x1b[K,\n'}
+[35.292794] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2OceanVisual.cc:16\x1b[m\x1b[K:\n'}
+[35.292841] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.292890] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[35.292936] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[35.299503] (-) TimerEvent: {}
+[35.321155] (gz-waves1) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library ../../../lib/libgz-waves1-dynamic-geometry-system.so\x1b[0m\n'}
+[35.399669] (-) TimerEvent: {}
+[35.474020] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[35.474269] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[35.474329] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.hh:29\x1b[m\x1b[K,\n'}
+[35.474420] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/SceneNodeFactory.hh:27\x1b[m\x1b[K,\n'}
+[35.474473] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/RenderEngineExtension.hh:45\x1b[m\x1b[K,\n'}
+[35.474522] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/BaseRenderEngineExtension.hh:27\x1b[m\x1b[K,\n'}
+[35.474570] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2RenderEngineExtension.hh:31\x1b[m\x1b[K,\n'}
+[35.474617] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2RenderEngineExtension.cc:16\x1b[m\x1b[K:\n'}
+[35.474665] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.474722] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[35.474769] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[35.499837] (-) TimerEvent: {}
+[35.574968] (gz-waves1) StdoutLine: {'line': b'[ 95%] Built target gz-waves1-dynamic-geometry-system\n'}
+[35.600040] (-) TimerEvent: {}
+[35.700500] (-) TimerEvent: {}
+[35.801004] (-) TimerEvent: {}
+[35.901504] (-) TimerEvent: {}
+[35.925386] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[35.925612] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[35.925667] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/OceanVisual.hh:29\x1b[m\x1b[K,\n'}
+[35.925715] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/SceneNodeFactory.hh:27\x1b[m\x1b[K,\n'}
+[35.925763] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2SceneNodeFactory.hh:25\x1b[m\x1b[K,\n'}
+[35.925810] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2SceneNodeFactory.cc:16\x1b[m\x1b[K:\n'}
+[35.925856] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[35.925918] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[35.925965] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[36.001744] (-) TimerEvent: {}
+[36.102192] (-) TimerEvent: {}
+[36.202623] (-) TimerEvent: {}
+[36.303100] (-) TimerEvent: {}
+[36.403617] (-) TimerEvent: {}
+[36.504093] (-) TimerEvent: {}
+[36.604583] (-) TimerEvent: {}
+[36.704976] (-) TimerEvent: {}
+[36.805438] (-) TimerEvent: {}
+[36.905816] (-) TimerEvent: {}
+[37.006198] (-) TimerEvent: {}
+[37.076639] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/gz/common5/gz/common.hh:35\x1b[m\x1b[K,\n'}
+[37.076867] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/include/gz/waves/OceanTile.hh:24\x1b[m\x1b[K,\n'}
+[37.076924] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/WavesVisual.cc:74\x1b[m\x1b[K:\n'}
+[37.076974] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/gz/common5/gz/common/SuppressWarning.hh:23:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: gz-common SuppressWarning is deprecated, use gz-utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[37.077024] (gz-waves1) StderrLine: {'line': b'   23 | #pragma message("gz-common SuppressWarning is deprecated, use gz-utils"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[37.077072] (gz-waves1) StderrLine: {'line': b'      |                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[37.106418] (-) TimerEvent: {}
+[37.206900] (-) TimerEvent: {}
+[37.307290] (-) TimerEvent: {}
+[37.407682] (-) TimerEvent: {}
+[37.508126] (-) TimerEvent: {}
+[37.608576] (-) TimerEvent: {}
+[37.709026] (-) TimerEvent: {}
+[37.809484] (-) TimerEvent: {}
+[37.909912] (-) TimerEvent: {}
+[38.010317] (-) TimerEvent: {}
+[38.110799] (-) TimerEvent: {}
+[38.211188] (-) TimerEvent: {}
+[38.248177] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePrerequisites.h:30\x1b[m\x1b[K,\n'}
+[38.248451] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/OGRE-2.3/Hlms/Pbs/OgreHlmsPbsPrerequisites.h:31\x1b[m\x1b[K,\n'}
+[38.248508] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2/Ogre2Material.hh:29\x1b[m\x1b[K,\n'}
+[38.248557] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2OceanVisual.cc:20\x1b[m\x1b[K:\n'}
+[38.248606] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePlatform.h:360:102:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: Ogre can\'t tell whether this is a debug build. If it is, please add _DEBUG to the preprocessor definitions. Otherwise, you can set OGRE_IGNORE_UNKNOWN_DEBUG to suppress this warning. Ogre will assume this is not a debug build by default. To add _DEBUG with g++, invoke g++ with the argument -D_DEBUG. To add it in CMake, include set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG=1 -D_DEBUG=1" ) at the top of your CMakeLists.txt file. IDEs usually provide the possibility to add preprocessor definitions in the build settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[38.248683] (gz-waves1) StderrLine: {'line': b'  360 |     "settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG." \x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[38.248731] (gz-waves1) StderrLine: {'line': b'      |                                                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[38.311444] (-) TimerEvent: {}
+[38.411885] (-) TimerEvent: {}
+[38.512423] (-) TimerEvent: {}
+[38.611285] (gz-waves1) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library ../../../lib/libgz-waves1-hydrodynamics-system.so\x1b[0m\n'}
+[38.612476] (-) TimerEvent: {}
+[38.712867] (-) TimerEvent: {}
+[38.813371] (-) TimerEvent: {}
+[38.840701] (gz-waves1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePrerequisites.h:30\x1b[m\x1b[K,\n'}
+[38.840930] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/OGRE-2.3/Ogre.h:31\x1b[m\x1b[K,\n'}
+[38.840986] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2/Ogre2Includes.hh:32\x1b[m\x1b[K,\n'}
+[38.841037] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2/Ogre2BoundingBoxCamera.hh:32\x1b[m\x1b[K,\n'}
+[38.841088] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/gz/rendering7/gz/rendering/ogre2.hh:25\x1b[m\x1b[K,\n'}
+[38.841136] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2DisplacementMap.hh:28\x1b[m\x1b[K,\n'}
+[38.841184] (gz-waves1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blueboat_sitl/gz_ws/src/asv_wave_sim/gz-waves/src/systems/waves/Ogre2SceneNodeFactory.cc:25\x1b[m\x1b[K:\n'}
+[38.841232] (gz-waves1) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/OGRE-2.3/OgrePlatform.h:360:102:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: Ogre can\'t tell whether this is a debug build. If it is, please add _DEBUG to the preprocessor definitions. Otherwise, you can set OGRE_IGNORE_UNKNOWN_DEBUG to suppress this warning. Ogre will assume this is not a debug build by default. To add _DEBUG with g++, invoke g++ with the argument -D_DEBUG. To add it in CMake, include set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG=1 -D_DEBUG=1" ) at the top of your CMakeLists.txt file. IDEs usually provide the possibility to add preprocessor definitions in the build settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[38.841311] (gz-waves1) StderrLine: {'line': b'  360 |     "settings. You can also manually set OGRE_DEBUG_MODE to either 1 or 0 instead of adding _DEBUG." \x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[38.841373] (gz-waves1) StderrLine: {'line': b'      |                                                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[38.873851] (gz-waves1) StdoutLine: {'line': b'[ 96%] Built target gz-waves1-hydrodynamics-system\n'}
+[38.913529] (-) TimerEvent: {}
+[39.014055] (-) TimerEvent: {}
+[39.114520] (-) TimerEvent: {}
+[39.214951] (-) TimerEvent: {}
+[39.315427] (-) TimerEvent: {}
+[39.415894] (-) TimerEvent: {}
+[39.516365] (-) TimerEvent: {}
+[39.616809] (-) TimerEvent: {}
+[39.717240] (-) TimerEvent: {}
+[39.817685] (-) TimerEvent: {}
+[39.918131] (-) TimerEvent: {}
+[40.018578] (-) TimerEvent: {}
+[40.119039] (-) TimerEvent: {}
+[40.219415] (-) TimerEvent: {}
+[40.319907] (-) TimerEvent: {}
+[40.420338] (-) TimerEvent: {}
+[40.520790] (-) TimerEvent: {}
+[40.621252] (-) TimerEvent: {}
+[40.721730] (-) TimerEvent: {}
+[40.822220] (-) TimerEvent: {}
+[40.922874] (-) TimerEvent: {}
+[41.023261] (-) TimerEvent: {}
+[41.123662] (-) TimerEvent: {}
+[41.223987] (-) TimerEvent: {}
+[41.324402] (-) TimerEvent: {}
+[41.424771] (-) TimerEvent: {}
+[41.525138] (-) TimerEvent: {}
+[41.625552] (-) TimerEvent: {}
+[41.725939] (-) TimerEvent: {}
+[41.826326] (-) TimerEvent: {}
+[41.926722] (-) TimerEvent: {}
+[42.027097] (-) TimerEvent: {}
+[42.127485] (-) TimerEvent: {}
+[42.227778] (-) TimerEvent: {}
+[42.328175] (-) TimerEvent: {}
+[42.428606] (-) TimerEvent: {}
+[42.529017] (-) TimerEvent: {}
+[42.629405] (-) TimerEvent: {}
+[42.649062] (gz-waves1) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable ../bin/UNIT_CGAL_TEST\x1b[0m\n'}
+[42.729616] (-) TimerEvent: {}
+[42.830010] (-) TimerEvent: {}
+[42.889818] (gz-waves1) StdoutLine: {'line': b'[ 97%] Built target UNIT_CGAL_TEST\n'}
+[42.930150] (-) TimerEvent: {}
+[43.030487] (-) TimerEvent: {}
+[43.130903] (-) TimerEvent: {}
+[43.231307] (-) TimerEvent: {}
+[43.331738] (-) TimerEvent: {}
+[43.432171] (-) TimerEvent: {}
+[43.532600] (-) TimerEvent: {}
+[43.633046] (-) TimerEvent: {}
+[43.733497] (-) TimerEvent: {}
+[43.833913] (-) TimerEvent: {}
+[43.934483] (-) TimerEvent: {}
+[44.034857] (-) TimerEvent: {}
+[44.135226] (-) TimerEvent: {}
+[44.235578] (-) TimerEvent: {}
+[44.335953] (-) TimerEvent: {}
+[44.374714] (gz-waves1) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX shared library ../../../lib/libgz-waves1-waves-visual-system.so\x1b[0m\n'}
+[44.436150] (-) TimerEvent: {}
+[44.536538] (-) TimerEvent: {}
+[44.550883] (gz-waves1) StdoutLine: {'line': b'[ 98%] Built target gz-waves1-waves-visual-system\n'}
+[44.636700] (-) TimerEvent: {}
+[44.737001] (-) TimerEvent: {}
+[44.837345] (-) TimerEvent: {}
+[44.937617] (-) TimerEvent: {}
+[45.037907] (-) TimerEvent: {}
+[45.138206] (-) TimerEvent: {}
+[45.238531] (-) TimerEvent: {}
+[45.338849] (-) TimerEvent: {}
+[45.439211] (-) TimerEvent: {}
+[45.539608] (-) TimerEvent: {}
+[45.637986] (gz-waves1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library ../../../lib/libgz-waves1-rendering-ogre2.so\x1b[0m\n'}
+[45.639645] (-) TimerEvent: {}
+[45.739924] (-) TimerEvent: {}
+[45.812105] (gz-waves1) StdoutLine: {'line': b'[100%] Built target gz-waves1-rendering-ogre2\n'}
+[45.823798] (gz-waves1) CommandEnded: {'returncode': 0}
+[45.824371] (gz-waves1) JobProgress: {'identifier': 'gz-waves1', 'progress': 'install'}
+[45.829108] (gz-waves1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/blueboat_sitl/gz_ws/build/gz-waves1'], 'cwd': '/home/blueboat_sitl/gz_ws/build/gz-waves1', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/blueboat_sitl/ardupilot_gazebo/build:'), ('GZ_SIM_RESOURCE_PATH', '/home/blueboat_sitl/ardupilot_gazebo/models:/home/blueboat_sitl/ardupilot_gazebo/worlds:'), ('USER', 'blueboat_sitl'), ('HOSTNAME', 'frl-gpu-2'), ('SKIP_AP_GRAPHIC_ENV', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge/lib:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/blueboat_sitl'), ('OLDPWD', '/home/blueboat_sitl'), ('SKIP_AP_EXT_ENV', '1'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/blueboat_sitl/ardupilot/Tools/autotest:/home/blueboat_sitl/ardupilot/build/sitl/bin:/home/blueboat_sitl/.local/lib/python3.10/site-packages:/home/blueboat_sitl/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos/share'), ('DIST', 'humble'), ('GZ_VERSION', 'garden'), ('PWD', '/home/blueboat_sitl/gz_ws/build/gz-waves1'), ('LC_ALL', 'C.UTF-8'), ('SKIP_AP_GIT_CHECK', '1'), ('PYTHONPATH', '/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces/local/lib/python3.10/dist-packages:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('SKIP_AP_COV_ENV', '1'), ('CMAKE_PREFIX_PATH', '/home/blueboat_sitl/colcon_ws/install/test_ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_ign_interfaces:/home/blueboat_sitl/colcon_ws/install/ros_ign:/home/blueboat_sitl/colcon_ws/install/ros_ign_image:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo_demos:/home/blueboat_sitl/colcon_ws/install/ros_ign_gazebo:/home/blueboat_sitl/colcon_ws/install/ros_ign_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim_demos:/home/blueboat_sitl/colcon_ws/install/ros_gz_sim:/home/blueboat_sitl/colcon_ws/install/ros_gz_image:/home/blueboat_sitl/colcon_ws/install/ros_gz_bridge:/home/blueboat_sitl/colcon_ws/install/ros_gz_interfaces:/home/blueboat_sitl/colcon_ws/install/ros2_shared')]), 'shell': False}
+[45.834763] (gz-waves1) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[45.834818] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-all/gz-waves1-all-config.cmake\n'}
+[45.834844] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-all/gz-waves1-all-config-version.cmake\n'}
+[45.834898] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-all/gz-waves1-all-targets.cmake\n'}
+[45.835182] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/detail/Export.hh\n'}
+[45.835261] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Export.hh\n'}
+[45.835306] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1.so.1.0.0\n'}
+[45.840001] (-) TimerEvent: {}
+[45.852091] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1.so.1\n'}
+[45.852173] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1.so\n'}
+[45.852222] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-config.cmake\n'}
+[45.852253] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-config-version.cmake\n'}
+[45.852291] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-targets.cmake\n'}
+[45.852336] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1/gz-waves1-targets-relwithdebinfo.cmake\n'}
+[45.852402] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1.pc\n'}
+[45.852770] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/dynamic-geometry-system/detail/Export.hh\n'}
+[45.852815] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/dynamic-geometry-system/Export.hh\n'}
+[45.852847] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so.1.0.0\n'}
+[45.856181] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so.1\n'}
+[45.856267] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so.1.0.0" to ""\n'}
+[45.856302] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-dynamic-geometry-system.so\n'}
+[45.856354] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-config.cmake\n'}
+[45.856399] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-config-version.cmake\n'}
+[45.856453] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-targets.cmake\n'}
+[45.856507] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-dynamic-geometry-system/gz-waves1-dynamic-geometry-system-targets-relwithdebinfo.cmake\n'}
+[45.856559] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-dynamic-geometry-system.pc\n'}
+[45.856760] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/hydrodynamics-system/detail/Export.hh\n'}
+[45.856809] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/hydrodynamics-system/Export.hh\n'}
+[45.856892] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so.1.0.0\n'}
+[45.863894] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so.1\n'}
+[45.863964] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so.1.0.0" to ""\n'}
+[45.864000] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-hydrodynamics-system.so\n'}
+[45.864048] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-config.cmake\n'}
+[45.864093] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-config-version.cmake\n'}
+[45.864148] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-targets.cmake\n'}
+[45.864201] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-hydrodynamics-system/gz-waves1-hydrodynamics-system-targets-relwithdebinfo.cmake\n'}
+[45.864252] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-hydrodynamics-system.pc\n'}
+[45.864661] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering/detail/Export.hh\n'}
+[45.864729] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering/Export.hh\n'}
+[45.864761] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so.1.0.0\n'}
+[45.866611] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so.1\n'}
+[45.866700] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so.1.0.0" to ""\n'}
+[45.866734] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering.so\n'}
+[45.866778] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-config.cmake\n'}
+[45.866819] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-config-version.cmake\n'}
+[45.866874] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-targets.cmake\n'}
+[45.866934] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering/gz-waves1-rendering-targets-relwithdebinfo.cmake\n'}
+[45.866985] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-rendering.pc\n'}
+[45.867055] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering-ogre2/detail/Export.hh\n'}
+[45.867312] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/rendering-ogre2/Export.hh\n'}
+[45.867333] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so.1.0.0\n'}
+[45.872700] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so.1\n'}
+[45.872771] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so.1.0.0" to ""\n'}
+[45.872803] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-rendering-ogre2.so\n'}
+[45.872849] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-config.cmake\n'}
+[45.872889] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-config-version.cmake\n'}
+[45.872945] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-targets.cmake\n'}
+[45.873003] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-rendering-ogre2/gz-waves1-rendering-ogre2-targets-relwithdebinfo.cmake\n'}
+[45.873055] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-rendering-ogre2.pc\n'}
+[45.873125] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-visual-system/detail/Export.hh\n'}
+[45.873172] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-visual-system/Export.hh\n'}
+[45.873227] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so.1.0.0\n'}
+[45.878155] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so.1\n'}
+[45.878239] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so.1.0.0" to ""\n'}
+[45.878271] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-visual-system.so\n'}
+[45.878320] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-config.cmake\n'}
+[45.878362] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-config-version.cmake\n'}
+[45.878420] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-targets.cmake\n'}
+[45.878509] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-visual-system/gz-waves1-waves-visual-system-targets-relwithdebinfo.cmake\n'}
+[45.878557] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-waves-visual-system.pc\n'}
+[45.878651] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-model-system/detail/Export.hh\n'}
+[45.878682] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/waves-model-system/Export.hh\n'}
+[45.878730] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so.1.0.0\n'}
+[45.881317] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so.1\n'}
+[45.881396] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so.1.0.0" to ""\n'}
+[45.881426] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/libgz-waves1-waves-model-system.so\n'}
+[45.881471] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-config.cmake\n'}
+[45.881510] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-config-version.cmake\n'}
+[45.881564] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-targets.cmake\n'}
+[45.881617] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/cmake/gz-waves1-waves-model-system/gz-waves1-waves-model-system-targets-relwithdebinfo.cmake\n'}
+[45.881665] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/lib/pkgconfig/gz-waves1-waves-model-system.pc\n'}
+[45.882005] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/components/Wavefield.hh\n'}
+[45.882062] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Algorithm.hh\n'}
+[45.882083] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/CGALTypes.hh\n'}
+[45.882114] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Convert.hh\n'}
+[45.882145] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Geometry.hh\n'}
+[45.882175] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Grid.hh\n'}
+[45.882204] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/LinearRandomFFTWaveSimulation.hh\n'}
+[45.882241] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/LinearRandomWaveSimulation.hh\n'}
+[45.882276] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/LinearRegularWaveSimulation.hh\n'}
+[45.882307] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/MeshTools.hh\n'}
+[45.882352] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/OceanTile.hh\n'}
+[45.882433] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/PhysicalConstants.hh\n'}
+[45.882467] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Physics.hh\n'}
+[45.882496] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/TriangulatedGrid.hh\n'}
+[45.882522] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/TrochoidIrregularWaveSimulation.hh\n'}
+[45.882544] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Types.hh\n'}
+[45.882577] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Utilities.hh\n'}
+[45.882609] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveParameters.hh\n'}
+[45.882641] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveSimulation.hh\n'}
+[45.882670] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveSpectrum.hh\n'}
+[45.882701] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WaveSpreadingFunction.hh\n'}
+[45.882731] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/Wavefield.hh\n'}
+[45.882757] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/WavefieldSampler.hh\n'}
+[45.882805] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves.hh\n'}
+[45.882848] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/config.hh\n'}
+[45.882942] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/include/gz/waves1/gz/waves/components.hh\n'}
+[45.883395] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_GnuPlotExample\n'}
+[45.883924] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_GnuPlotExample" to ""\n'}
+[45.883951] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomFFTWaves\n'}
+[45.884633] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomFFTWaves" to ""\n'}
+[45.884670] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomWaves\n'}
+[45.885399] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRandomWaves" to ""\n'}
+[45.885434] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRegularWaves\n'}
+[45.886122] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_LinearRegularWaves" to ""\n'}
+[45.886147] (gz-waves1) StdoutLine: {'line': b'-- Installing: /home/blueboat_sitl/gz_ws/install/bin/PLOT_WaveSpectrum\n'}
+[45.887026] (gz-waves1) StdoutLine: {'line': b'-- Set runtime path of "/home/blueboat_sitl/gz_ws/install/bin/PLOT_WaveSpectrum" to ""\n'}
+[45.888449] (gz-waves1) CommandEnded: {'returncode': 0}
+[45.896955] (gz-waves1) JobEnded: {'identifier': 'gz-waves1', 'rc': 0}
+[45.897882] (-) EventReactorShutdown: {}

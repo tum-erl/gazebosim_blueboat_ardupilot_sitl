@@ -1,0 +1,1 @@
+/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/rosidl_generator_py/blueboat_interfaces/_blueboat_interfaces_s.ep.rosidl_typesupport_introspection_c.c

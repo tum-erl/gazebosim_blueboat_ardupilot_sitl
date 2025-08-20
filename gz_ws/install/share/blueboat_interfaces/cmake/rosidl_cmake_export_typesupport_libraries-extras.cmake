@@ -1,0 +1,1 @@
+/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

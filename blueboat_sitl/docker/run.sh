@@ -14,8 +14,8 @@ then
     chmod a+r $XAUTH
 fi
 
-local_gz_ws="/home/markus/underwater/gazebosim_blueboat_ardupilot_sitl/gz_ws"
-local_SITL_Models="/home/markus/underwater/gazebosim_blueboat_ardupilot_sitl/SITL_Models"
+local_gz_ws="/home/lennart/gazebosim_blueboat_ardupilot_sitl/gz_ws"
+local_SITL_Models="/home/lennart/gazebosim_blueboat_ardupilot_sitl/SITL_Models"
 docker run -it \
     --rm \
     --name blueboat_sitl \
@@ -33,7 +33,6 @@ docker run -it \
     --privileged \
     --security-opt seccomp=unconfined \
     --network host \
-    --gpus all \
     blueboat_sitl:latest
 
 

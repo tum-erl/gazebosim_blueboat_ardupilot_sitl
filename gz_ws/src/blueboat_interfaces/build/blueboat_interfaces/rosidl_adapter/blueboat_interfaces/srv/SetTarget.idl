@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from blueboat_interfaces/srv/SetTarget.srv
+// generated code does not contain a copyright notice
+
+
+module blueboat_interfaces {
+  module srv {
+    struct SetTarget_Request {
+      double x;
+
+      double y;
+    };
+    struct SetTarget_Response {
+      boolean accepted;
+    };
+  };
+};

@@ -1,0 +1,210 @@
+[0.015s] Invoking command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/blueboat_sitl/gz_ws/src/blueboat_interfaces -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBUILD_TESTING=ON -DCMAKE_CXX_STANDARD=17 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/blueboat_sitl/gz_ws/install
+[0.152s] -- The C compiler identification is GNU 11.4.0
+[0.152s] -- The CXX compiler identification is GNU 11.4.0
+[0.152s] -- Detecting C compiler ABI info
+[0.152s] -- Detecting C compiler ABI info - done
+[0.152s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.152s] -- Detecting C compile features
+[0.152s] -- Detecting C compile features - done
+[0.152s] -- Detecting CXX compiler ABI info
+[0.191s] -- Detecting CXX compiler ABI info - done
+[0.194s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.195s] -- Detecting CXX compile features
+[0.195s] -- Detecting CXX compile features - done
+[0.198s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.314s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.352s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.388s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.393s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.400s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.437s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.615s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.730s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.874s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.886s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.889s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.906s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.906s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.906s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.906s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.918s] -- Found PythonExtra: .so  
+[0.944s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.966s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.966s] -- Configured cppcheck include dirs: 
+[0.966s] -- Configured cppcheck exclude dirs and/or files: 
+[0.967s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.967s] -- Added test 'lint_cmake' to check CMake code style
+[0.968s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.970s] -- Added test 'uncrustify' to check C / C++ code style
+[0.970s] -- Configured uncrustify additional arguments: 
+[0.971s] -- Added test 'xmllint' to check XML markup files
+[0.973s] -- Configuring done
+[0.986s] -- Generating done
+[0.990s] -- Build files have been written to: /home/blueboat_sitl/gz_ws/build/blueboat_interfaces
+[0.994s] Invoked command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/blueboat_sitl/gz_ws/src/blueboat_interfaces -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBUILD_TESTING=ON -DCMAKE_CXX_STANDARD=17 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/blueboat_sitl/gz_ws/install
+[0.994s] Invoking command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blueboat_sitl/gz_ws/build/blueboat_interfaces -- -j24 -l24
+[1.020s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.028s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.033s] [  6%] Built target ament_cmake_python_symlink_blueboat_interfaces
+[1.165s] [  6%] Built target blueboat_interfaces__cpp
+[1.168s] running egg_info
+[1.168s] creating blueboat_interfaces.egg-info
+[1.168s] writing blueboat_interfaces.egg-info/PKG-INFO
+[1.168s] writing dependency_links to blueboat_interfaces.egg-info/dependency_links.txt
+[1.168s] writing top-level names to blueboat_interfaces.egg-info/top_level.txt
+[1.168s] writing manifest file 'blueboat_interfaces.egg-info/SOURCES.txt'
+[1.169s] reading manifest file 'blueboat_interfaces.egg-info/SOURCES.txt'
+[1.170s] writing manifest file 'blueboat_interfaces.egg-info/SOURCES.txt'
+[1.172s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.172s] [ 12%] [32mBuilding C object CMakeFiles/blueboat_interfaces__rosidl_generator_c.dir/rosidl_generator_c/blueboat_interfaces/srv/detail/set_target__functions.c.o[0m
+[1.172s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.173s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.191s] [ 19%] Built target ament_cmake_python_build_blueboat_interfaces_egg
+[1.251s] [ 22%] [32m[1mLinking C shared library libblueboat_interfaces__rosidl_generator_c.so[0m
+[1.275s] [ 22%] Built target blueboat_interfaces__rosidl_generator_c
+[1.282s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.283s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.283s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.294s] [ 35%] [32mBuilding CXX object CMakeFiles/blueboat_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/blueboat_interfaces/srv/set_target__type_support.cpp.o[0m
+[1.311s] [ 38%] [32mBuilding CXX object CMakeFiles/blueboat_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/blueboat_interfaces/srv/detail/dds_fastrtps/set_target__type_support.cpp.o[0m
+[1.314s] [ 41%] [32mBuilding CXX object CMakeFiles/blueboat_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/blueboat_interfaces/srv/detail/set_target__type_support.cpp.o[0m
+[1.409s] [ 45%] [32mBuilding CXX object CMakeFiles/blueboat_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/blueboat_interfaces/srv/set_target__type_support.cpp.o[0m
+[1.424s] [ 48%] [32mBuilding CXX object CMakeFiles/blueboat_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/blueboat_interfaces/srv/detail/set_target__type_support_c.cpp.o[0m
+[1.425s] [ 51%] [32mBuilding C object CMakeFiles/blueboat_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/blueboat_interfaces/srv/detail/set_target__type_support.c.o[0m
+[1.438s] [ 54%] [32m[1mLinking CXX shared library libblueboat_interfaces__rosidl_typesupport_c.so[0m
+[1.443s] [ 58%] [32m[1mLinking CXX shared library libblueboat_interfaces__rosidl_typesupport_cpp.so[0m
+[1.454s] [ 61%] [32m[1mLinking C shared library libblueboat_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.468s] [ 61%] Built target blueboat_interfaces__rosidl_typesupport_c
+[1.469s] [ 61%] Built target blueboat_interfaces__rosidl_typesupport_cpp
+[1.472s] [ 61%] Built target blueboat_interfaces__rosidl_typesupport_introspection_c
+[1.532s] [ 64%] [32m[1mLinking CXX shared library libblueboat_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.551s] [ 67%] [32m[1mLinking CXX shared library libblueboat_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.563s] [ 67%] Built target blueboat_interfaces__rosidl_typesupport_introspection_cpp
+[1.597s] [ 67%] Built target blueboat_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.625s] [ 70%] [32m[1mLinking CXX shared library libblueboat_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.670s] [ 70%] Built target blueboat_interfaces__rosidl_typesupport_fastrtps_c
+[1.684s] [ 70%] Built target blueboat_interfaces
+[1.695s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.862s] [ 74%] Built target blueboat_interfaces__py
+[1.875s] [ 77%] [32mBuilding C object CMakeFiles/blueboat_interfaces__rosidl_generator_py.dir/rosidl_generator_py/blueboat_interfaces/srv/_set_target_s.c.o[0m
+[1.950s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/blueboat_interfaces/libblueboat_interfaces__rosidl_generator_py.so[0m
+[1.977s] [ 80%] Built target blueboat_interfaces__rosidl_generator_py
+[1.991s] [ 83%] [32mBuilding C object CMakeFiles/blueboat_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/blueboat_interfaces/_blueboat_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[1.992s] [ 87%] [32mBuilding C object CMakeFiles/blueboat_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/blueboat_interfaces/_blueboat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.992s] [ 90%] [32mBuilding C object CMakeFiles/blueboat_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/blueboat_interfaces/_blueboat_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.064s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.064s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.064s] [100%] [32m[1mLinking C shared library rosidl_generator_py/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.088s] [100%] Built target blueboat_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.088s] [100%] Built target blueboat_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.089s] [100%] Built target blueboat_interfaces__rosidl_typesupport_c__pyext
+[2.094s] Invoked command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blueboat_sitl/gz_ws/build/blueboat_interfaces -- -j24 -l24
+[2.095s] Invoking command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/blueboat_sitl/gz_ws/build/blueboat_interfaces
+[2.100s] -- Install configuration: "RelWithDebInfo"
+[2.101s] -- Execute custom install script
+[2.101s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/rosidl_interfaces/blueboat_interfaces
+[2.106s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.112s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__functions.h
+[2.116s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__struct.h
+[2.121s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__type_support.h
+[2.127s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/set_target.h
+[2.132s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/library_path.sh
+[2.137s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/library_path.dsv
+[2.141s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.145s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__rosidl_typesupport_fastrtps_c.h
+[2.151s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.155s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__rosidl_typesupport_introspection_c.h
+[2.160s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.165s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__builder.hpp
+[2.170s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__struct.hpp
+[2.175s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__traits.hpp
+[2.179s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__type_support.hpp
+[2.183s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/set_target.hpp
+[2.188s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.193s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__rosidl_typesupport_fastrtps_cpp.hpp
+[2.199s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/include/blueboat_interfaces/blueboat_interfaces/srv/detail/set_target__rosidl_typesupport_introspection_cpp.hpp
+[2.203s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/pythonpath.sh
+[2.207s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/pythonpath.dsv
+[2.212s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.216s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.222s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.227s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.231s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/__init__.py
+[2.236s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/_blueboat_interfaces_s.ep.rosidl_typesupport_c.c
+[2.241s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/_blueboat_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.247s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/_blueboat_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.252s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.257s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.262s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.267s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/libblueboat_interfaces__rosidl_generator_py.so
+[2.271s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/srv/__init__.py
+[2.276s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/srv/_set_target.py
+[2.281s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/srv/_set_target_s.c
+[2.285s] -- Up-to-date symlink: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.285s] -- Up-to-date symlink: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.285s] -- Up-to-date symlink: /home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.285s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/srv/SetTarget.idl
+[2.290s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/srv/SetTarget.srv
+[2.294s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/srv/SetTarget_Request.msg
+[2.299s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/srv/SetTarget_Response.msg
+[2.303s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/package_run_dependencies/blueboat_interfaces
+[2.308s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/parent_prefix_path/blueboat_interfaces
+[2.312s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/ament_prefix_path.sh
+[2.316s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/ament_prefix_path.dsv
+[2.321s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/path.sh
+[2.325s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/environment/path.dsv
+[2.331s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/local_setup.bash
+[2.335s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/local_setup.sh
+[2.340s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/local_setup.zsh
+[2.344s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/local_setup.dsv
+[2.348s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/package.dsv
+[2.354s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/packages/blueboat_interfaces
+[2.358s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.363s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.368s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.372s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.378s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.382s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.388s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.392s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfacesConfig.cmake
+[2.397s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfacesConfig-version.cmake
+[2.402s] -- Symlinking: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/package.xml
+[2.407s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_generator_c.so
+[2.407s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_generator_c.so" to ""
+[2.407s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.407s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.407s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_introspection_c.so
+[2.408s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.408s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_c.so
+[2.408s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_c.so" to ""
+[2.408s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.408s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.408s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.408s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.408s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_cpp.so
+[2.408s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.427s] Listing '/home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces'...
+[2.428s] Compiling '/home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/__init__.py'...
+[2.428s] Listing '/home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/srv'...
+[2.428s] Compiling '/home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/srv/__init__.py'...
+[2.428s] Compiling '/home/blueboat_sitl/gz_ws/install/local/lib/python3.10/dist-packages/blueboat_interfaces/srv/_set_target.py'...
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_generator_py.so
+[2.430s] -- Set runtime path of "/home/blueboat_sitl/gz_ws/install/lib/libblueboat_interfaces__rosidl_generator_py.so" to ""
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_generator_cExport.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_generator_cExport-relwithdebinfo.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_typesupport_fastrtps_cExport-relwithdebinfo.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_introspection_cExport-relwithdebinfo.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_cExport.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_cExport-relwithdebinfo.cmake
+[2.430s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_generator_cppExport.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_typesupport_fastrtps_cppExport-relwithdebinfo.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_introspection_cppExport-relwithdebinfo.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_cppExport.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/blueboat_interfaces__rosidl_typesupport_cppExport-relwithdebinfo.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_generator_pyExport.cmake
+[2.431s] -- Installing: /home/blueboat_sitl/gz_ws/install/share/blueboat_interfaces/cmake/export_blueboat_interfaces__rosidl_generator_pyExport-relwithdebinfo.cmake
+[2.433s] Invoked command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/blueboat_sitl/gz_ws/build/blueboat_interfaces

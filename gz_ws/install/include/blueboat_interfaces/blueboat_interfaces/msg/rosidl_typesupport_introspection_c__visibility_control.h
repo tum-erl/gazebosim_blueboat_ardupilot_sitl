@@ -1,0 +1,1 @@
+/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/rosidl_typesupport_introspection_c/blueboat_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h

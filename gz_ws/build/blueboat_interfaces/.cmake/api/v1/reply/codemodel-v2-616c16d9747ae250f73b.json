@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-3d2000b79d7623e05280.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "blueboat_interfaces__py",
+					"jsonFile" : "directory-blueboat_interfaces__py-RelWithDebInfo-9f12f7295330032a56f7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/blueboat_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "blueboat_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_blueboat_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_blueboat_interfaces_egg-RelWithDebInfo-96c4b7e6a9b48d816f55.json",
+					"name" : "ament_cmake_python_build_blueboat_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_blueboat_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_blueboat_interfaces-RelWithDebInfo-2abc5744d986710b6924.json",
+					"name" : "ament_cmake_python_symlink_blueboat_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces-RelWithDebInfo-496947d9e84f45e99a5c.json",
+					"name" : "blueboat_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__cpp-RelWithDebInfo-f0ce36636aa5a808c85d.json",
+					"name" : "blueboat_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "blueboat_interfaces__py::@dace8ba34c32c655110e",
+					"jsonFile" : "target-blueboat_interfaces__py-RelWithDebInfo-ec7d1733608fd6ea49e5.json",
+					"name" : "blueboat_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_generator_c-RelWithDebInfo-059e586e19ba60f23021.json",
+					"name" : "blueboat_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_generator_py-RelWithDebInfo-ffc33146c5bb8e9a27c4.json",
+					"name" : "blueboat_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_c-RelWithDebInfo-9a989b16021cc13ea984.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_c__pyext-RelWithDebInfo-d1b5e41d45a44950aac6.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_cpp-RelWithDebInfo-83c0d9f218a1efb4f9a0.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_fastrtps_c-RelWithDebInfo-56fa120a433008471f58.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_fastrtps_c__pyext-RelWithDebInfo-7b200c16f07301738d76.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_fastrtps_cpp-RelWithDebInfo-596933a3320273e15c0d.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_introspection_c-RelWithDebInfo-68733f9c06c84843a750.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_introspection_c__pyext-RelWithDebInfo-7d9f9727518324a54d35.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces__rosidl_typesupport_introspection_cpp-RelWithDebInfo-d64aa8b8c30268774e65.json",
+					"name" : "blueboat_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blueboat_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blueboat_interfaces_uninstall-RelWithDebInfo-7126acf03787ec59b781.json",
+					"name" : "blueboat_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-02e071d05e0fae315b30.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/blueboat_sitl/gz_ws/build/blueboat_interfaces",
+		"source" : "/home/blueboat_sitl/gz_ws/src/blueboat_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

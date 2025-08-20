@@ -1,0 +1,139 @@
+[
+    {
+        "label": "rclpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rclpy",
+        "description": "rclpy",
+        "detail": "rclpy",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Pose",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "PID",
+        "kind": 6,
+        "importPath": "regler_node",
+        "description": "regler_node",
+        "peekOfCode": "class PID:\n    def __init__(self, kp, ki, kd):\n        self.kp, self.ki, self.kd = kp, ki, kd\n        self.prev_error = 0.0\n        self.integral = 0.0\n        self.last_time = None\n    def update(self, error):\n        now = time.time()\n        dt = now - self.last_time if self.last_time else 0.1\n        self.last_time = now",
+        "detail": "regler_node",
+        "documentation": {}
+    },
+    {
+        "label": "BlueboatPIDNode",
+        "kind": 6,
+        "importPath": "regler_node",
+        "description": "regler_node",
+        "peekOfCode": "class BlueboatPIDNode(Node):\n    def __init__(self):\n        super().__init__('blueboat_pid_regler')\n        # Zielposition\n        self.goal = [0.0, 0.0]\n        # PID-Regler initialisieren\n        self.heading_pid = PID(kp=1., ki=0.0, kd=0.4)\n        self.speed_pid = PID(kp=1.3, ki=0.0, kd=0.2)\n        # MAVLink-Verbindung\n        self.master = mavutil.mavlink_connection('udp:127.0.0.1:14550')",
+        "detail": "regler_node",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "regler_node",
+        "description": "regler_node",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = BlueboatPIDNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "regler_node",
+        "documentation": {}
+    },
+    {
+        "label": "PID",
+        "kind": 6,
+        "importPath": "regler_node_Ackermann",
+        "description": "regler_node_Ackermann",
+        "peekOfCode": "class PID:\n    def __init__(self, kp, ki, kd):\n        self.kp = kp\n        self.ki = ki\n        self.kd = kd\n        self.prev_error = 0.0\n        self.integral = 0.0\n        self.last_time = None\n    def update(self, error):\n        now = time.time()",
+        "detail": "regler_node_Ackermann",
+        "documentation": {}
+    },
+    {
+        "label": "PIDReglerNode",
+        "kind": 6,
+        "importPath": "regler_node_Ackermann",
+        "description": "regler_node_Ackermann",
+        "peekOfCode": "class PIDReglerNode(Node):\n    def __init__(self):\n        super().__init__('blueboat_pid_regler')\n        # Zielkoordinate in Gazebo-Frame\n        self.goal = [0.0, 0.0]  # x, y\n        # PID für Heading (Lenkung)\n        self.pid_heading = PID(kp=5.5, ki=0.0, kd=0.2)\n        self.pid_speed = PID(kp=0.3, ki=0.0, kd=1) \n        # MAVLink starten\n        self.master = mavutil.mavlink_connection('udp:127.0.0.1:14550')",
+        "detail": "regler_node_Ackermann",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "regler_node_Ackermann",
+        "description": "regler_node_Ackermann",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = PIDReglerNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        #node.logfile.close()  # Log-Datei schließen\n        node.destroy_node()",
+        "detail": "regler_node_Ackermann",
+        "documentation": {}
+    }
+]
