@@ -33,7 +33,11 @@ class BlueboatPIDNode(Node):
     def __init__(self):
         super().__init__('blueboat_pid_regler')
 
-        # Zielposition
+        # ROS Parameter für GPS Modus
+        self.declare_parameter('use_gps', False)
+        self.use_gps = self.get_parameter('use_gps').value
+        
+        # Zielposition (XY oder GPS Koordinaten je nach Modus)
         self.goal = [0.0, 0.0]  # initiales Ziel
         # PID-Regler initialisieren
         self.heading_pid = PID(kp=3.0, ki=0.0, kd=0.4)
@@ -42,7 +46,8 @@ class BlueboatPIDNode(Node):
         # MAVLink-Verbindung
         self.master = mavutil.mavlink_connection('udp:127.0.0.1:14550')
         self.master.wait_heartbeat()
-        self.get_logger().info("Mit MAVLink verbunden")
+        mode = "GPS" if self.use_gps else "XY"
+        self.get_logger().info(f"Mit MAVLink verbunden - Modus: {mode}")
 
         # Odometrie abonnieren
         self.create_subscription(Odometry, '/model/blueboat/odometry', self.odom_callback, 10)
@@ -54,7 +59,10 @@ class BlueboatPIDNode(Node):
 
     def set_target_callback(self, request, response):
         self.goal = [request.x, request.y]
-        self.get_logger().info(f"Neues Ziel empfangen: x={request.x}, y={request.y}")
+        if self.use_gps:
+            self.get_logger().info(f"Neues GPS Ziel empfangen: lat={request.x}, lon={request.y}")
+        else:
+            self.get_logger().info(f"Neues XY Ziel empfangen: x={request.x}, y={request.y}")
         self.goal_reached = False  # zurücksetzen!
         response.accepted = True
         time.sleep(5)
@@ -65,7 +73,12 @@ class BlueboatPIDNode(Node):
         pos = msg.pose.pose.position
         yaw = self.get_yaw(msg.pose.pose.orientation)
 
-        distance, heading_error = self.compute_control_errors(pos.x, pos.y, yaw)
+        if self.use_gps:
+            # In GPS mode, assume pos.x = latitude, pos.y = longitude
+            distance, heading_error = self.compute_control_errors_gps(pos.x, pos.y, yaw)
+        else:
+            # In XY mode, use standard XY coordinates
+            distance, heading_error = self.compute_control_errors(pos.x, pos.y, yaw)
         speed_cmd = self.compute_speed_cmd(distance, heading_error)
         steer_cmd = self.compute_steer_cmd(heading_error)
 
@@ -79,8 +92,10 @@ class BlueboatPIDNode(Node):
             self.get_logger().info("Ziel erreicht -> Nachricht gesendet")
 
         # Ausgabe der aktuellen Werte
-
-        #self.get_logger().info(f"BootPos: x={pos.x:.2f}, y={pos.y:.2f}, yaw={math.degrees(yaw):.1f}°")
+        if self.use_gps:
+            self.get_logger().info(f"GPS: lat={pos.x:.6f}, lon={pos.y:.6f}, yaw={math.degrees(yaw):.1f}°")
+        else:
+            self.get_logger().info(f"XY: x={pos.x:.2f}, y={pos.y:.2f}, yaw={math.degrees(yaw):.1f}°")
         self.get_logger().info(f"Distanz: {distance:.2f} m | Heading_Fehler: {math.degrees(heading_error):.1f}°")
         #self.get_logger().info(f"PWM Left: {pwm_left}, PWM Right: {pwm_right}")
 
@@ -90,6 +105,17 @@ class BlueboatPIDNode(Node):
         distance = math.hypot(dx, dy)
         target_angle = math.atan2(dy, dx)
         heading_error = (target_angle - yaw + math.pi) % (2 * math.pi) - math.pi
+        return distance, heading_error
+
+    def compute_control_errors_gps(self, current_lat, current_lon, yaw):
+        """Calculate control errors using GPS coordinates (latitude, longitude)"""
+        target_lat = self.goal[0]  # latitude
+        target_lon = self.goal[1]  # longitude
+        
+        distance = self.haversine_distance(current_lat, current_lon, target_lat, target_lon)
+        target_bearing = self.bearing_to_target(current_lat, current_lon, target_lat, target_lon)
+        heading_error = (target_bearing - yaw + math.pi) % (2 * math.pi) - math.pi
+        
         return distance, heading_error
 
     def compute_speed_cmd(self, distance, heading_error):
@@ -127,6 +153,34 @@ class BlueboatPIDNode(Node):
         siny_cosp = 2 * (q.w * q.z + q.x * q.y)
         cosy_cosp = 1 - 2 * (q.y * q.y + q.z * q.z)
         return math.atan2(siny_cosp, cosy_cosp)
+
+    def haversine_distance(self, lat1, lon1, lat2, lon2):
+        """Calculate the great circle distance in meters between two GPS points"""
+        R = 6371000  # Earth's radius in meters
+        
+        lat1_rad = math.radians(lat1)
+        lat2_rad = math.radians(lat2)
+        delta_lat = math.radians(lat2 - lat1)
+        delta_lon = math.radians(lon2 - lon1)
+        
+        a = (math.sin(delta_lat / 2) ** 2 + 
+             math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(delta_lon / 2) ** 2)
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        
+        return R * c
+
+    def bearing_to_target(self, lat1, lon1, lat2, lon2):
+        """Calculate the bearing (angle) from point 1 to point 2 in radians"""
+        lat1_rad = math.radians(lat1)
+        lat2_rad = math.radians(lat2)
+        delta_lon = math.radians(lon2 - lon1)
+        
+        y = math.sin(delta_lon) * math.cos(lat2_rad)
+        x = (math.cos(lat1_rad) * math.sin(lat2_rad) - 
+             math.sin(lat1_rad) * math.cos(lat2_rad) * math.cos(delta_lon))
+        
+        bearing = math.atan2(y, x)
+        return bearing
 
 
 def main(args=None):
