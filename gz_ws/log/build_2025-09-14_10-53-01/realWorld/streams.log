@@ -1,0 +1,35 @@
+[1.251s] Invoking command in '/home/blueboat_sitl/gz_ws/src/realWorld': PYTHONPATH=/home/blueboat_sitl/gz_ws/build/realWorld/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realWorld build --build-base /home/blueboat_sitl/gz_ws/build/realWorld/build install --record /home/blueboat_sitl/gz_ws/build/realWorld/install.log --single-version-externally-managed install_data
+[1.691s] running egg_info
+[1.691s] creating ../../build/realWorld/realWorld.egg-info
+[1.691s] writing ../../build/realWorld/realWorld.egg-info/PKG-INFO
+[1.692s] writing dependency_links to ../../build/realWorld/realWorld.egg-info/dependency_links.txt
+[1.692s] writing entry points to ../../build/realWorld/realWorld.egg-info/entry_points.txt
+[1.692s] writing requirements to ../../build/realWorld/realWorld.egg-info/requires.txt
+[1.693s] writing top-level names to ../../build/realWorld/realWorld.egg-info/top_level.txt
+[1.693s] writing manifest file '../../build/realWorld/realWorld.egg-info/SOURCES.txt'
+[1.695s] reading manifest file '../../build/realWorld/realWorld.egg-info/SOURCES.txt'
+[1.695s] adding license file 'LICENSE'
+[1.696s] writing manifest file '../../build/realWorld/realWorld.egg-info/SOURCES.txt'
+[1.696s] running build
+[1.696s] running build_py
+[1.697s] creating /home/blueboat_sitl/gz_ws/build/realWorld/build
+[1.697s] creating /home/blueboat_sitl/gz_ws/build/realWorld/build/lib
+[1.697s] creating /home/blueboat_sitl/gz_ws/build/realWorld/build/lib/realWorld
+[1.697s] copying realWorld/__init__.py -> /home/blueboat_sitl/gz_ws/build/realWorld/build/lib/realWorld
+[1.697s] copying realWorld/my_node.py -> /home/blueboat_sitl/gz_ws/build/realWorld/build/lib/realWorld
+[1.697s] running install
+[1.698s] running install_lib
+[1.699s] creating /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/realWorld
+[1.699s] copying /home/blueboat_sitl/gz_ws/build/realWorld/build/lib/realWorld/__init__.py -> /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/realWorld
+[1.700s] copying /home/blueboat_sitl/gz_ws/build/realWorld/build/lib/realWorld/my_node.py -> /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/realWorld
+[1.701s] byte-compiling /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/realWorld/__init__.py to __init__.cpython-310.pyc
+[1.701s] byte-compiling /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/realWorld/my_node.py to my_node.cpython-310.pyc
+[1.701s] running install_data
+[1.702s] copying resource/realWorld -> /home/blueboat_sitl/gz_ws/install/share/ament_index/resource_index/packages
+[1.702s] copying package.xml -> /home/blueboat_sitl/gz_ws/install/share/realWorld
+[1.702s] running install_egg_info
+[1.705s] Copying ../../build/realWorld/realWorld.egg-info to /home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages/realWorld-0.0.0-py3.10.egg-info
+[1.707s] running install_scripts
+[1.739s] Installing my_node script to /home/blueboat_sitl/gz_ws/install/lib/realWorld
+[1.739s] writing list of installed files to '/home/blueboat_sitl/gz_ws/build/realWorld/install.log'
+[1.783s] Invoked command in '/home/blueboat_sitl/gz_ws/src/realWorld' returned '0': PYTHONPATH=/home/blueboat_sitl/gz_ws/build/realWorld/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blueboat_sitl/gz_ws/install/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realWorld build --build-base /home/blueboat_sitl/gz_ws/build/realWorld/build install --record /home/blueboat_sitl/gz_ws/build/realWorld/install.log --single-version-externally-managed install_data

@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = realWorld.my_node:main
+

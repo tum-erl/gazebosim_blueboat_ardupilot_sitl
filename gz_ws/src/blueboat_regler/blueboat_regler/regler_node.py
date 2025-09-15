@@ -55,7 +55,7 @@ class BlueboatPIDNode(Node):
         self.target_service = self.create_service(SetTarget, 'set_target', self.set_target_callback)
         # Publisher für Ziel-Erreichung
         self.target_reached_pub = self.create_publisher(Bool, '/target_reached', 10)
-        self.goal_reached = False  # merken, ob wir es schon gemeldet haben
+        self.goal_reached = False  # merken, ob schon gemeldet
 
     def set_target_callback(self, request, response):
         self.goal = [request.x, request.y]
