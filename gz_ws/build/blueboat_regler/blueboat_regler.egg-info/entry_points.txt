@@ -1,3 +1,0 @@
-[console_scripts]
-blueboat_regler = blueboat_regler.regler_node:main
-

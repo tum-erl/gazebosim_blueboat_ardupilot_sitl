@@ -1,1 +1,0 @@
-/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/rosidl_typesupport_fastrtps_c/blueboat_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

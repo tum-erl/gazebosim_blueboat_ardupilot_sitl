@@ -1,3 +1,0 @@
-[console_scripts]
-asv_pid_rc = blueboat_control.asv_pid_rc_node:main
-

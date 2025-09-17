@@ -1,4 +1,0 @@
-source;share/blueboat_interfaces/local_setup.bash
-source;share/blueboat_interfaces/local_setup.dsv
-source;share/blueboat_interfaces/local_setup.sh
-source;share/blueboat_interfaces/local_setup.zsh

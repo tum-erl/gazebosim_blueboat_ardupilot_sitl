@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/rosidl_generator_py/blueboat_interfaces/blueboat_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "blueboat_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/blueboat_interfaces")

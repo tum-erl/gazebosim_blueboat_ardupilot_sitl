@@ -1,1 +1,0 @@
-/home/blueboat_sitl/gz_ws/src/blueboat_regler/setup.py

@@ -1,4 +1,0 @@
-Invoking command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blueboat_sitl/gz_ws/build/blueboat_interfaces -- -j12 -l12
-Invoked command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blueboat_sitl/gz_ws/build/blueboat_interfaces -- -j12 -l12
-Invoking command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/blueboat_sitl/gz_ws/build/blueboat_interfaces
-Invoked command in '/home/blueboat_sitl/gz_ws/build/blueboat_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/blueboat_sitl/gz_ws/build/blueboat_interfaces

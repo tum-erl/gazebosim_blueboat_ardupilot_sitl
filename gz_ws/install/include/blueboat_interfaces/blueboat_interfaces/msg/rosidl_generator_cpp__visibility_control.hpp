@@ -1,1 +1,0 @@
-/home/blueboat_sitl/gz_ws/build/blueboat_interfaces/rosidl_generator_cpp/blueboat_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
