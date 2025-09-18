@@ -1,3 +1,4 @@
-gz_ws/build/**
-gz_ws/install/**
-gz_ws/log/**
+gz_ws/build/
+gz_ws/install/
+gz_ws/log/
+gz_ws/src/blueboat_control/blueboat_control/__pycache__/

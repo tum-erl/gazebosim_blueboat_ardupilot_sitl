@@ -91,14 +91,14 @@ class ASVPidRcNode(Node):
         self.declare_parameter('speed_kd', 0.0)
 
         # Ziel (lat/lon) initial optional als Parameter
-        self.declare_parameter('goal_lat', 0.0)
-        self.declare_parameter('goal_lon', 0.0)
+        self.declare_parameter('goal_lat', 48.28454)
+        self.declare_parameter('goal_lon', 11.60564)
         self.have_goal = False
-        self.goal_lat = float(self.get_parameter('goal_lat').value)
+        self.goal_lat = float(self.get_parameter('goal_lat').value) 
         self.goal_lon = float(self.get_parameter('goal_lon').value)
         if abs(self.goal_lat) > 1e-9 or abs(self.goal_lon) > 1e-9:
             self.have_goal = True
-
+        self.get_logger().info(f'Neues Ziel: lat={self.goal_lat:.7f}, lon={self.goal_lon:.7f}')
         # Aktuelle Navigation
         self.last_lat = None
         self.last_lon = None
@@ -131,7 +131,7 @@ class ASVPidRcNode(Node):
         # Ziel setzen via Topic: geometry_msgs/Point (x=lat, y=lon)
         self.sub_goal = self.create_subscription(Point, 'asv/target', self.cb_target, 10)
 
-        # GPS von MAVROS (dein Topic)
+        # GPS von MAVROS
         self.sub_gpsraw = self.create_subscription(GPSRAW, '/mavros/gpsstatus/gps1/raw', self.cb_gps, 10)
 
         # 10 Hz Steuer-Loop
