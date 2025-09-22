@@ -151,8 +151,8 @@ class ASVPidRcNode(Node):
         # IMU: Heading (SensorDataQoS = BestEffort, volatile)
         self.create_subscription(Imu, '/mavros/imu/data', self.cb_imu, qos_profile_sensor_data)
 
-        # 10 Hz Steuer-Loop
-        self.timer = self.create_timer(0.1, self.control_step)
+        # 100 Hz Steuer-Loop
+        self.timer = self.create_timer(0.01, self.control_step)
 
         self.get_logger().info('ASV PID RC node (IMU-Heading, QoS fix, Stop latch) bereit.')
 
@@ -183,6 +183,9 @@ class ASVPidRcNode(Node):
             return
         self.last_lat = msg.lat / 1e7
         self.last_lon = msg.lon / 1e7
+
+        self.get_logger().info(f'lat={msg.lat:.7f}, lon={msg.lon:.7f}')
+        self.get_logger().info(f'Fix: {msg.fix_type}')
 
     def cb_imu(self, msg: Imu):
         qx, qy, qz, qw = msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w
@@ -227,6 +230,7 @@ class ASVPidRcNode(Node):
         left = clamp(base_pwm - power - turn, 1100, 1900)
         right = clamp(base_pwm - power + turn, 1100, 1900)
         return left, right
+        #self.control_step()
 
     # ---- Steuerlogik ----
     def control_step(self):
@@ -273,7 +277,7 @@ class ASVPidRcNode(Node):
     def send_rc(self, pwm_left=None, pwm_right=None, neutral=False):
         msg = OverrideRCIn()
         ch = [0]*18
-
+        self.get_logger().info(f'Pwm1={pwm1:.7f}, Pwm3={pwm3:.7f}')
         if neutral:
             n = int(self.get_parameter('neutral_pwm').value)
             ch[int(self.get_parameter('chan_left').value) - 1]  = n

@@ -187,12 +187,26 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y \
     python3-tk    
 
-RUN python3 -m pip install gekko  
+RUN python3 -m pip install gekko pymavlink
 
 USER $USERNAME
 
 USER root
 
-RUN apt-get update && apt-get install -y ros-humble-joint-state-publisher
+RUN apt-get update && apt-get install -y ros-humble-joint-state-publisher \
+    ros-humble-mavros \
+    ros-humble-mavros-extras \
+    ros-humble-mavros-msgs
 
+# USER $USERNAME
+RUN apt install -y geographiclib-tools \
+    && sudo geographiclib-get-geoids egm96-5 \
+    && sudo geographiclib-get-magnetic wmm2020 \ 
+    && sudo geographiclib-get-gravity egm2008
+
+# Add entrypoint and make $USERNAME the default user
+USER root
+RUN chmod +x /home/blueboat_sitl/gz_ws/entrypoint.sh
 USER $USERNAME
+ENTRYPOINT ["/home/blueboat_sitl/gz_ws/entrypoint.sh"]
+CMD ["bash"]
