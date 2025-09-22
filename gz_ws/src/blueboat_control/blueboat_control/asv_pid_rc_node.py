@@ -119,6 +119,16 @@ class ASVPidRcNode(Node):
         self.last_yaw_deg_imu_filt = None
         self.last_imu_t = None
 
+        # Letzte Regel- und Navigationswerte für Logging
+        self.last_distance_m = None
+        self.last_bearing_deg = None
+        self.last_heading_deg = None
+        self.last_heading_error_deg = None
+        self.last_speed_cmd = None
+        self.last_steer_cmd = None
+        self.last_pwm_left = None
+        self.last_pwm_right = None
+
         # PIDs
         self.heading_pid = PID(
             kp=float(self.get_parameter('heading_kp').value),
@@ -184,8 +194,8 @@ class ASVPidRcNode(Node):
         self.last_lat = msg.lat / 1e7
         self.last_lon = msg.lon / 1e7
 
-        self.get_logger().info(f'lat={msg.lat:.7f}, lon={msg.lon:.7f}')
-        self.get_logger().info(f'Fix: {msg.fix_type}')
+        if self.update_navigation_state():
+            self.log_navigation_state()
 
     def cb_imu(self, msg: Imu):
         qx, qy, qz, qw = msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w
@@ -232,6 +242,25 @@ class ASVPidRcNode(Node):
         return left, right
         #self.control_step()
 
+    def update_navigation_state(self):
+        if not self.have_goal:
+            return False
+        if self.last_lat is None or self.last_lon is None:
+            return False
+        if self.last_yaw_deg_imu_filt is None:
+            return False
+
+        dist = haversine_m(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)
+        brg_deg = bearing_deg(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)
+        heading_deg = self.last_yaw_deg_imu_filt
+        heading_err_deg = wrap_deg(brg_deg - heading_deg)
+
+        self.last_distance_m = dist
+        self.last_bearing_deg = brg_deg
+        self.last_heading_deg = heading_deg
+        self.last_heading_error_deg = heading_err_deg
+        return True
+
     # ---- Steuerlogik ----
     def control_step(self):
         # Latch-Stop: neutral halten solange aktiv
@@ -239,17 +268,11 @@ class ASVPidRcNode(Node):
             self.send_rc(neutral=True)
             return
 
-        if not self.have_goal:
-            return
-        if self.last_lat is None or self.last_lon is None:
-            return
-        if self.last_yaw_deg_imu_filt is None:
+        if not self.update_navigation_state():
             return
 
-        dist = haversine_m(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)
-        brg_deg = bearing_deg(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)
-        heading_deg = self.last_yaw_deg_imu_filt
-        heading_err_deg = wrap_deg(brg_deg - heading_deg)
+        dist = self.last_distance_m
+        heading_err_deg = self.last_heading_error_deg
         heading_err_rad = math.radians(heading_err_deg)
 
         if dist < float(self.get_parameter('arrival_radius_m').value):
@@ -268,28 +291,61 @@ class ASVPidRcNode(Node):
         pwm_left, pwm_right = self.compute_motor_pwms(speed_cmd, steer_cmd)
         self.send_rc(pwm_left, pwm_right)
 
-        self.get_logger().info(
-            f'dist={dist:.2f}m brg={brg_deg:.0f}° hdg_imu={heading_deg:.0f}° '
-            f'err={heading_err_deg:.0f}° spd={speed_cmd:+.2f} str={steer_cmd:+.2f} '
-            f'L={pwm_left} R={pwm_right}'
-        )
+        self.last_speed_cmd = speed_cmd
+        self.last_steer_cmd = steer_cmd
+        self.last_pwm_left = pwm_left
+        self.last_pwm_right = pwm_right
 
     def send_rc(self, pwm_left=None, pwm_right=None, neutral=False):
         msg = OverrideRCIn()
         ch = [0]*18
-        self.get_logger().info(f'Pwm1={pwm1:.7f}, Pwm3={pwm3:.7f}')
+        # self.get_logger().info(f'Pwm1={pwm1:.7f}, Pwm3={pwm3:.7f}')
         if neutral:
             n = int(self.get_parameter('neutral_pwm').value)
             ch[int(self.get_parameter('chan_left').value) - 1]  = n
             ch[int(self.get_parameter('chan_right').value) - 1] = n
+            self.last_speed_cmd = 0.0
+            self.last_steer_cmd = 0.0
+            self.last_pwm_left = n
+            self.last_pwm_right = n
         else:
             if pwm_left is not None:
                 ch[int(self.get_parameter('chan_left').value) - 1]  = int(pwm_left)
             if pwm_right is not None:
                 ch[int(self.get_parameter('chan_right').value) - 1] = int(pwm_right)
+            self.last_pwm_left = int(pwm_left) if pwm_left is not None else self.last_pwm_left
+            self.last_pwm_right = int(pwm_right) if pwm_right is not None else self.last_pwm_right
 
         msg.channels = ch
         self.pub_rc.publish(msg)
+
+    def log_navigation_state(self):
+        if self.last_distance_m is None or self.last_heading_error_deg is None:
+            return
+
+        speed_cmd = self.last_speed_cmd if self.last_speed_cmd is not None else 0.0
+        steer_cmd = self.last_steer_cmd if self.last_steer_cmd is not None else 0.0
+        pwm_left = self.last_pwm_left if self.last_pwm_left is not None else int(self.get_parameter('neutral_pwm').value)
+        pwm_right = self.last_pwm_right if self.last_pwm_right is not None else int(self.get_parameter('neutral_pwm').value)
+
+        self.get_logger().info(
+            'Goal: %.7f, %.7f | Position: %.7f, %.7f | Dist: %.2fm | '
+            'Heading: %.1f° | Yaw err: %.1f° | Speed cmd: %+0.2f | Steer cmd: %+0.2f | '
+            'PWM L/R: %d / %d'
+            % (
+                self.goal_lat,
+                self.goal_lon,
+                self.last_lat,
+                self.last_lon,
+                self.last_distance_m,
+                self.last_heading_deg if self.last_heading_deg is not None else float('nan'),
+                self.last_heading_error_deg,
+                speed_cmd,
+                steer_cmd,
+                pwm_left,
+                pwm_right,
+            )
+        )
 
 
 def main():

@@ -206,7 +206,10 @@ RUN apt install -y geographiclib-tools \
 
 # Add entrypoint and make $USERNAME the default user
 USER root
-RUN chmod +x /home/blueboat_sitl/gz_ws/entrypoint.sh
+COPY docker/entrypoint.sh /usr/local/bin/blueboat_entrypoint.sh
+RUN chmod +x /usr/local/bin/blueboat_entrypoint.sh \
+ && ls -l /usr/local/bin/blueboat_entrypoint.sh \
+ && head -n1 /usr/local/bin/blueboat_entrypoint.sh
 USER $USERNAME
-ENTRYPOINT ["/home/blueboat_sitl/gz_ws/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/blueboat_entrypoint.sh"]
 CMD ["bash"]
