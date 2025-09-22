@@ -7,6 +7,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Point
 from std_msgs.msg import Bool
 from mavros_msgs.msg import GPSRAW, OverrideRCIn
+from sensor_msgs.msg import Imu  # >>> IMU
 
 
 def clamp(v, lo, hi):
@@ -30,10 +31,21 @@ def bearing_deg(lat1, lon1, lat2, lon2):
     phi1, phi2 = math.radians(lat1), math.radians(lat2)
     dlmb = math.radians(lon2 - lon1)
     y = math.sin(dlmb) * math.cos(phi2)
-    x = math.cos(phi1)*math.sin(phi2) - math.sin(phi1)*math.cos(phi2)*math.cos(dlmb
-    )
+    x = math.cos(phi1)*math.sin(phi2) - math.sin(phi1)*math.cos(phi2)*math.cos(dlmb)
     brg = math.degrees(math.atan2(y, x))
     return brg + 360.0 if brg < 0.0 else brg
+
+# >>> IMU: Quaternion -> Yaw (rad), kreissichere Interpolation in Grad
+def quat_to_yaw_rad(qx, qy, qz, qw):
+    # Yaw (Z) aus ZYX-Konvention (roll->pitch->yaw)
+    siny_cosp = 2.0 * (qw*qz + qx*qy)
+    cosy_cosp = 1.0 - 2.0 * (qy*qy + qz*qz)
+    return math.atan2(siny_cosp, cosy_cosp)  # [-pi, pi]
+
+def circ_lerp_deg(a_deg, b_deg, k):
+    """Zyklische Interpolation a->b in Grad, k in [0,1]."""
+    diff = wrap_deg(b_deg - a_deg)
+    return (a_deg + k*diff + 360.0) % 360.0
 
 
 class PID:
@@ -74,12 +86,12 @@ class ASVPidRcNode(Node):
         self.declare_parameter('chan_left', 1)           # 1-basiert: CH1
         self.declare_parameter('chan_right', 3)          # 1-basiert: CH3
 
-        # Heading-PID in RAD (wie in deiner Simulation)
+        # Heading-PID in RAD
         self.declare_parameter('heading_kp', 3.0)
         self.declare_parameter('heading_ki', 0.0)
         self.declare_parameter('heading_kd', 0.4)
 
-        # Speed-PID (hier P/PD möglich, wie in der Simulation)
+        # Speed-PID
         self.declare_parameter('speed_kp', 0.1)
         self.declare_parameter('speed_ki', 0.0)
         self.declare_parameter('speed_kd', 0.8)
@@ -97,8 +109,15 @@ class ASVPidRcNode(Node):
         # Aktuelle Navigation
         self.last_lat = None
         self.last_lon = None
-        self.last_cog_deg = None  # 0..360 (aus GPS COG); 655.35° (=65535 centideg) bedeutet unknown
+        self.last_cog_deg = None  # bleibt befüllt, wird aber nicht mehr genutzt
         self.target_reached = False
+
+        # >>> IMU: Parameter & Zustände
+        self.declare_parameter('imu_yaw_offset_deg', 0.0)   # Deklination/Montage
+        self.declare_parameter('imu_yaw_lpf_tau_s', 0.5)    # Glättung (0.2..1.0)
+        self.last_yaw_deg_imu_raw = None
+        self.last_yaw_deg_imu_filt = None
+        self.last_imu_t = None
 
         # PIDs
         self.heading_pid = PID(
@@ -121,11 +140,12 @@ class ASVPidRcNode(Node):
         self.create_subscription(Bool, '/asv/stop', self.stop_callback, 10)
         self.create_subscription(Point, 'asv/target', self.cb_target, 10)
         self.create_subscription(GPSRAW, '/mavros/gpsstatus/gps1/raw', self.cb_gps, 10)
+        self.create_subscription(Imu, '/mavros/imu/data', self.cb_imu, 50)  # >>> IMU
 
         # 10 Hz Steuer-Loop
         self.timer = self.create_timer(0.1, self.control_step)
 
-        self.get_logger().info('ASV PID RC node (sim-Style Regler) bereit.')
+        self.get_logger().info('ASV PID RC node (IMU-Heading aktiv) bereit.')
 
     # ---- Callbacks ----
     def stop_callback(self, msg: Bool):
@@ -150,9 +170,34 @@ class ASVPidRcNode(Node):
             return
         self.last_lat = msg.lat / 1e7
         self.last_lon = msg.lon / 1e7
-        # COG in centideg -> Grad (0..360), 65535 = unknown
+        # COG in centideg -> Grad (0..360), 65535 = unknown (hier ungenutzt)
         if msg.cog != 65535:
             self.last_cog_deg = (msg.cog / 100.0) % 360.0
+
+    # >>> IMU: neue Callback
+    def cb_imu(self, msg: Imu):
+        qx, qy, qz, qw = msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w
+        # Schutz gegen Nullquaternion
+        if (qx*qx + qy*qy + qz*qz + qw*qw) < 1e-10:
+            return
+
+        yaw_rad = quat_to_yaw_rad(qx, qy, qz, qw)
+        yaw_deg = (math.degrees(yaw_rad) + float(self.get_parameter('imu_yaw_offset_deg').value)) % 360.0
+
+        now = time.time()
+        if self.last_imu_t is None or self.last_yaw_deg_imu_filt is None:
+            self.last_yaw_deg_imu_raw = yaw_deg
+            self.last_yaw_deg_imu_filt = yaw_deg
+            self.last_imu_t = now
+            return
+
+        dt = max(1e-3, now - self.last_imu_t)
+        self.last_imu_t = now
+        tau = max(1e-3, float(self.get_parameter('imu_yaw_lpf_tau_s').value))
+        alpha = clamp(dt / (tau + dt), 0.0, 1.0)  # 0..1
+
+        self.last_yaw_deg_imu_raw = yaw_deg
+        self.last_yaw_deg_imu_filt = circ_lerp_deg(self.last_yaw_deg_imu_filt, yaw_deg, alpha)
 
     # ---- Sim-Style Stellgrößen ----
     def compute_speed_cmd(self, distance_m, heading_error_rad):
@@ -184,13 +229,17 @@ class ASVPidRcNode(Node):
     def control_step(self):
         if not self.have_goal:
             return
-        if self.last_lat is None or self.last_lon is None or self.last_cog_deg is None:
+        if self.last_lat is None or self.last_lon is None:
             return
+        # >>> IMU: Heading ausschließlich von IMU benutzen
+        if self.last_yaw_deg_imu_filt is None:
+            return  # noch kein IMU-Heading verfügbar
 
         # Distanz & Peilung
         dist = haversine_m(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)
         brg_deg = bearing_deg(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)  # 0..360
-        heading_err_deg = wrap_deg(brg_deg - self.last_cog_deg)   # -180..180
+        heading_deg = self.last_yaw_deg_imu_filt                                  # 0..360 aus IMU
+        heading_err_deg = wrap_deg(brg_deg - heading_deg)                         # -180..180
         heading_err_rad = math.radians(heading_err_deg)
 
         # Ziel erreicht?
@@ -205,7 +254,6 @@ class ASVPidRcNode(Node):
             if self.target_reached:
                 self.target_reached = False
 
-        
         speed_cmd = self.compute_speed_cmd(dist, heading_err_rad)
         steer_cmd = self.compute_steer_cmd(heading_err_rad)
         pwm_left, pwm_right = self.compute_motor_pwms(speed_cmd, steer_cmd)
@@ -215,7 +263,7 @@ class ASVPidRcNode(Node):
 
         # Debug
         self.get_logger().info(
-            f'dist={dist:.2f}m brg={brg_deg:.0f}° cog={self.last_cog_deg:.0f}° '
+            f'dist={dist:.2f}m brg={brg_deg:.0f}° hdg_imu={heading_deg:.0f}° '
             f'err={heading_err_deg:.0f}° spd={speed_cmd:+.2f} str={steer_cmd:+.2f} '
             f'L={pwm_left} R={pwm_right}'
         )
