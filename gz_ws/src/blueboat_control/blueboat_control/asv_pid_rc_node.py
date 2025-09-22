@@ -7,7 +7,6 @@ from rclpy.node import Node
 from geometry_msgs.msg import Point
 from std_msgs.msg import Bool
 from mavros_msgs.msg import GPSRAW, OverrideRCIn
-from std_msgs.msg import Bool
 
 
 def clamp(v, lo, hi):
@@ -15,8 +14,7 @@ def clamp(v, lo, hi):
 
 def wrap_deg(a):
     """wrap angle to [-180, 180)"""
-    a = (a + 180.0) % 360.0 - 180.0
-    return a
+    return (a + 180.0) % 360.0 - 180.0
 
 def haversine_m(lat1, lon1, lat2, lon2):
     """Entfernung in Metern"""
@@ -32,15 +30,15 @@ def bearing_deg(lat1, lon1, lat2, lon2):
     phi1, phi2 = math.radians(lat1), math.radians(lat2)
     dlmb = math.radians(lon2 - lon1)
     y = math.sin(dlmb) * math.cos(phi2)
-    x = math.cos(phi1)*math.sin(phi2) - math.sin(phi1)*math.cos(phi2)*math.cos(dlmb)
+    x = math.cos(phi1)*math.sin(phi2) - math.sin(phi1)*math.cos(phi2)*math.cos(dlmb
+    )
     brg = math.degrees(math.atan2(y, x))
-    if brg < 0:
-        brg += 360.0
-    return brg
+    return brg + 360.0 if brg < 0.0 else brg
 
 
 class PID:
-    def __init__(self, kp, ki, kd, out_min=-1.0, out_max=1.0):
+    def __init__(self, kp, ki, kd, out_min=-3.0, out_max=3.0):
+        # bewusst breiter Clamp als in der alten Version; End-Clamp passiert außerhalb
         self.kp, self.ki, self.kd = kp, ki, kd
         self.out_min, self.out_max = out_min, out_max
         self.prev_error = 0.0
@@ -69,50 +67,45 @@ class ASVPidRcNode(Node):
     def __init__(self):
         super().__init__('asv_pid_rc_node')
 
-        # --- Parameter ---
-        self.declare_parameter('arrival_radius_m', 1.5)           # Ziel erreicht unterhalb dieses Radius
+        # --- Parameter (schlank & sim-nah) ---
+        self.declare_parameter('arrival_radius_m', 0.6)
         self.declare_parameter('neutral_pwm', 1500)
-        self.declare_parameter('steer_span', 400)                  # ± um Neutral für CH1 (Lenkung)
-        self.declare_parameter('throttle_span_fwd', 350)           # + um Neutral für Vorwärts
-        self.declare_parameter('throttle_span_rev', 300)           # - um Neutral für Rückwärts
-        self.declare_parameter('invert_steer', False)              # ggf. true, wenn Lenkung invertiert ist
-        self.declare_parameter('invert_throttle', False)           # ggf. true, wenn Gas invertiert ist
-        self.declare_parameter('max_throttle_when_large_heading_deg', 70.0)  # bei großem Headingfehler Gas reduzieren
-        self.declare_parameter('guided_only', False)               # wenn true, sendet nur wenn mode GUIDED (optional, ausbaufähig)
+        self.declare_parameter('pwm_span', 400)          # 1500 ± 400 -> 1100..1900
+        self.declare_parameter('chan_left', 1)           # 1-basiert: CH1
+        self.declare_parameter('chan_right', 3)          # 1-basiert: CH3
 
-        # PID auf Heading (Fehler in Grad)
-        self.declare_parameter('heading_kp', 0.03)   # 0.03 -> 30° Fehler ~ 0.9 Steer
+        # Heading-PID in RAD (wie in deiner Simulation)
+        self.declare_parameter('heading_kp', 3.0)
         self.declare_parameter('heading_ki', 0.0)
-        self.declare_parameter('heading_kd', 0.01)
+        self.declare_parameter('heading_kd', 0.4)
 
-        # Schlichtes Speed-“PID”: hier proportional auf Distanz (m)
-        self.declare_parameter('speed_kp', 0.15)     # 5 m -> 0.75 “Throttle-Norm”
+        # Speed-PID (hier P/PD möglich, wie in der Simulation)
+        self.declare_parameter('speed_kp', 0.1)
         self.declare_parameter('speed_ki', 0.0)
-        self.declare_parameter('speed_kd', 0.0)
+        self.declare_parameter('speed_kd', 0.8)
 
-        # Ziel (lat/lon) initial optional als Parameter
+        # Ziel (lat/lon) initial optional
         self.declare_parameter('goal_lat', 48.28454)
         self.declare_parameter('goal_lon', 11.60564)
         self.have_goal = False
-        self.goal_lat = float(self.get_parameter('goal_lat').value) 
+        self.goal_lat = float(self.get_parameter('goal_lat').value)
         self.goal_lon = float(self.get_parameter('goal_lon').value)
         if abs(self.goal_lat) > 1e-9 or abs(self.goal_lon) > 1e-9:
             self.have_goal = True
-        self.get_logger().info(f'Neues Ziel: lat={self.goal_lat:.7f}, lon={self.goal_lon:.7f}')
+            self.get_logger().info(f'Startziel: lat={self.goal_lat:.7f}, lon={self.goal_lon:.7f}')
+
         # Aktuelle Navigation
         self.last_lat = None
         self.last_lon = None
-        self.last_cog_deg = None  # aus GPS (centideg)
+        self.last_cog_deg = None  # 0..360 (aus GPS COG); 655.35° (=65535 centideg) bedeutet unknown
         self.target_reached = False
-        # Stop
-        self.stopped = False
 
-        # PID-Instanzen
+        # PIDs
         self.heading_pid = PID(
             kp=float(self.get_parameter('heading_kp').value),
             ki=float(self.get_parameter('heading_ki').value),
             kd=float(self.get_parameter('heading_kd').value),
-            out_min=-1.0, out_max=1.0
+            out_min=-3.0, out_max=3.0
         )
         self.speed_pid = PID(
             kp=float(self.get_parameter('speed_kp').value),
@@ -124,35 +117,23 @@ class ASVPidRcNode(Node):
         # Publisher & Subscriber
         self.pub_rc = self.create_publisher(OverrideRCIn, '/mavros/rc/override', 10)
         self.pub_reached = self.create_publisher(Bool, 'asv/target_reached', 10)
-        
-        # Stop vio Topic
+
         self.create_subscription(Bool, '/asv/stop', self.stop_callback, 10)
-
-        # Ziel setzen via Topic: geometry_msgs/Point (x=lat, y=lon)
-        self.sub_goal = self.create_subscription(Point, 'asv/target', self.cb_target, 10)
-
-        # GPS von MAVROS
-        self.sub_gpsraw = self.create_subscription(GPSRAW, '/mavros/gpsstatus/gps1/raw', self.cb_gps, 10)
+        self.create_subscription(Point, 'asv/target', self.cb_target, 10)
+        self.create_subscription(GPSRAW, '/mavros/gpsstatus/gps1/raw', self.cb_gps, 10)
 
         # 10 Hz Steuer-Loop
         self.timer = self.create_timer(0.1, self.control_step)
 
-        self.get_logger().info('ASV PID RC node bereit. Ziel via Topic "asv/target" (Point: x=lat, y=lon) setzen.')
+        self.get_logger().info('ASV PID RC node (sim-Style Regler) bereit.')
 
     # ---- Callbacks ----
     def stop_callback(self, msg: Bool):
         if msg.data:
-            self.get_logger().info("Stop-Signal empfangen -> Boot anhalten")
-            self.stop()
-        else:
-            self.stopped = False
-            self.get_logger().info("Stop aufgehoben -> Regelung wieder aktiv")
-
-    def stop(self):
-        self.stopped = True
-        self.speed_pid.integral = 0.0
-        self.heading_pid.integral = 0.0
-        self.send_rc(1500, 1500)   # neutral
+            self.get_logger().info("Stop-Signal -> neutral.")
+            self.speed_pid.integral = 0.0
+            self.heading_pid.integral = 0.0
+            self.send_rc(neutral=True)
 
     def cb_target(self, msg: Point):
         self.goal_lat = float(msg.x)
@@ -173,11 +154,34 @@ class ASVPidRcNode(Node):
         if msg.cog != 65535:
             self.last_cog_deg = (msg.cog / 100.0) % 360.0
 
-    # ---- Steuerlogik ----
+    # ---- Sim-Style Stellgrößen ----
+    def compute_speed_cmd(self, distance_m, heading_error_rad):
+        """Wie in deiner Simulation."""
+        if distance_m < 0.1:
+            self.speed_pid.integral = 0.0
+            return -0.2  # leicht rückwärts zum Bremsen
+        if distance_m > 0.3 and abs(heading_error_rad) > math.radians(90):
+            return 0.0  # auf der Stelle drehen
+        # Negatives Vorzeichen, damit „vorwärts“ PWM > neutral (siehe compute_motor_pwms)
+        return clamp(-self.speed_pid.update(distance_m), -0.5, 1.0)
 
+    def compute_steer_cmd(self, heading_error_rad):
+        steer = self.heading_pid.update(heading_error_rad)
+        return clamp(steer, -1.0, 1.0)
+
+    def compute_motor_pwms(self, speed_cmd, steer_cmd):
+        base_pwm = int(self.get_parameter('neutral_pwm').value)
+        span = int(self.get_parameter('pwm_span').value)
+        power = int(span * speed_cmd)
+        turn = int(span * steer_cmd)
+        # links/rechts differenziell – wie in der Simulation:
+        # Vorzeichen so gewählt, dass speed_cmd < 0 → PWM > base (vorwärts)
+        left = clamp(base_pwm - power - turn, 1100, 1900)
+        right = clamp(base_pwm - power + turn, 1100, 1900)
+        return left, right
+
+    # ---- Steuerlogik ----
     def control_step(self):
-        if self.stopped:
-            return
         if not self.have_goal:
             return
         if self.last_lat is None or self.last_lon is None or self.last_cog_deg is None:
@@ -185,83 +189,51 @@ class ASVPidRcNode(Node):
 
         # Distanz & Peilung
         dist = haversine_m(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)
-        brg = bearing_deg(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)  # 0..360
-        heading_err = wrap_deg(brg - self.last_cog_deg)  # in Grad, -180..180
+        brg_deg = bearing_deg(self.last_lat, self.last_lon, self.goal_lat, self.goal_lon)  # 0..360
+        heading_err_deg = wrap_deg(brg_deg - self.last_cog_deg)   # -180..180
+        heading_err_rad = math.radians(heading_err_deg)
 
         # Ziel erreicht?
         if dist < float(self.get_parameter('arrival_radius_m').value):
             if not self.target_reached:
                 self.target_reached = True
                 self.pub_reached.publish(Bool(data=True))
-                self.get_logger().info('Ziel erreicht – Stoppe (neutral).')
+                self.get_logger().info('Ziel erreicht – neutral.')
             self.send_rc(neutral=True)
             return
         else:
-            # sobald wir raus sind, wieder False
             if self.target_reached:
                 self.target_reached = False
 
-        # Heading-PID (Norm-Steer −1..1)
-        steer_norm = self.heading_pid.update(heading_err)  # Fehler in Grad!
+        
+        speed_cmd = self.compute_speed_cmd(dist, heading_err_rad)
+        steer_cmd = self.compute_steer_cmd(heading_err_rad)
+        pwm_left, pwm_right = self.compute_motor_pwms(speed_cmd, steer_cmd)
 
-        # Einfache Speed-Regel: proportional auf Distanz (Norm −1..1), Bremse bei großem Heading-Fehler
-        speed_cmd = self.speed_pid.update(dist)  # >0 => vorwärts
-        # Bei großem Kursfehler Gas begrenzen
-        max_head = float(self.get_parameter('max_throttle_when_large_heading_deg').value)
-        if abs(heading_err) > max_head:
-            speed_cmd = min(speed_cmd, 0.2)  # z.B. auf 20% drosseln
+        # Senden (CH1=links, CH3=rechts)
+        self.send_rc(pwm_left, pwm_right)
 
-        # in PWM wandeln
-        pwm1, pwm3 = self.mix_to_pwm(steer_norm, speed_cmd)
-
-        self.send_rc(pwm1=pwm1, pwm3=pwm3)
-
-        # Debug schlank:
+        # Debug
         self.get_logger().info(
-            f'dist={dist:.1f}m brg={brg:.0f}° cog={self.last_cog_deg:.0f}° '
-            f'err={heading_err:.0f}° steer={steer_norm:+.2f} spd={speed_cmd:+.2f} '
-            f'CH1={pwm1} CH3={pwm3}'
+            f'dist={dist:.2f}m brg={brg_deg:.0f}° cog={self.last_cog_deg:.0f}° '
+            f'err={heading_err_deg:.0f}° spd={speed_cmd:+.2f} str={steer_cmd:+.2f} '
+            f'L={pwm_left} R={pwm_right}'
         )
 
-    def mix_to_pwm(self, steer_norm, speed_norm):
-        neutral = int(self.get_parameter('neutral_pwm').value)
-        steer_span = int(self.get_parameter('steer_span').value)
-        thr_span_f = int(self.get_parameter('throttle_span_fwd').value)
-        thr_span_r = int(self.get_parameter('throttle_span_rev').value)
-        inv_st = bool(self.get_parameter('invert_steer').value)
-        inv_th = bool(self.get_parameter('invert_throttle').value)
-
-        steer_norm = clamp(steer_norm, -1.0, 1.0)
-        speed_norm = clamp(speed_norm, -1.0, 1.0)
-
-        # Steering CH1
-        steer = steer_norm if not inv_st else -steer_norm
-        ch1 = neutral + int(steer * steer_span)
-
-        # Throttle CH3 (asymmetrisch)
-        spd = speed_norm if not inv_th else -speed_norm
-        if spd >= 0:
-            ch3 = neutral + int(spd * thr_span_f)
-        else:
-            ch3 = neutral + int(spd * thr_span_r)  # spd negativ -> neutral - X
-
-        ch1 = clamp(ch1, 1100, 1900)
-        ch3 = clamp(ch3, 1100, 1900)
-        return ch1, ch3
-
-    def send_rc(self, pwm1=None, pwm3=None, neutral=False):
+    def send_rc(self, pwm_left=None, pwm_right=None, neutral=False):
         msg = OverrideRCIn()
         ch = [0]*18  # 0 = no override
 
         if neutral:
             n = int(self.get_parameter('neutral_pwm').value)
-            ch[0] = n       # CH1 Lenkung neutral
-            ch[2] = n       # CH3 Gas neutral
+            # Standard: CH1 (links), CH3 (rechts)
+            ch[int(self.get_parameter('chan_left').value) - 1]  = n
+            ch[int(self.get_parameter('chan_right').value) - 1] = n
         else:
-            if pwm1 is not None:
-                ch[0] = int(pwm1)  # CH1
-            if pwm3 is not None:
-                ch[2] = int(pwm3)  # CH3
+            if pwm_left is not None:
+                ch[int(self.get_parameter('chan_left').value) - 1]  = int(pwm_left)
+            if pwm_right is not None:
+                ch[int(self.get_parameter('chan_right').value) - 1] = int(pwm_right)
 
         msg.channels = ch
         self.pub_rc.publish(msg)
