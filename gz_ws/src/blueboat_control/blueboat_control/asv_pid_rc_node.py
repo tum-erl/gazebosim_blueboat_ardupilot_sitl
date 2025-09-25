@@ -226,7 +226,7 @@ class ASVPidRcNode(Node):
             return -0.2
         if distance_m > 0.3 and abs(heading_error_rad) > math.radians(90):
             return 0.0
-        return clamp(-self.speed_pid.update(distance_m), -0.5, 1.0)
+        return clamp(self.speed_pid.update(distance_m), -0.5, 1.0)
 
     def compute_steer_cmd(self, heading_error_rad):
         steer = self.heading_pid.update(heading_error_rad)
@@ -237,8 +237,8 @@ class ASVPidRcNode(Node):
         span = int(self.get_parameter('pwm_span').value)
         power = int(span * speed_cmd)
         turn = int(span * steer_cmd)
-        left = clamp(base_pwm - power - turn, 1100, 1900)
-        right = clamp(base_pwm - power + turn, 1100, 1900)
+        left = clamp(base_pwm + power - turn, 1100, 1900)
+        right = clamp(base_pwm + power + turn, 1100, 1900)
         return left, right
         #self.control_step()
 
