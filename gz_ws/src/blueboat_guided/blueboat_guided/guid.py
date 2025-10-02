@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import math
-import time
 from typing import List, Tuple
 
 import rclpy
 from rclpy.node import Node
 from rclpy.duration import Duration
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 from rclpy.time import Time
 
 from sensor_msgs.msg import NavSatFix
@@ -15,9 +15,11 @@ from geographic_msgs.msg import GeoPoseStamped
 def haversine_m(lat1, lon1, lat2, lon2) -> float:
     """Entfernung in Metern (great-circle)."""
     R = 6371000.0
-    phi1 = math.radians(lat1); phi2 = math.radians(lat2)
-    dphi = math.radians(lat2 - lat1); dlmb = math.radians(lon2 - lon1)
-    a = math.sin(dphi/2)**2 + math.cos(phi1)*math.cos(phi2)*math.sin(dlmb/2)**2
+    phi1 = math.radians(lat1)
+    phi2 = math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlmb = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlmb / 2) ** 2
     return 2 * R * math.asin(math.sqrt(a))
 
 
@@ -25,17 +27,17 @@ class GuidedMissionNode(Node):
     def __init__(self):
         super().__init__('guided_mission_node')
 
-        # --- Parameter (können auch als ROS-Parameter deklariert werden) ---
-        self.arrival_radius_m = 3.0            # Ab wann gilt Wegpunkt als erreicht
-        self.hold_seconds = 10.0               # Haltezeit am Wegpunkt
-        self.setpoint_rate_hz = 5.0            # Wie oft Ziel publishen (MAVROS braucht kontinuierliche Setpoints)
+        # --- Parameter ---
+        self.arrival_radius_m = 2.0     # Radius für "WP erreicht"
+        self.hold_seconds = 20.0        # Wartezeit am WP
+        self.setpoint_rate_hz = 5.0     # Hz fürs Setpoint-Streaming
 
-        # Wegpunkte (lat, lon, alt_m)
+        # Wegpunkte (lat, lon, alt)
         self.waypoints: List[Tuple[float, float, float]] = [
-            (48.2525290, 11.6047148,  0.0),
-            (48.2526000, 11.6049000,  0.0),
-            (48.2527000, 11.6047000,  0.0),
-            (48.2526500, 11.6045000,  0.0),
+            (48.285083, 11.606444, 0.0),
+            (48.284583, 11.605833, 0.0),
+            (48.284944, 11.606417, 0.0),
+            (48.284864, 11.606720, 0.0),
         ]
 
         # --- State ---
@@ -47,72 +49,75 @@ class GuidedMissionNode(Node):
         self.curr_lon = None
         self.curr_alt = 0.0
 
-        # Publisher / Subscriber
-        self.pub_target = self.create_publisher(GeoPoseStamped, '/mavros/setpoint_position/global', 10)
-        self.sub_fix = self.create_subscription(NavSatFix, '/mavros/global_position/global', self.gps_cb, 10)
+        # Publisher
+        self.pub_target = self.create_publisher(
+            GeoPoseStamped,
+            '/mavros/setpoint_position/global',
+            10
+        )
 
-        # Timer zum Setpoint-Stream
+        # Subscriber (QoS Best Effort, weil MAVROS so publisht)
+        qos = QoSProfile(
+            reliability=ReliabilityPolicy.BEST_EFFORT,
+            history=HistoryPolicy.KEEP_LAST,
+            depth=10
+        )
+        self.sub_fix = self.create_subscription(
+            NavSatFix,
+            '/mavros/global_position/global',
+            self.gps_cb,
+            qos
+        )
+
+        # Timer für Setpoints
         self.timer = self.create_timer(1.0 / self.setpoint_rate_hz, self.tick)
 
-        self.get_logger().info("GuidedMissionNode gestartet. Sende kontinuierlich Global-Setpoints.")
+        self.get_logger().info("GuidedMissionNode gestartet – streame Setpoints im GUIDED Mode")
 
-    # --- Callbacks ---
     def gps_cb(self, msg: NavSatFix):
-        # Nur sinnvolle Fixes werten (fix_status >= 2: 2D/3D)
-        self.have_fix = msg.status.status >= 2
+        self.have_fix = msg.status.status >= 0
         self.curr_lat = msg.latitude
         self.curr_lon = msg.longitude
         self.curr_alt = msg.altitude
 
     def tick(self):
-        # Keine Setpoints senden, bevor wir GPS haben oder alle WPs abgearbeitet sind
         if not self.have_fix:
-            self.get_logger().throttle_log(5000, self.get_clock(), "Warte auf GPS-Fix…")
+            self.get_logger().info("Warte auf GPS-Fix…")
             return
         if self.wp_idx >= len(self.waypoints):
-            self.get_logger().throttle_log(5000, self.get_clock(), "Mission abgeschlossen. (Keine weiteren Setpoints)")
+            self.get_logger().info("Mission abgeschlossen – keine weiteren Wegpunkte.")
             return
 
         target_lat, target_lon, target_alt = self.waypoints[self.wp_idx]
-
-        # Entfernung berechnen
         dist = haversine_m(self.curr_lat, self.curr_lon, target_lat, target_lon)
 
-        # Hold-Logik
         now = self.get_clock().now()
+
         if self.holding:
-            # Während Hold weiter das gleiche Ziel publishen (Position Hold)
             if now >= self.hold_until:
-                # Weiter zum nächsten Wegpunkt
                 self.wp_idx += 1
                 self.holding = False
                 if self.wp_idx < len(self.waypoints):
-                    self.get_logger().info(f"Weiter zu WP {self.wp_idx+1}/{len(self.waypoints)}")
+                    self.get_logger().info(" Weiter zu WP {self.wp_idx+1}/{len(self.waypoints)}")
                 else:
-                    self.get_logger().info("Alle Wegpunkte abgefahren. Mission fertig.")
+                    self.get_logger().info(" Alle Wegpunkte erreicht.")
             else:
-                # Noch halten – einfach weiter publishen
                 self.publish_target(target_lat, target_lon, target_alt)
-                self.get_logger().throttle_log(
-                    1000, self.get_clock(),
-                    f"Halte an WP {self.wp_idx+1}: noch {(self.hold_until - now).nanoseconds/1e9:.1f}s"
-                )
+                remaining = (self.hold_until - now).nanoseconds / 1e9
+                self.get_logger().info(" Halte an WP {self.wp_idx+1}: noch {remaining:.1f}s")
                 return
         else:
-            # Noch nicht im Hold: prüfen, ob Ziel erreicht
             if dist <= self.arrival_radius_m:
                 self.holding = True
                 self.hold_until = now + Duration(seconds=self.hold_seconds)
                 self.get_logger().info(
-                    f"WP {self.wp_idx+1} erreicht (dist={dist:.1f} m). Halte {self.hold_seconds:.0f}s…"
+                    "WP {self.wp_idx+1} erreicht (dist={dist:.1f} m). Halte {self.hold_seconds:.0f}s…"
                 )
 
-        # In jedem Fall den aktuellen Ziel-Setpoint streamen
+        # immer Setpoints publizieren
         self.publish_target(target_lat, target_lon, target_alt)
 
-        # Status-Log (gedrosselt)
-        self.get_logger().throttle_log(
-            1000, self.get_clock(),
+        self.get_logger().info(
             f"WP {self.wp_idx+1}/{len(self.waypoints)} | dist={dist:.1f} m | "
             f"target=({target_lat:.6f},{target_lon:.6f}) | "
             f"gps=({self.curr_lat:.6f},{self.curr_lon:.6f})"

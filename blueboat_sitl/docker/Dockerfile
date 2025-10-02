@@ -1,5 +1,7 @@
 FROM osrf/ros:humble-desktop AS base
-
+ARG JOBS=2
+ENV CMAKE_BUILD_PARALLEL_LEVEL=${JOBS} \
+	MAKEFLAGS=-j${JOBS}
 ARG USERNAME=blueboat_sitl
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
@@ -94,7 +96,7 @@ RUN Tools/environment_install/install-prereqs-ubuntu.sh -y
 # Build ArduSub
 WORKDIR /home/$USERNAME/ardupilot
 RUN modules/waf/waf-light configure --board sitl \
-  && modules/waf/waf-light build --target bin/ardusub
+  && modules/waf/waf-light -j ${JOBS} build --target bin/ardusub
 
 # Clone ardupilot_gazebo code
 WORKDIR /home/$USERNAME
@@ -106,7 +108,7 @@ RUN [ "/bin/bash" , "-c" , " \
   && mkdir build \
   && cd build \
   && cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  && make -j4" ]
+  && make -j${JOBS}" ]
 
 # Create colcon workspace and copy workspace.repos file
 WORKDIR /home/$USERNAME
@@ -130,7 +132,7 @@ RUN rosdep install -y --from-paths . --ignore-src --skip-keys="gz-transport12 gz
 WORKDIR /home/$USERNAME/colcon_ws
 RUN [ "/bin/bash" , "-c" , "\
   source /opt/ros/humble/setup.bash \
-  && colcon build" ]
+  && colcon build --cmake-args -DCMAKE_BUILD_PARALLEL_LEVEL=${JOBS}" ]
 
 # Run rosdep over blueboat package.xml files
 RUN rosdep update \
@@ -148,7 +150,7 @@ COPY --chown=$USER_UID:$USER_GID . src/blueboat_sitl
 # Build everything
 RUN [ "/bin/bash" , "-c" , "\
   source /opt/ros/humble/setup.bash \
-  && colcon build" ]
+  && colcon build --cmake-args -DCMAKE_BUILD_PARALLEL_LEVEL=${JOBS}" ]
 
 # Set up the environment
 WORKDIR /home/$USERNAME/colcon_ws
@@ -201,7 +203,7 @@ RUN apt-get update && apt-get install -y ros-humble-joint-state-publisher \
 # USER $USERNAME
 RUN apt install -y geographiclib-tools \
     && sudo geographiclib-get-geoids egm96-5 \
-    && sudo geographiclib-get-magnetic wmm2020 \ 
+    && sudo geographiclib-get-magnetic wmm2020 \
     && sudo geographiclib-get-gravity egm2008
 
 # Add entrypoint and make $USERNAME the default user

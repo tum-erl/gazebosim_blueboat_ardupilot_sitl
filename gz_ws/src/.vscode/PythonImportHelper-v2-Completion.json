@@ -1,0 +1,3310 @@
+[
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "rclpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rclpy",
+        "description": "rclpy",
+        "detail": "rclpy",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "qos_profile_sensor_data",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSProfile",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSReliabilityPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSHistoryPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSProfile",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "ReliabilityPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "HistoryPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSProfile",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSReliabilityPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSDurabilityPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSProfile",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "ReliabilityPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "DurabilityPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Pose",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Twist",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "PointStamped",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Quaternion",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Twist",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "PointStamped",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Twist",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "PointStamped",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "PointStamped",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Pose",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Bool",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Bool",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Bool",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64MultiArray",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float32",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Float64MultiArray",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "GPSRAW",
+        "importPath": "mavros_msgs.msg",
+        "description": "mavros_msgs.msg",
+        "isExtraImport": true,
+        "detail": "mavros_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "OverrideRCIn",
+        "importPath": "mavros_msgs.msg",
+        "description": "mavros_msgs.msg",
+        "isExtraImport": true,
+        "detail": "mavros_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Imu",
+        "importPath": "sensor_msgs.msg",
+        "description": "sensor_msgs.msg",
+        "isExtraImport": true,
+        "detail": "sensor_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "NavSatFix",
+        "importPath": "sensor_msgs.msg",
+        "description": "sensor_msgs.msg",
+        "isExtraImport": true,
+        "detail": "sensor_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Joy",
+        "importPath": "sensor_msgs.msg",
+        "description": "sensor_msgs.msg",
+        "isExtraImport": true,
+        "detail": "sensor_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "NavSatFix",
+        "importPath": "sensor_msgs.msg",
+        "description": "sensor_msgs.msg",
+        "isExtraImport": true,
+        "detail": "sensor_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "NavSatFix",
+        "importPath": "sensor_msgs.msg",
+        "description": "sensor_msgs.msg",
+        "isExtraImport": true,
+        "detail": "sensor_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "NavSatFix",
+        "importPath": "sensor_msgs.msg",
+        "description": "sensor_msgs.msg",
+        "isExtraImport": true,
+        "detail": "sensor_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Odometry",
+        "importPath": "nav_msgs.msg",
+        "description": "nav_msgs.msg",
+        "isExtraImport": true,
+        "detail": "nav_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "mavutil",
+        "importPath": "pymavlink",
+        "description": "pymavlink",
+        "isExtraImport": true,
+        "detail": "pymavlink",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Duration",
+        "importPath": "rclpy.duration",
+        "description": "rclpy.duration",
+        "isExtraImport": true,
+        "detail": "rclpy.duration",
+        "documentation": {}
+    },
+    {
+        "label": "Time",
+        "importPath": "rclpy.time",
+        "description": "rclpy.time",
+        "isExtraImport": true,
+        "detail": "rclpy.time",
+        "documentation": {}
+    },
+    {
+        "label": "GeoPoseStamped",
+        "importPath": "geographic_msgs.msg",
+        "description": "geographic_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geographic_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "OrderedDict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "OrderedDict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "SetTarget",
+        "importPath": "blueboat_interfaces.srv",
+        "description": "blueboat_interfaces.srv",
+        "isExtraImport": true,
+        "detail": "blueboat_interfaces.srv",
+        "documentation": {}
+    },
+    {
+        "label": "SetTarget",
+        "importPath": "blueboat_interfaces.srv",
+        "description": "blueboat_interfaces.srv",
+        "isExtraImport": true,
+        "detail": "blueboat_interfaces.srv",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "RotatingFileHandler",
+        "importPath": "logging.handlers",
+        "description": "logging.handlers",
+        "isExtraImport": true,
+        "detail": "logging.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "LaunchDescription",
+        "importPath": "launch",
+        "description": "launch",
+        "isExtraImport": true,
+        "detail": "launch",
+        "documentation": {}
+    },
+    {
+        "label": "LaunchDescription",
+        "importPath": "launch",
+        "description": "launch",
+        "isExtraImport": true,
+        "detail": "launch",
+        "documentation": {}
+    },
+    {
+        "label": "ExecuteProcess",
+        "importPath": "launch.actions",
+        "description": "launch.actions",
+        "isExtraImport": true,
+        "detail": "launch.actions",
+        "documentation": {}
+    },
+    {
+        "label": "DeclareLaunchArgument",
+        "importPath": "launch.actions",
+        "description": "launch.actions",
+        "isExtraImport": true,
+        "detail": "launch.actions",
+        "documentation": {}
+    },
+    {
+        "label": "GroupAction",
+        "importPath": "launch.actions",
+        "description": "launch.actions",
+        "isExtraImport": true,
+        "detail": "launch.actions",
+        "documentation": {}
+    },
+    {
+        "label": "LogInfo",
+        "importPath": "launch.actions",
+        "description": "launch.actions",
+        "isExtraImport": true,
+        "detail": "launch.actions",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "launch_ros.actions",
+        "description": "launch_ros.actions",
+        "isExtraImport": true,
+        "detail": "launch_ros.actions",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "launch_ros.actions",
+        "description": "launch_ros.actions",
+        "isExtraImport": true,
+        "detail": "launch_ros.actions",
+        "documentation": {}
+    },
+    {
+        "label": "IfCondition",
+        "importPath": "launch.conditions",
+        "description": "launch.conditions",
+        "isExtraImport": true,
+        "detail": "launch.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "LaunchConfiguration",
+        "importPath": "launch.substitutions",
+        "description": "launch.substitutions",
+        "isExtraImport": true,
+        "detail": "launch.substitutions",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "heapq",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "heapq",
+        "description": "heapq",
+        "detail": "heapq",
+        "documentation": {}
+    },
+    {
+        "label": "MultiThreadedExecutor",
+        "importPath": "rclpy.executors",
+        "description": "rclpy.executors",
+        "isExtraImport": true,
+        "detail": "rclpy.executors",
+        "documentation": {}
+    },
+    {
+        "label": "MultiThreadedExecutor",
+        "importPath": "rclpy.executors",
+        "description": "rclpy.executors",
+        "isExtraImport": true,
+        "detail": "rclpy.executors",
+        "documentation": {}
+    },
+    {
+        "label": "ReentrantCallbackGroup",
+        "importPath": "rclpy.callback_groups",
+        "description": "rclpy.callback_groups",
+        "isExtraImport": true,
+        "detail": "rclpy.callback_groups",
+        "documentation": {}
+    },
+    {
+        "label": "ReentrantCallbackGroup",
+        "importPath": "rclpy.callback_groups",
+        "description": "rclpy.callback_groups",
+        "isExtraImport": true,
+        "detail": "rclpy.callback_groups",
+        "documentation": {}
+    },
+    {
+        "label": "ReentrantCallbackGroup",
+        "importPath": "rclpy.callback_groups",
+        "description": "rclpy.callback_groups",
+        "isExtraImport": true,
+        "detail": "rclpy.callback_groups",
+        "documentation": {}
+    },
+    {
+        "label": "GEKKO",
+        "importPath": "gekko",
+        "description": "gekko",
+        "isExtraImport": true,
+        "detail": "gekko",
+        "documentation": {}
+    },
+    {
+        "label": "interp1d",
+        "importPath": "scipy.interpolate",
+        "description": "scipy.interpolate",
+        "isExtraImport": true,
+        "detail": "scipy.interpolate",
+        "documentation": {}
+    },
+    {
+        "label": "CubicSpline",
+        "importPath": "scipy.interpolate",
+        "description": "scipy.interpolate",
+        "isExtraImport": true,
+        "detail": "scipy.interpolate",
+        "documentation": {}
+    },
+    {
+        "label": "CubicSpline",
+        "importPath": "scipy.interpolate",
+        "description": "scipy.interpolate",
+        "isExtraImport": true,
+        "detail": "scipy.interpolate",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "geodesic",
+        "importPath": "geopy.distance",
+        "description": "geopy.distance",
+        "isExtraImport": true,
+        "detail": "geopy.distance",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "importPath": "glob",
+        "description": "glob",
+        "isExtraImport": true,
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "PID",
+        "kind": 6,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "class PID:\n    def __init__(self, kp, ki, kd, out_min=-3.0, out_max=3.0):\n        self.kp, self.ki, self.kd = kp, ki, kd\n        self.out_min, self.out_max = out_min, out_max\n        self.prev_error = 0.0\n        self.integral = 0.0\n        self.last_t = None\n    def reset(self):\n        self.prev_error = 0.0\n        self.integral = 0.0",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "ASVPidRcNode",
+        "kind": 6,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "class ASVPidRcNode(Node):\n    def __init__(self):\n        super().__init__('asv_pid_rc_node')\n        # --- Parameter ---\n        self.declare_parameter('arrival_radius_m', 0.6)\n        self.declare_parameter('neutral_pwm', 1500)\n        self.declare_parameter('pwm_span', 400)          # 1500 ± 400 -> 1100..1900\n        self.declare_parameter('chan_left', 1)           # 1-basiert: CH1\n        self.declare_parameter('chan_right', 3)          # 1-basiert: CH3\n        # Heading-PID in RAD",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "clamp",
+        "kind": 2,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def clamp(v, lo, hi):\n    return max(lo, min(hi, v))\ndef wrap_deg(a):\n    \"\"\"wrap angle to [-180, 180)\"\"\"\n    return (a + 180.0) % 360.0 - 180.0\ndef haversine_m(lat1, lon1, lat2, lon2):\n    \"\"\"Entfernung in Metern\"\"\"\n    R = 6371000.0\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dphi = math.radians(lat2 - lat1)",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "wrap_deg",
+        "kind": 2,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def wrap_deg(a):\n    \"\"\"wrap angle to [-180, 180)\"\"\"\n    return (a + 180.0) % 360.0 - 180.0\ndef haversine_m(lat1, lon1, lat2, lon2):\n    \"\"\"Entfernung in Metern\"\"\"\n    R = 6371000.0\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dphi = math.radians(lat2 - lat1)\n    dlmb = math.radians(lon2 - lon1)\n    a = math.sin(dphi/2)**2 + math.cos(phi1)*math.cos(phi2)*math.sin(dlmb/2)**2",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_m",
+        "kind": 2,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def haversine_m(lat1, lon1, lat2, lon2):\n    \"\"\"Entfernung in Metern\"\"\"\n    R = 6371000.0\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dphi = math.radians(lat2 - lat1)\n    dlmb = math.radians(lon2 - lon1)\n    a = math.sin(dphi/2)**2 + math.cos(phi1)*math.cos(phi2)*math.sin(dlmb/2)**2\n    return 2*R*math.asin(math.sqrt(a))\ndef bearing_deg(lat1, lon1, lat2, lon2):\n    \"\"\"Peilung (0..360) von Punkt1 nach Punkt2 in Grad\"\"\"",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "bearing_deg",
+        "kind": 2,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def bearing_deg(lat1, lon1, lat2, lon2):\n    \"\"\"Peilung (0..360) von Punkt1 nach Punkt2 in Grad\"\"\"\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dlmb = math.radians(lon2 - lon1)\n    y = math.sin(dlmb) * math.cos(phi2)\n    x = math.cos(phi1)*math.sin(phi2) - math.sin(phi1)*math.cos(phi2)*math.cos(dlmb)\n    brg = math.degrees(math.atan2(y, x))\n    return brg + 360.0 if brg < 0.0 else brg\n# Quaternion -> Yaw (rad), kreissichere Interpolation in Grad\ndef quat_to_yaw_rad(qx, qy, qz, qw):",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "quat_to_yaw_rad",
+        "kind": 2,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def quat_to_yaw_rad(qx, qy, qz, qw):\n    siny_cosp = 2.0 * (qw*qz + qx*qy)\n    cosy_cosp = 1.0 - 2.0 * (qy*qy + qz*qz)\n    return math.atan2(siny_cosp, cosy_cosp)  # [-pi, pi]\ndef circ_lerp_deg(a_deg, b_deg, k):\n    \"\"\"Zyklische Interpolation a->b in Grad, k in [0,1].\"\"\"\n    diff = wrap_deg(b_deg - a_deg)\n    return (a_deg + k*diff + 360.0) % 360.0\nclass PID:\n    def __init__(self, kp, ki, kd, out_min=-3.0, out_max=3.0):",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "circ_lerp_deg",
+        "kind": 2,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def circ_lerp_deg(a_deg, b_deg, k):\n    \"\"\"Zyklische Interpolation a->b in Grad, k in [0,1].\"\"\"\n    diff = wrap_deg(b_deg - a_deg)\n    return (a_deg + k*diff + 360.0) % 360.0\nclass PID:\n    def __init__(self, kp, ki, kd, out_min=-3.0, out_max=3.0):\n        self.kp, self.ki, self.kd = kp, ki, kd\n        self.out_min, self.out_max = out_min, out_max\n        self.prev_error = 0.0\n        self.integral = 0.0",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def main():\n    rclpy.init()\n    node = ASVPidRcNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "blueboat_control.blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "blueboat_control.test.test_copyright",
+        "description": "blueboat_control.test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "blueboat_control.test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "blueboat_control.test.test_flake8",
+        "description": "blueboat_control.test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "blueboat_control.test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "blueboat_control.test.test_pep257",
+        "description": "blueboat_control.test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "blueboat_control.test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "blueboat_control.setup",
+        "description": "blueboat_control.setup",
+        "peekOfCode": "package_name = 'blueboat_control'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=find_packages(exclude=['test']),\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n    ],",
+        "detail": "blueboat_control.setup",
+        "documentation": {}
+    },
+    {
+        "label": "PID",
+        "kind": 6,
+        "importPath": "blueboat_controller.blueboat_controller.pid_controller",
+        "description": "blueboat_controller.blueboat_controller.pid_controller",
+        "peekOfCode": "class PID:\n    def __init__(self, kp, ki, kd):\n        self.kp, self.ki, self.kd = kp, ki, kd\n        self.prev_error = 0.0\n        self.integral = 0.0\n        self.last_time = None\n    def update(self, error):\n        now = time.time()\n        dt = now - self.last_time if self.last_time else 0.1\n        self.last_time = now",
+        "detail": "blueboat_controller.blueboat_controller.pid_controller",
+        "documentation": {}
+    },
+    {
+        "label": "BlueboatPIDNode",
+        "kind": 6,
+        "importPath": "blueboat_controller.blueboat_controller.pid_controller",
+        "description": "blueboat_controller.blueboat_controller.pid_controller",
+        "peekOfCode": "class BlueboatPIDNode(Node):\n    def __init__(self):\n        super().__init__('blueboat_pid_regler')\n        # Festes Ziel (XY)\n        self.goal = [0.0, 0.0]\n        # PID-Regler\n        self.heading_pid = PID(kp=3.0, ki=0.0, kd=0.4)\n        self.speed_pid = PID(kp=0.1, ki=0.0, kd=0.8)\n        # MAVLink-Verbindung\n        self.master = mavutil.mavlink_connection('udp:127.0.0.1:14550')",
+        "detail": "blueboat_controller.blueboat_controller.pid_controller",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_controller.blueboat_controller.pid_controller",
+        "description": "blueboat_controller.blueboat_controller.pid_controller",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = BlueboatPIDNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "blueboat_controller.blueboat_controller.pid_controller",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "blueboat_controller.test.test_copyright",
+        "description": "blueboat_controller.test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "blueboat_controller.test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "blueboat_controller.test.test_flake8",
+        "description": "blueboat_controller.test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "blueboat_controller.test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "blueboat_controller.test.test_pep257",
+        "description": "blueboat_controller.test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "blueboat_controller.test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "blueboat_controller.setup",
+        "description": "blueboat_controller.setup",
+        "peekOfCode": "package_name = 'blueboat_controller'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=find_packages(exclude=['test']),\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n    ],",
+        "detail": "blueboat_controller.setup",
+        "documentation": {}
+    },
+    {
+        "label": "GuidedMissionNode",
+        "kind": 6,
+        "importPath": "blueboat_guided.blueboat_guided.guid",
+        "description": "blueboat_guided.blueboat_guided.guid",
+        "peekOfCode": "class GuidedMissionNode(Node):\n    def __init__(self):\n        super().__init__('guided_mission_node')\n        # --- Parameter ---\n        self.arrival_radius_m = 2.0     # Radius für \"WP erreicht\"\n        self.hold_seconds = 20.0        # Wartezeit am WP\n        self.setpoint_rate_hz = 5.0     # Hz fürs Setpoint-Streaming\n        # Wegpunkte (lat, lon, alt)\n        self.waypoints: List[Tuple[float, float, float]] = [\n            (48.285083, 11.606444, 0.0),",
+        "detail": "blueboat_guided.blueboat_guided.guid",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_m",
+        "kind": 2,
+        "importPath": "blueboat_guided.blueboat_guided.guid",
+        "description": "blueboat_guided.blueboat_guided.guid",
+        "peekOfCode": "def haversine_m(lat1, lon1, lat2, lon2) -> float:\n    \"\"\"Entfernung in Metern (great-circle).\"\"\"\n    R = 6371000.0\n    phi1 = math.radians(lat1)\n    phi2 = math.radians(lat2)\n    dphi = math.radians(lat2 - lat1)\n    dlmb = math.radians(lon2 - lon1)\n    a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlmb / 2) ** 2\n    return 2 * R * math.asin(math.sqrt(a))\nclass GuidedMissionNode(Node):",
+        "detail": "blueboat_guided.blueboat_guided.guid",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_guided.blueboat_guided.guid",
+        "description": "blueboat_guided.blueboat_guided.guid",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = GuidedMissionNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "blueboat_guided.blueboat_guided.guid",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "blueboat_guided.test.test_copyright",
+        "description": "blueboat_guided.test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "blueboat_guided.test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "blueboat_guided.test.test_flake8",
+        "description": "blueboat_guided.test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "blueboat_guided.test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "blueboat_guided.test.test_pep257",
+        "description": "blueboat_guided.test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "blueboat_guided.test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "blueboat_guided.setup",
+        "description": "blueboat_guided.setup",
+        "peekOfCode": "package_name = 'blueboat_guided'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=find_packages(exclude=['test']),\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n    ],",
+        "detail": "blueboat_guided.setup",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',\n        help='The additional file extension to be considered')",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "get_packages",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def get_packages(prefix_path, merged_install):\n    \"\"\"\n    Find packages based on colcon-specific files created during installation.\n    :param Path prefix_path: The install prefix path of all packages\n    :param bool merged_install: The flag if the packages are all installed\n      directly in the prefix or if each package is installed in a subdirectory\n      named after the package\n    :returns: A mapping from the package name to the set of runtime\n      dependencies\n    :rtype: dict",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "add_package_runtime_dependencies",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def add_package_runtime_dependencies(path, packages):\n    \"\"\"\n    Check the path and if it exists extract the packages runtime dependencies.\n    :param Path path: The resource file containing the runtime dependencies\n    :param dict packages: A mapping from package names to the sets of runtime\n      dependencies to add to\n    \"\"\"\n    content = path.read_text()\n    dependencies = set(content.split(os.pathsep) if content else [])\n    packages[path.name] = dependencies",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "order_packages",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def order_packages(packages):\n    \"\"\"\n    Order packages topologically.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies\n    :returns: The package names\n    :rtype: list\n    \"\"\"\n    # select packages with no dependencies in alphabetical order\n    to_be_ordered = list(packages.keys())",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_cycle_set",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def reduce_cycle_set(packages):\n    \"\"\"\n    Reduce the set of packages to the ones part of the circular dependency.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies which is modified in place\n    \"\"\"\n    last_depended = None\n    while len(packages) > 0:\n        # get all remaining dependencies\n        depended = set()",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "get_commands",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def get_commands(pkg_name, prefix, primary_extension, additional_extension):\n    commands = []\n    package_dsv_path = os.path.join(prefix, 'share', pkg_name, 'package.dsv')\n    if os.path.exists(package_dsv_path):\n        commands += process_dsv_file(\n            package_dsv_path, prefix, primary_extension, additional_extension)\n    return commands\ndef process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "process_dsv_file",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):\n    commands = []\n    if _include_comments():\n        commands.append(FORMAT_STR_COMMENT_LINE.format_map({'comment': dsv_path}))\n    with open(dsv_path, 'r') as h:\n        content = h.read()\n    lines = content.splitlines()\n    basenames = OrderedDict()",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "handle_dsv_types_except_source",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "def handle_dsv_types_except_source(type_, remainder, prefix):\n    commands = []\n    if type_ in (DSV_TYPE_SET, DSV_TYPE_SET_IF_UNSET):\n        try:\n            env_name, value = remainder.split(';', 1)\n        except ValueError:\n            raise RuntimeError(\n                \"doesn't contain a semicolon separating the environment name \"\n                'from the value')\n        try_prefixed_value = os.path.join(prefix, value) if value else prefix",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_COMMENT_LINE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_COMMENT_LINE = '# {comment}'\nFORMAT_STR_SET_ENV_VAR = 'Set-Item -Path \"Env:{name}\" -Value \"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '$env:{name}'\nFORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_SET_ENV_VAR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_SET_ENV_VAR = 'Set-Item -Path \"Env:{name}\" -Value \"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '$env:{name}'\nFORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_USE_ENV_VAR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_USE_ENV_VAR = '$env:{name}'\nFORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_INVOKE_SCRIPT",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_LEADING_SEPARATOR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_REMOVE_LEADING_SEPARATOR = ''  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_APPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET_IF_UNSET",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SOURCE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "env_state",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_ps1",
+        "description": "blueboat_interfaces.install._local_setup_util_ps1",
+        "peekOfCode": "env_state = {}\ndef _append_unique_value(name, value):\n    global env_state\n    if name not in env_state:\n        if os.environ.get(name):\n            env_state[name] = set(os.environ[name].split(os.pathsep))\n        else:\n            env_state[name] = set()\n    # append even if the variable has not been set yet, in case a shell script sets the\n    # same variable without the knowledge of this Python script.",
+        "detail": "blueboat_interfaces.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',\n        help='The additional file extension to be considered')",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "get_packages",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def get_packages(prefix_path, merged_install):\n    \"\"\"\n    Find packages based on colcon-specific files created during installation.\n    :param Path prefix_path: The install prefix path of all packages\n    :param bool merged_install: The flag if the packages are all installed\n      directly in the prefix or if each package is installed in a subdirectory\n      named after the package\n    :returns: A mapping from the package name to the set of runtime\n      dependencies\n    :rtype: dict",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "add_package_runtime_dependencies",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def add_package_runtime_dependencies(path, packages):\n    \"\"\"\n    Check the path and if it exists extract the packages runtime dependencies.\n    :param Path path: The resource file containing the runtime dependencies\n    :param dict packages: A mapping from package names to the sets of runtime\n      dependencies to add to\n    \"\"\"\n    content = path.read_text()\n    dependencies = set(content.split(os.pathsep) if content else [])\n    packages[path.name] = dependencies",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "order_packages",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def order_packages(packages):\n    \"\"\"\n    Order packages topologically.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies\n    :returns: The package names\n    :rtype: list\n    \"\"\"\n    # select packages with no dependencies in alphabetical order\n    to_be_ordered = list(packages.keys())",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_cycle_set",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def reduce_cycle_set(packages):\n    \"\"\"\n    Reduce the set of packages to the ones part of the circular dependency.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies which is modified in place\n    \"\"\"\n    last_depended = None\n    while len(packages) > 0:\n        # get all remaining dependencies\n        depended = set()",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "get_commands",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def get_commands(pkg_name, prefix, primary_extension, additional_extension):\n    commands = []\n    package_dsv_path = os.path.join(prefix, 'share', pkg_name, 'package.dsv')\n    if os.path.exists(package_dsv_path):\n        commands += process_dsv_file(\n            package_dsv_path, prefix, primary_extension, additional_extension)\n    return commands\ndef process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "process_dsv_file",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):\n    commands = []\n    if _include_comments():\n        commands.append(FORMAT_STR_COMMENT_LINE.format_map({'comment': dsv_path}))\n    with open(dsv_path, 'r') as h:\n        content = h.read()\n    lines = content.splitlines()\n    basenames = OrderedDict()",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "handle_dsv_types_except_source",
+        "kind": 2,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "def handle_dsv_types_except_source(type_, remainder, prefix):\n    commands = []\n    if type_ in (DSV_TYPE_SET, DSV_TYPE_SET_IF_UNSET):\n        try:\n            env_name, value = remainder.split(';', 1)\n        except ValueError:\n            raise RuntimeError(\n                \"doesn't contain a semicolon separating the environment name \"\n                'from the value')\n        try_prefixed_value = os.path.join(prefix, value) if value else prefix",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_COMMENT_LINE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_COMMENT_LINE = '# {comment}'\nFORMAT_STR_SET_ENV_VAR = 'export {name}=\"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '${name}'\nFORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_SET_ENV_VAR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_SET_ENV_VAR = 'export {name}=\"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '${name}'\nFORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_USE_ENV_VAR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_USE_ENV_VAR = '${name}'\nFORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_INVOKE_SCRIPT",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'  # noqa: E501\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_LEADING_SEPARATOR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'  # noqa: E501\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'  # noqa: E501\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_APPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET_IF_UNSET",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SOURCE",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "env_state",
+        "kind": 5,
+        "importPath": "blueboat_interfaces.install._local_setup_util_sh",
+        "description": "blueboat_interfaces.install._local_setup_util_sh",
+        "peekOfCode": "env_state = {}\ndef _append_unique_value(name, value):\n    global env_state\n    if name not in env_state:\n        if os.environ.get(name):\n            env_state[name] = set(os.environ[name].split(os.pathsep))\n        else:\n            env_state[name] = set()\n    # append even if the variable has not been set yet, in case a shell script sets the\n    # same variable without the knowledge of this Python script.",
+        "detail": "blueboat_interfaces.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "Planner",
+        "kind": 6,
+        "importPath": "blueboat_planner.blueboat_planner.planner_node",
+        "description": "blueboat_planner.blueboat_planner.planner_node",
+        "peekOfCode": "class Planner(Node):\n    def __init__(self):\n        super().__init__('blueboat_planner')\n        # Service-Client für Zielsetzung\n        self.client = self.create_client(SetTarget, 'set_target')\n        while not self.client.wait_for_service(timeout_sec=1.0):\n            self.get_logger().info('Warte auf Regler-Service...')\n        # Zielpunkte\n        self.targets = [[5.0, 0.0], [5.0, 5.0], [0.0, 5.0], [0.0, 0.0]]\n        self.current_target = 0",
+        "detail": "blueboat_planner.blueboat_planner.planner_node",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_planner.blueboat_planner.planner_node",
+        "description": "blueboat_planner.blueboat_planner.planner_node",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = Planner()\n    rclpy.spin(node)\n    node.destroy_node()\n    rclpy.shutdown()",
+        "detail": "blueboat_planner.blueboat_planner.planner_node",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "blueboat_planner.test.test_copyright",
+        "description": "blueboat_planner.test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "blueboat_planner.test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "blueboat_planner.test.test_flake8",
+        "description": "blueboat_planner.test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "blueboat_planner.test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "blueboat_planner.test.test_pep257",
+        "description": "blueboat_planner.test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "blueboat_planner.test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "blueboat_planner.setup",
+        "description": "blueboat_planner.setup",
+        "peekOfCode": "package_name = 'blueboat_planner'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=find_packages(exclude=['test']),\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n    ],",
+        "detail": "blueboat_planner.setup",
+        "documentation": {}
+    },
+    {
+        "label": "PID",
+        "kind": 6,
+        "importPath": "blueboat_regler.blueboat_regler.regler_node",
+        "description": "blueboat_regler.blueboat_regler.regler_node",
+        "peekOfCode": "class PID:\n    def __init__(self, kp, ki, kd):\n        self.kp, self.ki, self.kd = kp, ki, kd\n        self.prev_error = 0.0\n        self.integral = 0.0\n        self.last_time = None\n    def update(self, error):\n        now = time.time()\n        dt = now - self.last_time if self.last_time else 0.1\n        self.last_time = now",
+        "detail": "blueboat_regler.blueboat_regler.regler_node",
+        "documentation": {}
+    },
+    {
+        "label": "BlueboatPIDNode",
+        "kind": 6,
+        "importPath": "blueboat_regler.blueboat_regler.regler_node",
+        "description": "blueboat_regler.blueboat_regler.regler_node",
+        "peekOfCode": "class BlueboatPIDNode(Node):\n    def __init__(self):\n        super().__init__('blueboat_pid_regler')\n        # ROS Parameter für GPS Modus\n        self.declare_parameter('use_gps', False)\n        self.use_gps = self.get_parameter('use_gps').value\n        # Zielposition (XY oder GPS Koordinaten je nach Modus)\n        self.goal = [0.0, 0.0]  # initiales Ziel\n        # PID-Regler initialisieren\n        self.heading_pid = PID(kp=3.0, ki=0.0, kd=0.4)",
+        "detail": "blueboat_regler.blueboat_regler.regler_node",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_regler.blueboat_regler.regler_node",
+        "description": "blueboat_regler.blueboat_regler.regler_node",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = BlueboatPIDNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "blueboat_regler.blueboat_regler.regler_node",
+        "documentation": {}
+    },
+    {
+        "label": "PID",
+        "kind": 6,
+        "importPath": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "description": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "peekOfCode": "class PID:\n    def __init__(self, kp, ki, kd):\n        self.kp = kp\n        self.ki = ki\n        self.kd = kd\n        self.prev_error = 0.0\n        self.integral = 0.0\n        self.last_time = None\n    def update(self, error):\n        now = time.time()",
+        "detail": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "documentation": {}
+    },
+    {
+        "label": "PIDReglerNode",
+        "kind": 6,
+        "importPath": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "description": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "peekOfCode": "class PIDReglerNode(Node):\n    def __init__(self):\n        super().__init__('blueboat_pid_regler')\n        # Zielkoordinate in Gazebo-Frame\n        self.goal = [0.0, 0.0]  # x, y\n        # PID für Heading (Lenkung)\n        self.pid_heading = PID(kp=5.5, ki=0.0, kd=0.2)\n        self.pid_speed = PID(kp=0.3, ki=0.0, kd=1) \n        # MAVLink starten\n        self.master = mavutil.mavlink_connection('udp:127.0.0.1:14550')",
+        "detail": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "description": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = PIDReglerNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        #node.logfile.close()  # Log-Datei schließen\n        node.destroy_node()",
+        "detail": "blueboat_regler.blueboat_regler.regler_node_Ackermann",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "blueboat_regler.test.test_copyright",
+        "description": "blueboat_regler.test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "blueboat_regler.test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "blueboat_regler.test.test_flake8",
+        "description": "blueboat_regler.test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "blueboat_regler.test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "blueboat_regler.test.test_pep257",
+        "description": "blueboat_regler.test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "blueboat_regler.test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "blueboat_regler.setup",
+        "description": "blueboat_regler.setup",
+        "peekOfCode": "package_name = 'blueboat_regler'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=find_packages(exclude=['test']),\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n    ],",
+        "detail": "blueboat_regler.setup",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.args_mission_planner_gps",
+        "description": "extras_boat.args_mission_planner_gps",
+        "peekOfCode": "def arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")\n    timeout = time.time() + 10  # 10 second timeout for arming\n    armed = False",
+        "detail": "extras_boat.args_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "set_guided_mode",
+        "kind": 2,
+        "importPath": "extras_boat.args_mission_planner_gps",
+        "description": "extras_boat.args_mission_planner_gps",
+        "peekOfCode": "def set_guided_mode():\n    mode = 'GUIDED'\n    if mode not in master.mode_mapping():\n        print(f\"Mode {mode} not found in mode mapping. Exiting...\")\n        return\n    mode_id = master.mode_mapping()[mode]\n    master.set_mode(mode_id)\n    print(\"Mode set to GUIDED.\")\ndef get_initial_position():\n    print(\"Waiting for GPS position...\")",
+        "detail": "extras_boat.args_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "get_initial_position",
+        "kind": 2,
+        "importPath": "extras_boat.args_mission_planner_gps",
+        "description": "extras_boat.args_mission_planner_gps",
+        "peekOfCode": "def get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:\n        msg = master.recv_match(type='GLOBAL_POSITION_INT', blocking=True)\n        if msg:\n            initial_lat = msg.lat / 1e7\n            initial_lon = msg.lon / 1e7\n            print(f\"Initial position: lat={initial_lat}, lon={initial_lon}\")\n            return initial_lat, initial_lon\ndef send_target_position(lat, lon):",
+        "detail": "extras_boat.args_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "send_target_position",
+        "kind": 2,
+        "importPath": "extras_boat.args_mission_planner_gps",
+        "description": "extras_boat.args_mission_planner_gps",
+        "peekOfCode": "def send_target_position(lat, lon):\n    # Send the target position to the vehicle\n    master.mav.set_position_target_global_int_send(\n        0,                         # time_boot_ms\n        master.target_system,      # target_system\n        master.target_component,   # target_component\n        mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame\n        0b0000111111111000,        # type_mask (only positions enabled)\n        int(lat * 1e7),            # lat_int - X Position in WGS84 frame in 1e7 * degrees\n        int(lon * 1e7),            # lon_int - Y Position in WGS84 frame in 1e7 * degrees",
+        "detail": "extras_boat.args_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "follow_target_positions",
+        "kind": 2,
+        "importPath": "extras_boat.args_mission_planner_gps",
+        "description": "extras_boat.args_mission_planner_gps",
+        "peekOfCode": "def follow_target_positions(initial_lat, initial_lon, positions):\n    for idx, (x, y) in enumerate(positions):\n        lat = initial_lat + (y / 111320)  # Latitude degree per meter\n        lon = initial_lon + (x / (40075000 * (1 / 360) * math.cos(math.radians(initial_lat))))  # Longitude degree per meter\n        send_target_position(lat, lon)\n        print(f\"Sent target position {idx + 1}/{len(positions)}: lat={lat}, lon={lon}\")\n        # Wait for the rover to reach the position with a timeout\n        start_time = time.time()\n        timeout = 60  # 60 seconds timeout\n        while time.time() - start_time < timeout:",
+        "detail": "extras_boat.args_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "parse_arguments",
+        "kind": 2,
+        "importPath": "extras_boat.args_mission_planner_gps",
+        "description": "extras_boat.args_mission_planner_gps",
+        "peekOfCode": "def parse_arguments():\n    parser = argparse.ArgumentParser(description='Mission planner for BlueBoat using GPS coordinates.')\n    parser.add_argument('--positions', type=str, help='List of target positions in meters as \"x1,y1;x2,y2;...\".')\n    args = parser.parse_args()\n    positions = []\n    if args.positions:\n        pairs = args.positions.split(';')\n        for pair in pairs:\n            x, y = map(float, pair.split(','))\n            positions.append((x, y))",
+        "detail": "extras_boat.args_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.args_mission_planner_gps",
+        "description": "extras_boat.args_mission_planner_gps",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nmaster.wait_heartbeat()\ndef arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")",
+        "detail": "extras_boat.args_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.arm",
+        "description": "extras_boat.arm",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\n# Wait a heartbeat before sending commands\nmaster.wait_heartbeat()\n# Try to arm the vehicle\nmaster.mav.command_long_send(\n    master.target_system,\n    master.target_component,\n    mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n    0,\n    1, 0, 0, 0, 0, 0, 0)",
+        "detail": "extras_boat.arm",
+        "documentation": {}
+    },
+    {
+        "label": "timeout",
+        "kind": 5,
+        "importPath": "extras_boat.arm",
+        "description": "extras_boat.arm",
+        "peekOfCode": "timeout = time.time() + 10  # 10 second timeout for arming\narmed = False\nwhile not armed and time.time() < timeout:\n    message = master.recv_match(type='HEARTBEAT', blocking=True)\n    if message:\n        print(message.to_dict())\n        armed = message.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED\n        if armed:\n            print('Vehicle is armed!')\n            break",
+        "detail": "extras_boat.arm",
+        "documentation": {}
+    },
+    {
+        "label": "armed",
+        "kind": 5,
+        "importPath": "extras_boat.arm",
+        "description": "extras_boat.arm",
+        "peekOfCode": "armed = False\nwhile not armed and time.time() < timeout:\n    message = master.recv_match(type='HEARTBEAT', blocking=True)\n    if message:\n        print(message.to_dict())\n        armed = message.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED\n        if armed:\n            print('Vehicle is armed!')\n            break\nif not armed:",
+        "detail": "extras_boat.arm",
+        "documentation": {}
+    },
+    {
+        "label": "BoatController",
+        "kind": 6,
+        "importPath": "extras_boat.changing_modes",
+        "description": "extras_boat.changing_modes",
+        "peekOfCode": "class BoatController:\n    def __init__(self, connection_string):\n        self.connection_string = connection_string\n        self.conn = None\n    def connect(self):\n        # Create the connection\n        self.conn = mavutil.mavlink_connection(self.connection_string)\n        # Wait for a heartbeat before sending commands\n        self.conn.wait_heartbeat()\n        print(\"Connected to vehicle.\")",
+        "detail": "extras_boat.changing_modes",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "extras_boat.changing_modes",
+        "description": "extras_boat.changing_modes",
+        "peekOfCode": "def menu():\n    print(\"\\nBoat Controller Menu\")\n    print(\"1. Check current mode\")\n    print(\"2. Set mode to MANUAL\")\n    print(\"3. Set mode to GUIDED\")\n    print(\"4. Set mode to AUTO\")\n    print(\"5. Set mode to LOITER\")\n    print(\"6. Arm vehicle\")\n    print(\"0. Exit\")\nif __name__ == \"__main__\":",
+        "detail": "extras_boat.changing_modes",
+        "documentation": {}
+    },
+    {
+        "label": "read_compass_heading",
+        "kind": 2,
+        "importPath": "extras_boat.compas",
+        "description": "extras_boat.compas",
+        "peekOfCode": "def read_compass_heading(master):\n    master.mav.request_data_stream_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_DATA_STREAM_ALL,\n        1, 1\n    )\n    print(\"Waiting for compass heading data...\")\n    while True:\n        message = master.recv_match(type='VFR_HUD', blocking=True)",
+        "detail": "extras_boat.compas",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.compas",
+        "description": "extras_boat.compas",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:192.168.2.1:14550')\nmaster.wait_heartbeat()\ndef read_compass_heading(master):\n    master.mav.request_data_stream_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_DATA_STREAM_ALL,\n        1, 1\n    )\n    print(\"Waiting for compass heading data...\")",
+        "detail": "extras_boat.compas",
+        "documentation": {}
+    },
+    {
+        "label": "heading",
+        "kind": 5,
+        "importPath": "extras_boat.compas",
+        "description": "extras_boat.compas",
+        "peekOfCode": "heading = read_compass_heading(master)\nprint(f\"Normalized compass heading (0 degrees is North): {heading} degrees\")",
+        "detail": "extras_boat.compas",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.disarm",
+        "description": "extras_boat.disarm",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\n# Wait for the first heartbeat to ensure the connection is established\nmaster.wait_heartbeat()\nprint(\"Connection established!\")\n# Send disarm command\nmaster.mav.command_long_send(\n    master.target_system,\n    master.target_component,\n    mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n    0,  # Confirmation",
+        "detail": "extras_boat.disarm",
+        "documentation": {}
+    },
+    {
+        "label": "timeout",
+        "kind": 5,
+        "importPath": "extras_boat.disarm",
+        "description": "extras_boat.disarm",
+        "peekOfCode": "timeout = time.time() + 10  # 10 seconds timeout\ndisarmed = False\nwhile not disarmed and time.time() < timeout:\n    heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)\n    if heartbeat:\n        disarmed = not (heartbeat.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED)\n        if disarmed:\n            print('Vehicle is disarmed!')\n            break\nif not disarmed:",
+        "detail": "extras_boat.disarm",
+        "documentation": {}
+    },
+    {
+        "label": "disarmed",
+        "kind": 5,
+        "importPath": "extras_boat.disarm",
+        "description": "extras_boat.disarm",
+        "peekOfCode": "disarmed = False\nwhile not disarmed and time.time() < timeout:\n    heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)\n    if heartbeat:\n        disarmed = not (heartbeat.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED)\n        if disarmed:\n            print('Vehicle is disarmed!')\n            break\nif not disarmed:\n    print('Failed to disarm the vehicle. Check vehicle status and conditions.')",
+        "detail": "extras_boat.disarm",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.follow_me",
+        "description": "extras_boat.follow_me",
+        "peekOfCode": "def arm_vehicle():\n    # Try to arm the vehicle\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    # Wait and check for arming confirmation\n    print(\"Attempting to arm the vehicle...\")",
+        "detail": "extras_boat.follow_me",
+        "documentation": {}
+    },
+    {
+        "label": "set_guided_mode",
+        "kind": 2,
+        "importPath": "extras_boat.follow_me",
+        "description": "extras_boat.follow_me",
+        "peekOfCode": "def set_guided_mode():\n    mode = 'GUIDED'\n    if mode not in master.mode_mapping():\n        print(f\"Mode {mode} not found in mode mapping. Exiting...\")\n        return False\n    mode_id = master.mode_mapping()[mode]\n    print(f\"Setting mode to GUIDED with mode_id {mode_id}\")\n    # Ensure vehicle is disarmed before setting mode\n    master.mav.command_long_send(\n        master.target_system,",
+        "detail": "extras_boat.follow_me",
+        "documentation": {}
+    },
+    {
+        "label": "get_initial_position",
+        "kind": 2,
+        "importPath": "extras_boat.follow_me",
+        "description": "extras_boat.follow_me",
+        "peekOfCode": "def get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:\n        msg = master.recv_match(type='GLOBAL_POSITION_INT', blocking=True)\n        if msg:\n            initial_lat = msg.lat / 1e7\n            initial_lon = msg.lon / 1e7\n            print(f\"Initial position: lat={initial_lat}, lon={initial_lon}\")\n            return initial_lat, initial_lon\ndef send_position_target(lat, lon, alt=0):",
+        "detail": "extras_boat.follow_me",
+        "documentation": {}
+    },
+    {
+        "label": "send_position_target",
+        "kind": 2,
+        "importPath": "extras_boat.follow_me",
+        "description": "extras_boat.follow_me",
+        "peekOfCode": "def send_position_target(lat, lon, alt=0):\n    # Send the position target to the vehicle\n    master.mav.set_position_target_global_int_send(\n        0,                         # time_boot_ms\n        master.target_system,      # target_system\n        master.target_component,   # target_component\n        mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame\n        0b0000111111111000,        # type_mask (only positions enabled)\n        int(lat * 1e7),            # lat_int - X Position in WGS84 frame in 1e7 * degrees\n        int(lon * 1e7),            # lon_int - Y Position in WGS84 frame in 1e7 * degrees",
+        "detail": "extras_boat.follow_me",
+        "documentation": {}
+    },
+    {
+        "label": "follow_me",
+        "kind": 2,
+        "importPath": "extras_boat.follow_me",
+        "description": "extras_boat.follow_me",
+        "peekOfCode": "def follow_me(initial_lat, initial_lon):\n    # Convert meters to degrees\n    meter_to_lat = 1 / 111320\n    meter_to_lon = 1 / (111320 * math.cos(math.radians(initial_lat)))\n    # Target position 10 meters north and 10 meters east of the initial position\n    target_lat = initial_lat + 10 * meter_to_lat\n    target_lon = initial_lon + 10 * meter_to_lon\n    current_lat = initial_lat\n    current_lon = initial_lon\n    # Number of steps to move to the target",
+        "detail": "extras_boat.follow_me",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.follow_me",
+        "description": "extras_boat.follow_me",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\n# Wait for the heartbeat message to find the system ID\nmaster.wait_heartbeat()\ndef arm_vehicle():\n    # Try to arm the vehicle\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,",
+        "detail": "extras_boat.follow_me",
+        "documentation": {}
+    },
+    {
+        "label": "KalmanFilter",
+        "kind": 6,
+        "importPath": "extras_boat.fuse_imu_compass",
+        "description": "extras_boat.fuse_imu_compass",
+        "peekOfCode": "class KalmanFilter:\n    def __init__(self, process_variance, measurement_variance):\n        self.process_variance = process_variance\n        self.measurement_variance = measurement_variance\n        self.estimate = 0.0\n        self.estimate_error = 1.0\n    def update(self, measurement):\n        kalman_gain = self.estimate_error / (self.estimate_error + self.measurement_variance)\n        self.estimate = self.estimate + kalman_gain * (measurement - self.estimate)\n        self.estimate_error = (1 - kalman_gain) * self.estimate_error + abs(self.estimate) * self.process_variance",
+        "detail": "extras_boat.fuse_imu_compass",
+        "documentation": {}
+    },
+    {
+        "label": "get_imu_data",
+        "kind": 2,
+        "importPath": "extras_boat.fuse_imu_compass",
+        "description": "extras_boat.fuse_imu_compass",
+        "peekOfCode": "def get_imu_data(master):\n    data = {}\n    while True:\n        message = master.recv_match(type=['ATTITUDE', 'RAW_IMU'], blocking=True)\n        if message:\n            msg_type = message.get_type()\n            data[msg_type] = message.to_dict()\n            if \"ATTITUDE\" in data and \"RAW_IMU\" in data:\n                return data\ndef read_compass_heading(master):",
+        "detail": "extras_boat.fuse_imu_compass",
+        "documentation": {}
+    },
+    {
+        "label": "read_compass_heading",
+        "kind": 2,
+        "importPath": "extras_boat.fuse_imu_compass",
+        "description": "extras_boat.fuse_imu_compass",
+        "peekOfCode": "def read_compass_heading(master):\n    while True:\n        message = master.recv_match(type='VFR_HUD', blocking=True)\n        if message:\n            heading = message.heading % 360\n            return heading\ndef main():\n    master = mavutil.mavlink_connection('udpin:192.168.2.1:14550')\n    master.wait_heartbeat()\n    roll_kf = KalmanFilter(process_variance=1e-5, measurement_variance=1e-2)",
+        "detail": "extras_boat.fuse_imu_compass",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "extras_boat.fuse_imu_compass",
+        "description": "extras_boat.fuse_imu_compass",
+        "peekOfCode": "def main():\n    master = mavutil.mavlink_connection('udpin:192.168.2.1:14550')\n    master.wait_heartbeat()\n    roll_kf = KalmanFilter(process_variance=1e-5, measurement_variance=1e-2)\n    heading_kf = KalmanFilter(process_variance=1e-5, measurement_variance=1e-2)\n    while True:\n        data = get_imu_data(master)\n        if \"ATTITUDE\" not in data:\n            print(\"No ATTITUDE data\")\n            continue",
+        "detail": "extras_boat.fuse_imu_compass",
+        "documentation": {}
+    },
+    {
+        "label": "log_file_path",
+        "kind": 5,
+        "importPath": "extras_boat.log_tele",
+        "description": "extras_boat.log_tele",
+        "peekOfCode": "log_file_path = 'aggregated_telemetry.log'\nlogger = logging.getLogger('TelemetryLogger')\nlogger.setLevel(logging.INFO)\nhandler = RotatingFileHandler(log_file_path, maxBytes=5*1024*1024, backupCount=5)\nhandler.setFormatter(logging.Formatter('%(message)s'))\nlogger.addHandler(handler)\nmaster = mavutil.mavlink_connection('udp:127.0.0.1:14550')\naggregated_data = {}\naggregation_interval = 1  \nlast_aggregation_time = time.time()",
+        "detail": "extras_boat.log_tele",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "extras_boat.log_tele",
+        "description": "extras_boat.log_tele",
+        "peekOfCode": "logger = logging.getLogger('TelemetryLogger')\nlogger.setLevel(logging.INFO)\nhandler = RotatingFileHandler(log_file_path, maxBytes=5*1024*1024, backupCount=5)\nhandler.setFormatter(logging.Formatter('%(message)s'))\nlogger.addHandler(handler)\nmaster = mavutil.mavlink_connection('udp:127.0.0.1:14550')\naggregated_data = {}\naggregation_interval = 1  \nlast_aggregation_time = time.time()\ntry:",
+        "detail": "extras_boat.log_tele",
+        "documentation": {}
+    },
+    {
+        "label": "handler",
+        "kind": 5,
+        "importPath": "extras_boat.log_tele",
+        "description": "extras_boat.log_tele",
+        "peekOfCode": "handler = RotatingFileHandler(log_file_path, maxBytes=5*1024*1024, backupCount=5)\nhandler.setFormatter(logging.Formatter('%(message)s'))\nlogger.addHandler(handler)\nmaster = mavutil.mavlink_connection('udp:127.0.0.1:14550')\naggregated_data = {}\naggregation_interval = 1  \nlast_aggregation_time = time.time()\ntry:\n    while True:\n        msg = master.recv_match(blocking=True)",
+        "detail": "extras_boat.log_tele",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.log_tele",
+        "description": "extras_boat.log_tele",
+        "peekOfCode": "master = mavutil.mavlink_connection('udp:127.0.0.1:14550')\naggregated_data = {}\naggregation_interval = 1  \nlast_aggregation_time = time.time()\ntry:\n    while True:\n        msg = master.recv_match(blocking=True)\n        if msg:\n            msg_dict = msg.to_dict()\n            message_type = msg.get_type()",
+        "detail": "extras_boat.log_tele",
+        "documentation": {}
+    },
+    {
+        "label": "aggregated_data",
+        "kind": 5,
+        "importPath": "extras_boat.log_tele",
+        "description": "extras_boat.log_tele",
+        "peekOfCode": "aggregated_data = {}\naggregation_interval = 1  \nlast_aggregation_time = time.time()\ntry:\n    while True:\n        msg = master.recv_match(blocking=True)\n        if msg:\n            msg_dict = msg.to_dict()\n            message_type = msg.get_type()\n            aggregated_data[message_type] = msg_dict",
+        "detail": "extras_boat.log_tele",
+        "documentation": {}
+    },
+    {
+        "label": "aggregation_interval",
+        "kind": 5,
+        "importPath": "extras_boat.log_tele",
+        "description": "extras_boat.log_tele",
+        "peekOfCode": "aggregation_interval = 1  \nlast_aggregation_time = time.time()\ntry:\n    while True:\n        msg = master.recv_match(blocking=True)\n        if msg:\n            msg_dict = msg.to_dict()\n            message_type = msg.get_type()\n            aggregated_data[message_type] = msg_dict\n            current_time = time.time()",
+        "detail": "extras_boat.log_tele",
+        "documentation": {}
+    },
+    {
+        "label": "last_aggregation_time",
+        "kind": 5,
+        "importPath": "extras_boat.log_tele",
+        "description": "extras_boat.log_tele",
+        "peekOfCode": "last_aggregation_time = time.time()\ntry:\n    while True:\n        msg = master.recv_match(blocking=True)\n        if msg:\n            msg_dict = msg.to_dict()\n            message_type = msg.get_type()\n            aggregated_data[message_type] = msg_dict\n            current_time = time.time()\n            if current_time - last_aggregation_time >= aggregation_interval:",
+        "detail": "extras_boat.log_tele",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps",
+        "description": "extras_boat.loop_mission_planner_gps",
+        "peekOfCode": "def arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")\n    timeout = time.time() + 10  # 10 second timeout for arming\n    armed = False",
+        "detail": "extras_boat.loop_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "set_guided_mode",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps",
+        "description": "extras_boat.loop_mission_planner_gps",
+        "peekOfCode": "def set_guided_mode():\n    mode = 'GUIDED'\n    if mode not in master.mode_mapping():\n        print(f\"Mode {mode} not found in mode mapping. Exiting...\")\n        return\n    mode_id = master.mode_mapping()[mode]\n    master.set_mode(mode_id)\n    print(\"Mode set to GUIDED.\")\ndef get_initial_position():\n    print(\"Waiting for GPS position...\")",
+        "detail": "extras_boat.loop_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "get_initial_position",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps",
+        "description": "extras_boat.loop_mission_planner_gps",
+        "peekOfCode": "def get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:\n        msg = master.recv_match(type='GLOBAL_POSITION_INT', blocking=True)\n        if msg:\n            initial_lat = msg.lat / 1e7\n            initial_lon = msg.lon / 1e7\n            print(f\"Initial position: lat={initial_lat}, lon={initial_lon}\")\n            return initial_lat, initial_lon\ndef send_target_position(lat, lon):",
+        "detail": "extras_boat.loop_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "send_target_position",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps",
+        "description": "extras_boat.loop_mission_planner_gps",
+        "peekOfCode": "def send_target_position(lat, lon):\n    # Send the target position to the vehicle\n    master.mav.set_position_target_global_int_send(\n        0,                         # time_boot_ms\n        master.target_system,      # target_system\n        master.target_component,   # target_component\n        mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame\n        0b0000111111111000,        # type_mask (only positions enabled)\n        int(lat * 1e7),            # lat_int - X Position in WGS84 frame in 1e7 * degrees\n        int(lon * 1e7),            # lon_int - Y Position in WGS84 frame in 1e7 * degrees",
+        "detail": "extras_boat.loop_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "follow_target_positions",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps",
+        "description": "extras_boat.loop_mission_planner_gps",
+        "peekOfCode": "def follow_target_positions(initial_lat, initial_lon, positions):\n    for idx, (x, y) in enumerate(positions):\n        lat = initial_lat + (y / 111320)  # Latitude degree per meter\n        lon = initial_lon + (x / (40075000 * (1 / 360) * math.cos(math.radians(initial_lat))))  # Longitude degree per meter\n        send_target_position(lat, lon)\n        print(f\"Sent target position {idx + 1}/{len(positions)}: lat={lat}, lon={lon}\")\n        # Wait for the Blueboat to reach the position with a timeout\n        start_time = time.time()\n        timeout = 60  \n        while time.time() - start_time < timeout:",
+        "detail": "extras_boat.loop_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "main_loop",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps",
+        "description": "extras_boat.loop_mission_planner_gps",
+        "peekOfCode": "def main_loop():\n    initial_lat, initial_lon = get_initial_position()\n    print(\"Entering main loop. Waiting for new target positions...\")\n    while True:\n        user_input = input(\"Enter target positions as 'x1,y1;x2,y2;...': \")\n        positions = []\n        if user_input.strip():\n            try:\n                pairs = user_input.split(';')\n                for pair in pairs:",
+        "detail": "extras_boat.loop_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.loop_mission_planner_gps",
+        "description": "extras_boat.loop_mission_planner_gps",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nmaster.wait_heartbeat()\ndef arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")",
+        "detail": "extras_boat.loop_mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "description": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "peekOfCode": "def arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")\n    timeout = time.time() + 10  # 10 second timeout for arming\n    armed = False",
+        "detail": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "set_mode",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "description": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "peekOfCode": "def set_mode(mode_name):\n    if mode_name not in master.mode_mapping():\n        print(f\"Mode {mode_name} not found in mode mapping. Exiting...\")\n        return\n    mode_id = master.mode_mapping()[mode_name]\n    master.set_mode(mode_id)\n    print(f\"Mode set to {mode_name}.\")\ndef get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:",
+        "detail": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "get_initial_position",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "description": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "peekOfCode": "def get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:\n        msg = master.recv_match(type='GLOBAL_POSITION_INT', blocking=True)\n        if msg:\n            initial_lat = msg.lat / 1e7\n            initial_lon = msg.lon / 1e7\n            print(f\"Initial position: lat={initial_lat}, lon={initial_lon}\")\n            return initial_lat, initial_lon\ndef send_target_position(lat, lon):",
+        "detail": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "send_target_position",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "description": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "peekOfCode": "def send_target_position(lat, lon):\n    # Send the target position to the vehicle\n    master.mav.set_position_target_global_int_send(\n        0,                         # time_boot_ms\n        master.target_system,      # target_system\n        master.target_component,   # target_component\n        mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame\n        0b0000111111111000,        # type_mask (only positions enabled)\n        int(lat * 1e7),            # lat_int - X Position in WGS84 frame in 1e7 * degrees\n        int(lon * 1e7),            # lon_int - Y Position in WGS84 frame in 1e7 * degrees",
+        "detail": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "follow_target_positions",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "description": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "peekOfCode": "def follow_target_positions(initial_lat, initial_lon, positions):\n    for idx, (x, y) in enumerate(positions):\n        lat = initial_lat + (y / 111320)  # Latitude degree per meter\n        lon = initial_lon + (x / (40075000 * (1 / 360) * math.cos(math.radians(initial_lat))))  # Longitude degree per meter\n        send_target_position(lat, lon)\n        print(f\"Sent target position {idx + 1}/{len(positions)}: lat={lat}, lon={lon}\")\n        # Wait for the Blueboat to reach the position with a timeout\n        start_time = time.time()\n        timeout = 60  \n        while time.time() - start_time < timeout:",
+        "detail": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "main_loop",
+        "kind": 2,
+        "importPath": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "description": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "peekOfCode": "def main_loop():\n    initial_lat, initial_lon = get_initial_position()\n    print(\"Entering main loop. Waiting for new target positions...\")\n    while True:\n        user_input = input(\"Enter target positions as 'x1,y1;x2,y2;...': \")\n        positions = []\n        if user_input.strip():\n            try:\n                pairs = user_input.split(';')\n                for pair in pairs:",
+        "detail": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "description": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nmaster.wait_heartbeat()\ndef arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")",
+        "detail": "extras_boat.loop_mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "BoatController",
+        "kind": 6,
+        "importPath": "extras_boat.marvel_fake_gps_modes",
+        "description": "extras_boat.marvel_fake_gps_modes",
+        "peekOfCode": "class BoatController:\n    def __init__(self, connection_string):\n        self.connection_string = connection_string\n        self.conn = None\n        self.running = False\n    def connect(self):\n        # Create the connection\n        if not self.conn:\n            self.conn = mavutil.mavlink_connection(self.connection_string)\n            # Wait for a heartbeat before sending commands",
+        "detail": "extras_boat.marvel_fake_gps_modes",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "extras_boat.marvel_fake_gps_modes",
+        "description": "extras_boat.marvel_fake_gps_modes",
+        "peekOfCode": "def menu():\n    print(\"\\nBoat Controller Menu\")\n    print(\"1. Check current mode\")\n    print(\"2. Set mode to MANUAL\")\n    print(\"3. Set mode to GUIDED\")\n    print(\"4. Set mode to AUTO\")\n    print(\"5. Set mode to LOITER\")\n    print(\"6. Arm vehicle\")\n    print(\"7. Disarm vehicle\")\n    print(\"8. Get current position\")",
+        "detail": "extras_boat.marvel_fake_gps_modes",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps",
+        "description": "extras_boat.mission_planner_gps",
+        "peekOfCode": "def arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")\n    timeout = time.time() + 10  # 10 second timeout for arming\n    armed = False",
+        "detail": "extras_boat.mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "set_guided_mode",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps",
+        "description": "extras_boat.mission_planner_gps",
+        "peekOfCode": "def set_guided_mode():\n    mode = 'GUIDED'\n    if mode not in master.mode_mapping():\n        print(f\"Mode {mode} not found in mode mapping. Exiting...\")\n        return\n    mode_id = master.mode_mapping()[mode]\n    master.set_mode(mode_id)\n    print(\"Mode set to GUIDED.\")\ndef get_initial_position():\n    print(\"Waiting for GPS position...\")",
+        "detail": "extras_boat.mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "get_initial_position",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps",
+        "description": "extras_boat.mission_planner_gps",
+        "peekOfCode": "def get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:\n        msg = master.recv_match(type='GLOBAL_POSITION_INT', blocking=True)\n        if msg:\n            initial_lat = msg.lat / 1e7\n            initial_lon = msg.lon / 1e7\n            print(f\"Initial position: lat={initial_lat}, lon={initial_lon}\")\n            return initial_lat, initial_lon\ndef send_target_position(lat, lon):",
+        "detail": "extras_boat.mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "send_target_position",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps",
+        "description": "extras_boat.mission_planner_gps",
+        "peekOfCode": "def send_target_position(lat, lon):\n    # Send the target position to the vehicle\n    master.mav.set_position_target_global_int_send(\n        0,                         # time_boot_ms\n        master.target_system,      # target_system\n        master.target_component,   # target_component\n        mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame\n        0b0000111111111000,        # type_mask (only positions enabled)\n        int(lat * 1e7),            # lat_int - X Position in WGS84 frame in 1e7 * degrees\n        int(lon * 1e7),            # lon_int - Y Position in WGS84 frame in 1e7 * degrees",
+        "detail": "extras_boat.mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "follow_target_positions",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps",
+        "description": "extras_boat.mission_planner_gps",
+        "peekOfCode": "def follow_target_positions(initial_lat, initial_lon):\n    # mission sequence to follow (in meters) for Boat\n    positions = [(0, 0), (5, 5), (0, 0), (10, -10), (-5, 5), (0, 0), (30, 30), (0, 0)]  # Positions in meters\n    for idx, (x, y) in enumerate(positions):\n        lat = initial_lat + (y / 111320)  # Latitude degree per meter\n        lon = initial_lon + (x / (40075000 * (1 / 360) * math.cos(math.radians(initial_lat))))  # Longitude degree per meter\n        send_target_position(lat, lon)\n        print(f\"Sent target position {idx + 1}/{len(positions)}: lat={lat}, lon={lon}\")\n        # Wait for the rover to reach the position with a timeout\n        start_time = time.time()",
+        "detail": "extras_boat.mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.mission_planner_gps",
+        "description": "extras_boat.mission_planner_gps",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550') \nmaster.wait_heartbeat()\ndef arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")",
+        "detail": "extras_boat.mission_planner_gps",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps_dynamic_position",
+        "description": "extras_boat.mission_planner_gps_dynamic_position",
+        "peekOfCode": "def arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")\n    timeout = time.time() + 10  # 10 second timeout for arming\n    armed = False",
+        "detail": "extras_boat.mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "set_mode",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps_dynamic_position",
+        "description": "extras_boat.mission_planner_gps_dynamic_position",
+        "peekOfCode": "def set_mode(mode_name):\n    if mode_name not in master.mode_mapping():\n        print(f\"Mode {mode_name} not found in mode mapping. Exiting...\")\n        return\n    mode_id = master.mode_mapping()[mode_name]\n    master.set_mode(mode_id)\n    print(f\"Mode set to {mode_name}.\")\ndef get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:",
+        "detail": "extras_boat.mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "get_initial_position",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps_dynamic_position",
+        "description": "extras_boat.mission_planner_gps_dynamic_position",
+        "peekOfCode": "def get_initial_position():\n    print(\"Waiting for GPS position...\")\n    while True:\n        msg = master.recv_match(type='GLOBAL_POSITION_INT', blocking=True)\n        if msg:\n            initial_lat = msg.lat / 1e7\n            initial_lon = msg.lon / 1e7\n            print(f\"Initial position: lat={initial_lat}, lon={initial_lon}\")\n            return initial_lat, initial_lon\ndef send_target_position(lat, lon):",
+        "detail": "extras_boat.mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "send_target_position",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps_dynamic_position",
+        "description": "extras_boat.mission_planner_gps_dynamic_position",
+        "peekOfCode": "def send_target_position(lat, lon):\n    # Send the target position to the vehicle\n    master.mav.set_position_target_global_int_send(\n        0,                         # time_boot_ms\n        master.target_system,      # target_system\n        master.target_component,   # target_component\n        mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame\n        0b0000111111111000,        # type_mask (only positions enabled)\n        int(lat * 1e7),            # lat_int - X Position in WGS84 frame in 1e7 * degrees\n        int(lon * 1e7),            # lon_int - Y Position in WGS84 frame in 1e7 * degrees",
+        "detail": "extras_boat.mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "follow_target_positions",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps_dynamic_position",
+        "description": "extras_boat.mission_planner_gps_dynamic_position",
+        "peekOfCode": "def follow_target_positions(initial_lat, initial_lon, positions):\n    for idx, (x, y) in enumerate(positions):\n        lat = initial_lat + (y / 111320)  # Latitude degree per meter\n        lon = initial_lon + (x / (40075000 * (1 / 360) * math.cos(math.radians(initial_lat))))  # Longitude degree per meter\n        send_target_position(lat, lon)\n        print(f\"Sent target position {idx + 1}/{len(positions)}: lat={lat}, lon={lon}\")\n        # Wait for the Blueboat to reach the position with a timeout\n        start_time = time.time()\n        timeout = 60  \n        while time.time() - start_time < timeout:",
+        "detail": "extras_boat.mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "main_loop",
+        "kind": 2,
+        "importPath": "extras_boat.mission_planner_gps_dynamic_position",
+        "description": "extras_boat.mission_planner_gps_dynamic_position",
+        "peekOfCode": "def main_loop():\n    initial_lat, initial_lon = get_initial_position()\n    print(\"Entering main loop. Waiting for new target positions...\")\n    while True:\n        user_input = input(\"Enter target positions as 'x1,y1;x2,y2;...': \")\n        positions = []\n        if user_input.strip():\n            try:\n                pairs = user_input.split(';')\n                for pair in pairs:",
+        "detail": "extras_boat.mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.mission_planner_gps_dynamic_position",
+        "description": "extras_boat.mission_planner_gps_dynamic_position",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nmaster.wait_heartbeat()\ndef arm_vehicle():\n    master.mav.command_long_send(\n        master.target_system,\n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,\n        1, 0, 0, 0, 0, 0, 0)\n    print(\"Attempting to arm the vehicle...\")",
+        "detail": "extras_boat.mission_planner_gps_dynamic_position",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.print_json",
+        "description": "extras_boat.print_json",
+        "peekOfCode": "master = mavutil.mavlink_connection('udp:127.0.0.1:14550')\naggregated_data = {}\naggregation_interval = 1  # Adjust as needed\nlast_aggregation_time = time.time()\nwhile True:\n    msg = master.recv_match(blocking=True)\n    if msg:\n        msg_dict = msg.to_dict()\n        message_type = msg.get_type()\n        aggregated_data[message_type] = msg_dict",
+        "detail": "extras_boat.print_json",
+        "documentation": {}
+    },
+    {
+        "label": "aggregated_data",
+        "kind": 5,
+        "importPath": "extras_boat.print_json",
+        "description": "extras_boat.print_json",
+        "peekOfCode": "aggregated_data = {}\naggregation_interval = 1  # Adjust as needed\nlast_aggregation_time = time.time()\nwhile True:\n    msg = master.recv_match(blocking=True)\n    if msg:\n        msg_dict = msg.to_dict()\n        message_type = msg.get_type()\n        aggregated_data[message_type] = msg_dict\n        current_time = time.time()",
+        "detail": "extras_boat.print_json",
+        "documentation": {}
+    },
+    {
+        "label": "aggregation_interval",
+        "kind": 5,
+        "importPath": "extras_boat.print_json",
+        "description": "extras_boat.print_json",
+        "peekOfCode": "aggregation_interval = 1  # Adjust as needed\nlast_aggregation_time = time.time()\nwhile True:\n    msg = master.recv_match(blocking=True)\n    if msg:\n        msg_dict = msg.to_dict()\n        message_type = msg.get_type()\n        aggregated_data[message_type] = msg_dict\n        current_time = time.time()\n        if current_time - last_aggregation_time >= aggregation_interval:",
+        "detail": "extras_boat.print_json",
+        "documentation": {}
+    },
+    {
+        "label": "last_aggregation_time",
+        "kind": 5,
+        "importPath": "extras_boat.print_json",
+        "description": "extras_boat.print_json",
+        "peekOfCode": "last_aggregation_time = time.time()\nwhile True:\n    msg = master.recv_match(blocking=True)\n    if msg:\n        msg_dict = msg.to_dict()\n        message_type = msg.get_type()\n        aggregated_data[message_type] = msg_dict\n        current_time = time.time()\n        if current_time - last_aggregation_time >= aggregation_interval:\n            print(json.dumps(aggregated_data, indent=2))",
+        "detail": "extras_boat.print_json",
+        "documentation": {}
+    },
+    {
+        "label": "set_mode",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control",
+        "description": "extras_boat.pwm_control",
+        "peekOfCode": "def set_mode(master, mode):\n    mode_id = master.mode_mapping()[mode.upper()]\n    master.mav.set_mode_send(\n        master.target_system,\n        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,\n        mode_id)\n    # Check if mode has been set by listening to heartbeats\n    for _ in range(5):\n        heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)\n        current_mode = heartbeat.custom_mode",
+        "detail": "extras_boat.pwm_control",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control",
+        "description": "extras_boat.pwm_control",
+        "peekOfCode": "def arm_vehicle(master):\n    master.mav.command_long_send(\n        master.target_system, master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0, 1, 0, 0, 0, 0, 0, 0)\n    # Check for arming confirmation\n    print(\"Arming vehicle...\")\n    for _ in range(5):\n        heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)\n        if heartbeat.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED:",
+        "detail": "extras_boat.pwm_control",
+        "documentation": {}
+    },
+    {
+        "label": "send_rc_command",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control",
+        "description": "extras_boat.pwm_control",
+        "peekOfCode": "def send_rc_command(master, channels):\n    master.mav.rc_channels_override_send(\n        master.target_system, master.target_component,\n        channels[0], channels[1], channels[2], channels[3],\n        channels[4], channels[5], channels[6], channels[7])\ndef move_robot(master, thrust_left, thrust_right):\n    \"\"\"Control the robot's movement by setting the RC channels\"\"\"\n    # Convert thrust values to PWM values for channels 1 and 3\n    ch1_pwm = 1500 + (thrust_right - thrust_left)  # Thrust control for left/right\n    ch3_pwm = 1500 + ((thrust_left + thrust_right) // 2)  # Forward/backward control",
+        "detail": "extras_boat.pwm_control",
+        "documentation": {}
+    },
+    {
+        "label": "move_robot",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control",
+        "description": "extras_boat.pwm_control",
+        "peekOfCode": "def move_robot(master, thrust_left, thrust_right):\n    \"\"\"Control the robot's movement by setting the RC channels\"\"\"\n    # Convert thrust values to PWM values for channels 1 and 3\n    ch1_pwm = 1500 + (thrust_right - thrust_left)  # Thrust control for left/right\n    ch3_pwm = 1500 + ((thrust_left + thrust_right) // 2)  # Forward/backward control\n    # Clamp PWM values to valid range (1000 to 2000)\n    ch1_pwm = max(1100, min(1900, ch1_pwm))\n    ch3_pwm = max(1100, min(1900, ch3_pwm))\n    print (ch1_pwm, \", \", ch3_pwm)\n    master.mav.rc_channels_override_send(",
+        "detail": "extras_boat.pwm_control",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control",
+        "description": "extras_boat.pwm_control",
+        "peekOfCode": "def main():\n    if not arm_vehicle(master):\n        return\n    if not set_mode(master, 'MANUAL'):\n        print(\"Failed to set mode to MANUAL.\")\n        return\n    try:\n        while True:\n            cmd = input(\"Enter command (1: Forward, 2: Back, 3: Left, 4: Right, 0: Stop, q: Quit): \")\n            if cmd == 'q':",
+        "detail": "extras_boat.pwm_control",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.pwm_control",
+        "description": "extras_boat.pwm_control",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nprint(\"Waiting for Heartbeat\")\nmaster.wait_heartbeat()\nprint(\"Heartbeat received\")\n# Function to check and set mode\ndef set_mode(master, mode):\n    mode_id = master.mode_mapping()[mode.upper()]\n    master.mav.set_mode_send(\n        master.target_system,\n        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,",
+        "detail": "extras_boat.pwm_control",
+        "documentation": {}
+    },
+    {
+        "label": "set_mode",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control_servo_out",
+        "description": "extras_boat.pwm_control_servo_out",
+        "peekOfCode": "def set_mode(master, mode):\n    \"\"\"\n    Sets the flight mode by name (e.g., 'MANUAL', 'STABILIZE', etc.)\n    Returns True if successful, False otherwise.\n    \"\"\"\n    mode = mode.upper()\n    mode_mapping = master.mode_mapping()\n    if mode not in mode_mapping:\n        print(f\"Mode '{mode}' is not available on this vehicle.\")\n        return False",
+        "detail": "extras_boat.pwm_control_servo_out",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control_servo_out",
+        "description": "extras_boat.pwm_control_servo_out",
+        "peekOfCode": "def arm_vehicle(master):\n    \"\"\"\n    Arms the vehicle and waits for confirmation via HEARTBEAT message.\n    Returns True if armed, False otherwise.\n    \"\"\"\n    master.mav.command_long_send(\n        master.target_system, \n        master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0,",
+        "detail": "extras_boat.pwm_control_servo_out",
+        "documentation": {}
+    },
+    {
+        "label": "send_rc_command",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control_servo_out",
+        "description": "extras_boat.pwm_control_servo_out",
+        "peekOfCode": "def send_rc_command(master, channels):\n    \"\"\"\n    Overrides 8 RC channels with the values in 'channels' list.\n    Values must be integers. 1500 is neutral/stop, 1000/2000 extremes, etc.\n    \"\"\"\n    master.mav.rc_channels_override_send(\n        master.target_system, master.target_component,\n        channels[0], channels[1], channels[2], channels[3],\n        channels[4], channels[5], channels[6], channels[7]\n    )",
+        "detail": "extras_boat.pwm_control_servo_out",
+        "documentation": {}
+    },
+    {
+        "label": "move_robot",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control_servo_out",
+        "description": "extras_boat.pwm_control_servo_out",
+        "peekOfCode": "def move_robot(master, thrust_left, thrust_right):\n    \"\"\"\n    Example function to demonstrate custom movement logic by combining thrust values.\n    This sets channel 1 and 3 in a simplified \"differential thrust\" manner.\n    \"\"\"\n    # Convert thrust values to (example) PWM values\n    ch1_pwm = 1500 + (thrust_right - thrust_left)  \n    ch3_pwm = 1500 + ((thrust_left + thrust_right) // 2)\n    # Clamp PWM values to valid range (1100 to 1900 for safety)\n    ch1_pwm = max(1100, min(1900, ch1_pwm))",
+        "detail": "extras_boat.pwm_control_servo_out",
+        "documentation": {}
+    },
+    {
+        "label": "print_servo_outputs",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control_servo_out",
+        "description": "extras_boat.pwm_control_servo_out",
+        "peekOfCode": "def print_servo_outputs(master):\n    \"\"\"\n    Continuously reads MAVLink messages and prints only SERVO_OUTPUT_RAW\n    in \"1: val, 2: val, ...\" format every 0.1s in a background thread.\n    \"\"\"\n    while True:\n        msg = master.recv_match()\n        if msg:\n            if msg.get_type() == 'SERVO_OUTPUT_RAW':\n                servo_dict = msg.to_dict()",
+        "detail": "extras_boat.pwm_control_servo_out",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "extras_boat.pwm_control_servo_out",
+        "description": "extras_boat.pwm_control_servo_out",
+        "peekOfCode": "def main():\n    # Start a background thread that prints SERVO_OUTPUT_RAW\n    t = threading.Thread(target=print_servo_outputs, args=(master,), daemon=True)\n    t.start()\n    # Arm the vehicle\n    if not arm_vehicle(master):\n        return\n    # Set flight mode to MANUAL\n    if not set_mode(master, 'MANUAL'):\n        print(\"Failed to set mode to MANUAL.\")",
+        "detail": "extras_boat.pwm_control_servo_out",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.pwm_control_servo_out",
+        "description": "extras_boat.pwm_control_servo_out",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nprint(\"Waiting for Heartbeat\")\nmaster.wait_heartbeat()\nprint(\"Heartbeat received\")\n# Function to check and set mode\ndef set_mode(master, mode):\n    \"\"\"\n    Sets the flight mode by name (e.g., 'MANUAL', 'STABILIZE', etc.)\n    Returns True if successful, False otherwise.\n    \"\"\"",
+        "detail": "extras_boat.pwm_control_servo_out",
+        "documentation": {}
+    },
+    {
+        "label": "set_mode",
+        "kind": 2,
+        "importPath": "extras_boat.run_boat",
+        "description": "extras_boat.run_boat",
+        "peekOfCode": "def set_mode(master, mode):\n    mode_id = master.mode_mapping()[mode.upper()]\n    master.mav.set_mode_send(\n        master.target_system,\n        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,\n        mode_id)\n    # Check if mode has been set by listening to heartbeats\n    for _ in range(5):\n        heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)\n        current_mode = heartbeat.custom_mode",
+        "detail": "extras_boat.run_boat",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.run_boat",
+        "description": "extras_boat.run_boat",
+        "peekOfCode": "def arm_vehicle(master):\n    master.mav.command_long_send(\n        master.target_system, master.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        0, 1, 0, 0, 0, 0, 0, 0)\n    # Check for arming confirmation\n    print(\"Arming vehicle...\")\n    for _ in range(5):\n        heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)\n        if heartbeat.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED:",
+        "detail": "extras_boat.run_boat",
+        "documentation": {}
+    },
+    {
+        "label": "send_rc_command",
+        "kind": 2,
+        "importPath": "extras_boat.run_boat",
+        "description": "extras_boat.run_boat",
+        "peekOfCode": "def send_rc_command(master, channels):\n    master.mav.rc_channels_override_send(\n        master.target_system, master.target_component,\n        channels[0], channels[1], channels[2], channels[3],\n        channels[4], channels[5], channels[6], channels[7])\ndef main():\n    if not arm_vehicle(master):\n        return\n    if not set_mode(master, 'MANUAL'):\n        print(\"Failed to set mode to MANUAL.\")",
+        "detail": "extras_boat.run_boat",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "extras_boat.run_boat",
+        "description": "extras_boat.run_boat",
+        "peekOfCode": "def main():\n    if not arm_vehicle(master):\n        return\n    if not set_mode(master, 'MANUAL'):\n        print(\"Failed to set mode to MANUAL.\")\n        return\n    try:\n        while True:\n            cmd = input(\"Enter command (1: Forward, 2: Back, 3: Left, 4: Right, 0: Stop, q: Quit): \")\n            if cmd == 'q':",
+        "detail": "extras_boat.run_boat",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.run_boat",
+        "description": "extras_boat.run_boat",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nprint(\"Waiting for Heartbeat\")\nmaster.wait_heartbeat()\nprint(\"Heartbeat received\")\n# Function to check and set mode\ndef set_mode(master, mode):\n    mode_id = master.mode_mapping()[mode.upper()]\n    master.mav.set_mode_send(\n        master.target_system,\n        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,",
+        "detail": "extras_boat.run_boat",
+        "documentation": {}
+    },
+    {
+        "label": "is_armed",
+        "kind": 2,
+        "importPath": "extras_boat.status_arm_disarm",
+        "description": "extras_boat.status_arm_disarm",
+        "peekOfCode": "def is_armed(heartbeat):\n    return heartbeat.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED != 0\n# Continuously check and print armed status\ntry:\n    while True:\n        heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)\n        if heartbeat:\n            armed_status = \"Armed\" if is_armed(heartbeat) else \"Disarmed\"\n            print(f\"Vehicle is {armed_status}\")\n        time.sleep(1)  # Delay to limit the rate of messages",
+        "detail": "extras_boat.status_arm_disarm",
+        "documentation": {}
+    },
+    {
+        "label": "master",
+        "kind": 5,
+        "importPath": "extras_boat.status_arm_disarm",
+        "description": "extras_boat.status_arm_disarm",
+        "peekOfCode": "master = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\nmaster.wait_heartbeat()\nprint(\"Connection established!\")\n# Function to check if the vehicle is armed\ndef is_armed(heartbeat):\n    return heartbeat.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED != 0\n# Continuously check and print armed status\ntry:\n    while True:\n        heartbeat = master.recv_match(type='HEARTBEAT', blocking=True)",
+        "detail": "extras_boat.status_arm_disarm",
+        "documentation": {}
+    },
+    {
+        "label": "arm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "def arm_vehicle(conn):\n    \"\"\" Arms the vehicle \"\"\"\n    conn.mav.command_long_send(\n        conn.target_system, \n        conn.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        1,  # Confirmation\n        1,  # Param 1: 1 to arm, 0 to disarm\n        0, 0, 0, 0, 0, 0)\n    conn.motors_armed_wait()",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "disarm_vehicle",
+        "kind": 2,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "def disarm_vehicle(conn):\n    \"\"\" Disarms the vehicle \"\"\"\n    conn.mav.command_long_send(\n        conn.target_system, \n        conn.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,\n        1,  # Confirmation\n        0,  # Param 1: 1 to arm, 0 to disarm\n        0, 0, 0, 0, 0, 0)\n    conn.motors_disarmed_wait()",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "set_manual_mode",
+        "kind": 2,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "def set_manual_mode(conn):\n    conn.set_mode_apm(\"MANUAL\")\n    print(\"--- Vehicle set to manual mode ---\")\ndef send_motor_test(conn, motor_number, thrust_type, thrust_value, duration):\n    \"\"\"\n    https://mavlink.io/en/messages/common.html#MOTOR_TEST_THROTTLE_TYPE\n    Sends a MAV_CMD_DO_MOTOR_TEST command to the vehicle.\n    :param motor_number: Motor number (1-8 for an 8-thruster vehicle)\n    :param thrust_type: Thrust type (0 = Percent, 1 = PWM, 2 = Pilot, 3 = Control)\n    :param thrust_value: Thrust value (0.0 - 100.0 for percent)",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "send_motor_test",
+        "kind": 2,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "def send_motor_test(conn, motor_number, thrust_type, thrust_value, duration):\n    \"\"\"\n    https://mavlink.io/en/messages/common.html#MOTOR_TEST_THROTTLE_TYPE\n    Sends a MAV_CMD_DO_MOTOR_TEST command to the vehicle.\n    :param motor_number: Motor number (1-8 for an 8-thruster vehicle)\n    :param thrust_type: Thrust type (0 = Percent, 1 = PWM, 2 = Pilot, 3 = Control)\n    :param thrust_value: Thrust value (0.0 - 100.0 for percent)\n    :param duration: Duration of the motor test in seconds\n    \"\"\"\n    conn.mav.command_long_send(",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "conn = mavutil.mavlink_connection('udpin:0.0.0.0:14550')\n# Wait for the heartbeat message to find the system ID\nconn.wait_heartbeat()\nprint(\"Heartbeat from system (system %u component %u)\" % (conn.target_system, conn.target_component))\ndef arm_vehicle(conn):\n    \"\"\" Arms the vehicle \"\"\"\n    conn.mav.command_long_send(\n        conn.target_system, \n        conn.target_component,\n        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "num_thrusters",
+        "kind": 5,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "num_thrusters = 8\nthrust_type = 0  # 0 = Percent\nthrust_value = 50.0  # 50% thrust\nduration = 10  # 5 seconds for each test\nfor i in range(1, num_thrusters + 1):\n    print(f\"Testing motor {i}\")\n    send_motor_test(conn, i, thrust_type, thrust_value, duration)\n    time.sleep(duration + 1)  # Wait for the test to complete plus a buffer\n# Disarm the vehicle\ndisarm_vehicle(conn)",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "thrust_type",
+        "kind": 5,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "thrust_type = 0  # 0 = Percent\nthrust_value = 50.0  # 50% thrust\nduration = 10  # 5 seconds for each test\nfor i in range(1, num_thrusters + 1):\n    print(f\"Testing motor {i}\")\n    send_motor_test(conn, i, thrust_type, thrust_value, duration)\n    time.sleep(duration + 1)  # Wait for the test to complete plus a buffer\n# Disarm the vehicle\ndisarm_vehicle(conn)\nprint(\"Motor tests completed !!\")",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "thrust_value",
+        "kind": 5,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "thrust_value = 50.0  # 50% thrust\nduration = 10  # 5 seconds for each test\nfor i in range(1, num_thrusters + 1):\n    print(f\"Testing motor {i}\")\n    send_motor_test(conn, i, thrust_type, thrust_value, duration)\n    time.sleep(duration + 1)  # Wait for the test to complete plus a buffer\n# Disarm the vehicle\ndisarm_vehicle(conn)\nprint(\"Motor tests completed !!\")",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "duration",
+        "kind": 5,
+        "importPath": "extras_boat.test_motors",
+        "description": "extras_boat.test_motors",
+        "peekOfCode": "duration = 10  # 5 seconds for each test\nfor i in range(1, num_thrusters + 1):\n    print(f\"Testing motor {i}\")\n    send_motor_test(conn, i, thrust_type, thrust_value, duration)\n    time.sleep(duration + 1)  # Wait for the test to complete plus a buffer\n# Disarm the vehicle\ndisarm_vehicle(conn)\nprint(\"Motor tests completed !!\")",
+        "detail": "extras_boat.test_motors",
+        "documentation": {}
+    },
+    {
+        "label": "generate_launch_description",
+        "kind": 2,
+        "importPath": "move_blueboat.launch.launch_robot_simulation.launch",
+        "description": "move_blueboat.launch.launch_robot_simulation.launch",
+        "peekOfCode": "def generate_launch_description():\n    return LaunchDescription([\n        # Launch Gazebo simulation with environment variable\n        ExecuteProcess(\n            cmd=['gz', 'sim', '-r', '--headless-rendering', 'waves.sdf'],\n            output='screen'\n        ),\n        # Launch the Gazebo-ROS bridge\n        Node(\n            package='ros_ign_bridge',",
+        "detail": "move_blueboat.launch.launch_robot_simulation.launch",
+        "documentation": {}
+    },
+    {
+        "label": "generate_launch_description",
+        "kind": 2,
+        "importPath": "move_blueboat.launch.manual_control_boat_sim.launch",
+        "description": "move_blueboat.launch.manual_control_boat_sim.launch",
+        "peekOfCode": "def generate_launch_description():\n    joy_dev_argument = DeclareLaunchArgument(\n        'joy_dev',\n        default_value='/dev/input/js0',\n        description='Joystick device'\n    )\n    joystick_connected_argument = DeclareLaunchArgument(\n        'joystick_connected',\n        default_value='true',\n        description='Is the joystick physically connected?'",
+        "detail": "move_blueboat.launch.manual_control_boat_sim.launch",
+        "documentation": {}
+    },
+    {
+        "label": "CoordinateApp",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.coralguide_asv_mission_planner",
+        "description": "move_blueboat.move_blueboat.coralguide_asv_mission_planner",
+        "peekOfCode": "class CoordinateApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"CoralGuide Path Planner\")\n        self.grid_size = 50\n        self.step_size = 10\n        self.node_radius = 5\n        self.obstacle_radius = 1.0  # Diameter of 3 units\n        self.canvas_size = 500\n        self.center_x = self.canvas_size // 2",
+        "detail": "move_blueboat.move_blueboat.coralguide_asv_mission_planner",
+        "documentation": {}
+    },
+    {
+        "label": "WayASVController",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.dp_beacon_dvl_run_boat_waypoint",
+        "description": "move_blueboat.move_blueboat.dp_beacon_dvl_run_boat_waypoint",
+        "peekOfCode": "class WayASVController(Node):\n    def __init__(self):\n        super().__init__('way_asv_controller')\n        custom_qos = QoSProfile(\n            reliability=QoSReliabilityPolicy.RELIABLE,\n            durability=QoSDurabilityPolicy.TRANSIENT_LOCAL,\n            depth=10\n        )\n        # Reentrant callback group for multithreading\n        self.callback_group = ReentrantCallbackGroup()",
+        "detail": "move_blueboat.move_blueboat.dp_beacon_dvl_run_boat_waypoint",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.dp_beacon_dvl_run_boat_waypoint",
+        "description": "move_blueboat.move_blueboat.dp_beacon_dvl_run_boat_waypoint",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    way_asv_controller = WayASVController()\n    executor = MultiThreadedExecutor()\n    executor.add_node(way_asv_controller)\n    try:\n        way_asv_controller.get_logger().info('ASVController node is running')\n        executor.spin()\n    except KeyboardInterrupt:\n        way_asv_controller.get_logger().info('ASVController node is shutting down')",
+        "detail": "move_blueboat.move_blueboat.dp_beacon_dvl_run_boat_waypoint",
+        "documentation": {}
+    },
+    {
+        "label": "BlueBoatJoystickController",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.joy_sim_controller",
+        "description": "move_blueboat.move_blueboat.joy_sim_controller",
+        "peekOfCode": "class BlueBoatJoystickController(Node):\n    def __init__(self):\n        super().__init__('blue_boat_joystick_controller')\n        self.callback_group = ReentrantCallbackGroup()\n        self.motor_port_publisher = self.create_publisher(\n            Float64,\n            '/model/blueboat/joint/motor_port_joint/cmd_thrust',\n            10,\n            callback_group=self.callback_group\n        )",
+        "detail": "move_blueboat.move_blueboat.joy_sim_controller",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.joy_sim_controller",
+        "description": "move_blueboat.move_blueboat.joy_sim_controller",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    blue_boat_joystick_controller = BlueBoatJoystickController()\n    def on_closing():\n        blue_boat_joystick_controller.destroy_node()\n        rclpy.shutdown()\n    try:\n        rclpy.spin(blue_boat_joystick_controller)\n    except KeyboardInterrupt:\n        pass",
+        "detail": "move_blueboat.move_blueboat.joy_sim_controller",
+        "documentation": {}
+    },
+    {
+        "label": "RobotController",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.robot_controller",
+        "description": "move_blueboat.move_blueboat.robot_controller",
+        "peekOfCode": "class RobotController(Node):\n    def __init__(self):\n        super().__init__('robot_controller')\n        self.motor_port_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_port_joint/cmd_thrust', 10)\n        self.motor_stbd_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_stbd_joint/cmd_thrust', 10)\n        self.odometry_subscriber = self.create_subscription(Odometry, '/model/blueboat/odometry', self.odometry_callback, 10)\n        self.timer = self.create_timer(0.1, self.timer_callback)\n    def timer_callback(self):\n        port_thrust = Float64()\n        stbd_thrust = Float64()",
+        "detail": "move_blueboat.move_blueboat.robot_controller",
+        "documentation": {}
+    },
+    {
+        "label": "quaternion_to_euler",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.robot_controller",
+        "description": "move_blueboat.move_blueboat.robot_controller",
+        "peekOfCode": "def quaternion_to_euler(quaternion):\n    \"\"\"\n    Convert a quaternion into euler angles (roll, pitch, yaw)\n    roll is rotation around x in radians (counterclockwise)\n    pitch is rotation around y in radians (counterclockwise)\n    yaw is rotation around z in radians (counterclockwise)\n    \"\"\"\n    x, y, z, w = quaternion.x, quaternion.y, quaternion.z, quaternion.w\n    t0 = +2.0 * (w * x + y * z)\n    t1 = +1.0 - 2.0 * (x * x + y * y)",
+        "detail": "move_blueboat.move_blueboat.robot_controller",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.robot_controller",
+        "description": "move_blueboat.move_blueboat.robot_controller",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    robot_controller = RobotController()\n    rclpy.spin(robot_controller)\n    robot_controller.destroy_node()\n    rclpy.shutdown()\nif __name__ == '__main__':\n    main()",
+        "detail": "move_blueboat.move_blueboat.robot_controller",
+        "documentation": {}
+    },
+    {
+        "label": "RobotController",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "description": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "peekOfCode": "class RobotController(Node):\n    def __init__(self):\n        super().__init__('robot_controller')\n        self.motor_port_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_port_joint/cmd_thrust', 10)\n        self.motor_stbd_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_stbd_joint/cmd_thrust', 10)\n        self.odometry_subscriber = self.create_subscription(Odometry, '/model/blueboat/odometry', self.odometry_callback, 10)\n        self.Kp = 0.25\n        self.Ki = 0.0\n        self.Kd = 0.0\n        self.prev_error = 0.0",
+        "detail": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "documentation": {}
+    },
+    {
+        "label": "quaternion_to_yaw",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "description": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "peekOfCode": "def quaternion_to_yaw(orientation):\n    x, y, z, w = orientation.x, orientation.y, orientation.z, orientation.w\n    t3 = +2.0 * (w * z + x * y)\n    t4 = +1.0 - 2.0 * (y * y + z * z)\n    yaw_z = math.atan2(t3, t4)\n    return yaw_z\nclass RobotController(Node):\n    def __init__(self):\n        super().__init__('robot_controller')\n        self.motor_port_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_port_joint/cmd_thrust', 10)",
+        "detail": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "description": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    robot_controller = RobotController()\n    rclpy.spin(robot_controller)\n    robot_controller.destroy_node()\n    rclpy.shutdown()\nif __name__ == '__main__':\n    main()",
+        "detail": "move_blueboat.move_blueboat.run_blueboat_mission",
+        "documentation": {}
+    },
+    {
+        "label": "ASVController",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.run_mission",
+        "description": "move_blueboat.move_blueboat.run_mission",
+        "peekOfCode": "class ASVController(Node):\n    def __init__(self):\n        super().__init__('asv_controller')\n        self.motor_port_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_port_joint/cmd_thrust', 10)\n        self.motor_stbd_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_stbd_joint/cmd_thrust', 10)\n        self.navsat_subscription = self.create_subscription(NavSatFix, '/navsat', self.navsat_callback, 10)\n        self.odometry_subscription = self.create_subscription(Odometry, '/model/blueboat/odometry', self.odometry_callback, 10)\n        self.asv_pos_gps_publisher = self.create_publisher(PointStamped, '/asv_pos_gps', 10)\n        self.reference_position = (-22.986686999936378, -43.2023544348319)\n        #self.waypoints_from_planner = self.load_waypoints_from_file()",
+        "detail": "move_blueboat.move_blueboat.run_mission",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.run_mission",
+        "description": "move_blueboat.move_blueboat.run_mission",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = ASVController()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "move_blueboat.move_blueboat.run_mission",
+        "documentation": {}
+    },
+    {
+        "label": "ASVController",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.thrust_allocator",
+        "description": "move_blueboat.move_blueboat.thrust_allocator",
+        "peekOfCode": "class ASVController(Node):\n    def __init__(self):\n        super().__init__('asv_controller')\n        self.motor_port_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_port_joint/cmd_thrust', 10)\n        self.motor_stbd_publisher = self.create_publisher(Float64, '/model/blueboat/joint/motor_stbd_joint/cmd_thrust', 10)\n        self.subscription = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)\n        self.navsat_subscription = self.create_subscription(NavSatFix, '/navsat', self.navsat_callback, 10)\n        self.asv_pos_gps_publisher = self.create_publisher(PointStamped, '/asv_pos_gps', 10)\n        self.reference_position = (-22.986686999936378, -43.2023544348319, -11765.090082142502)\n    def cmd_vel_callback(self, msg):",
+        "detail": "move_blueboat.move_blueboat.thrust_allocator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.thrust_allocator",
+        "description": "move_blueboat.move_blueboat.thrust_allocator",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    node = ASVController()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "move_blueboat.move_blueboat.thrust_allocator",
+        "documentation": {}
+    },
+    {
+        "label": "WatchDog",
+        "kind": 6,
+        "importPath": "move_blueboat.move_blueboat.watchdog",
+        "description": "move_blueboat.move_blueboat.watchdog",
+        "peekOfCode": "class WatchDog(Node):\n    def __init__(self):\n        super().__init__('watchdog')\n        # Reentrant callback group for multithreading\n        self.callback_group = ReentrantCallbackGroup()\n        # Subscription to /asv_pos_gps topic\n        self.asv_pos_gps_subscription = self.create_subscription(\n            PointStamped,\n            '/asv_pos_gps',\n            self.asv_pos_gps_callback,",
+        "detail": "move_blueboat.move_blueboat.watchdog",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "move_blueboat.move_blueboat.watchdog",
+        "description": "move_blueboat.move_blueboat.watchdog",
+        "peekOfCode": "def main(args=None):\n    rclpy.init(args=args)\n    distance_calculator = WatchDog()\n    executor = MultiThreadedExecutor()\n    executor.add_node(distance_calculator)\n    try:\n        rclpy.spin(distance_calculator, executor)\n    except KeyboardInterrupt:\n        pass\n    finally:",
+        "detail": "move_blueboat.move_blueboat.watchdog",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "move_blueboat.test.test_copyright",
+        "description": "move_blueboat.test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "move_blueboat.test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "move_blueboat.test.test_flake8",
+        "description": "move_blueboat.test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "move_blueboat.test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "move_blueboat.test.test_pep257",
+        "description": "move_blueboat.test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "move_blueboat.test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "move_blueboat.setup",
+        "description": "move_blueboat.setup",
+        "peekOfCode": "package_name = 'move_blueboat'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=[package_name],\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n        # Include launch directory",
+        "detail": "move_blueboat.setup",
+        "documentation": {}
+    },
+    {
+        "label": "ASVControlNode",
+        "kind": 6,
+        "importPath": "realWorld.realWorld.my_node",
+        "description": "realWorld.realWorld.my_node",
+        "peekOfCode": "class ASVControlNode(Node):\n    \"\"\"ROS2 node for ASV control via MAVLink\"\"\"\n    def __init__(self):\n        super().__init__('asv_control_node')\n        # Initialize MAVLink connection parameters\n        self.connection_string = self.declare_parameter('connection_string', 'udpin:0.0.0.0:14550').value\n        #self.connection_string = self.declare_parameter('connection_string', 'udpin:0.0.0.0:14600').value\n        self.connection = None\n        self.target_system = None\n        self.target_component = None",
+        "detail": "realWorld.realWorld.my_node",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "realWorld.realWorld.my_node",
+        "description": "realWorld.realWorld.my_node",
+        "peekOfCode": "def main(args=None):\n    \"\"\"Main function to run the ASV control node\"\"\"\n    rclpy.init(args=args)\n    node = ASVControlNode()\n    try:\n        # Try to connect automatically on startup\n        node.connect()\n        # If connection successful, try to set GUIDED mode and arm\n        if node.latest_status['connected']:\n            if node.set_guided_mode():",
+        "detail": "realWorld.realWorld.my_node",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "realWorld.test.test_copyright",
+        "description": "realWorld.test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "realWorld.test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "realWorld.test.test_flake8",
+        "description": "realWorld.test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "realWorld.test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "realWorld.test.test_pep257",
+        "description": "realWorld.test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "realWorld.test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "realWorld.setup",
+        "description": "realWorld.setup",
+        "peekOfCode": "package_name = 'realWorld'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=find_packages(exclude=['test']),\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n    ],",
+        "detail": "realWorld.setup",
+        "documentation": {}
+    }
+]

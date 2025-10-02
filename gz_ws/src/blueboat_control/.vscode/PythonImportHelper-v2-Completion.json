@@ -1,0 +1,275 @@
+[
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "rclpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rclpy",
+        "description": "rclpy",
+        "detail": "rclpy",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "rclpy.node",
+        "description": "rclpy.node",
+        "isExtraImport": true,
+        "detail": "rclpy.node",
+        "documentation": {}
+    },
+    {
+        "label": "qos_profile_sensor_data",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSProfile",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSReliabilityPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "QoSHistoryPolicy",
+        "importPath": "rclpy.qos",
+        "description": "rclpy.qos",
+        "isExtraImport": true,
+        "detail": "rclpy.qos",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "geometry_msgs.msg",
+        "description": "geometry_msgs.msg",
+        "isExtraImport": true,
+        "detail": "geometry_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Bool",
+        "importPath": "std_msgs.msg",
+        "description": "std_msgs.msg",
+        "isExtraImport": true,
+        "detail": "std_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "GPSRAW",
+        "importPath": "mavros_msgs.msg",
+        "description": "mavros_msgs.msg",
+        "isExtraImport": true,
+        "detail": "mavros_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "OverrideRCIn",
+        "importPath": "mavros_msgs.msg",
+        "description": "mavros_msgs.msg",
+        "isExtraImport": true,
+        "detail": "mavros_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "Imu",
+        "importPath": "sensor_msgs.msg",
+        "description": "sensor_msgs.msg",
+        "isExtraImport": true,
+        "detail": "sensor_msgs.msg",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_copyright.main",
+        "description": "ament_copyright.main",
+        "isExtraImport": true,
+        "detail": "ament_copyright.main",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "main_with_errors",
+        "importPath": "ament_flake8.main",
+        "description": "ament_flake8.main",
+        "isExtraImport": true,
+        "detail": "ament_flake8.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "ament_pep257.main",
+        "description": "ament_pep257.main",
+        "isExtraImport": true,
+        "detail": "ament_pep257.main",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "PID",
+        "kind": 6,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "class PID:\n    def __init__(self, kp, ki, kd, out_min=-3.0, out_max=3.0):\n        self.kp, self.ki, self.kd = kp, ki, kd\n        self.out_min, self.out_max = out_min, out_max\n        self.prev_error = 0.0\n        self.integral = 0.0\n        self.last_t = None\n    def reset(self):\n        self.prev_error = 0.0\n        self.integral = 0.0",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "ASVPidRcNode",
+        "kind": 6,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "class ASVPidRcNode(Node):\n    def __init__(self):\n        super().__init__('asv_pid_rc_node')\n        # --- Parameter ---\n        self.declare_parameter('arrival_radius_m', 0.6)\n        self.declare_parameter('neutral_pwm', 1500)\n        self.declare_parameter('pwm_span', 400)          # 1500 ± 400 -> 1100..1900\n        self.declare_parameter('chan_left', 1)           # 1-basiert: CH1\n        self.declare_parameter('chan_right', 3)          # 1-basiert: CH3\n        # Heading-PID in RAD",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "clamp",
+        "kind": 2,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def clamp(v, lo, hi):\n    return max(lo, min(hi, v))\ndef wrap_deg(a):\n    \"\"\"wrap angle to [-180, 180)\"\"\"\n    return (a + 180.0) % 360.0 - 180.0\ndef haversine_m(lat1, lon1, lat2, lon2):\n    \"\"\"Entfernung in Metern\"\"\"\n    R = 6371000.0\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dphi = math.radians(lat2 - lat1)",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "wrap_deg",
+        "kind": 2,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def wrap_deg(a):\n    \"\"\"wrap angle to [-180, 180)\"\"\"\n    return (a + 180.0) % 360.0 - 180.0\ndef haversine_m(lat1, lon1, lat2, lon2):\n    \"\"\"Entfernung in Metern\"\"\"\n    R = 6371000.0\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dphi = math.radians(lat2 - lat1)\n    dlmb = math.radians(lon2 - lon1)\n    a = math.sin(dphi/2)**2 + math.cos(phi1)*math.cos(phi2)*math.sin(dlmb/2)**2",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_m",
+        "kind": 2,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def haversine_m(lat1, lon1, lat2, lon2):\n    \"\"\"Entfernung in Metern\"\"\"\n    R = 6371000.0\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dphi = math.radians(lat2 - lat1)\n    dlmb = math.radians(lon2 - lon1)\n    a = math.sin(dphi/2)**2 + math.cos(phi1)*math.cos(phi2)*math.sin(dlmb/2)**2\n    return 2*R*math.asin(math.sqrt(a))\ndef bearing_deg(lat1, lon1, lat2, lon2):\n    \"\"\"Peilung (0..360) von Punkt1 nach Punkt2 in Grad\"\"\"",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "bearing_deg",
+        "kind": 2,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def bearing_deg(lat1, lon1, lat2, lon2):\n    \"\"\"Peilung (0..360) von Punkt1 nach Punkt2 in Grad\"\"\"\n    phi1, phi2 = math.radians(lat1), math.radians(lat2)\n    dlmb = math.radians(lon2 - lon1)\n    y = math.sin(dlmb) * math.cos(phi2)\n    x = math.cos(phi1)*math.sin(phi2) - math.sin(phi1)*math.cos(phi2)*math.cos(dlmb)\n    brg = math.degrees(math.atan2(y, x))\n    return brg + 360.0 if brg < 0.0 else brg\n# Quaternion -> Yaw (rad), kreissichere Interpolation in Grad\ndef quat_to_yaw_rad(qx, qy, qz, qw):",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "quat_to_yaw_rad",
+        "kind": 2,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def quat_to_yaw_rad(qx, qy, qz, qw):\n    siny_cosp = 2.0 * (qw*qz + qx*qy)\n    cosy_cosp = 1.0 - 2.0 * (qy*qy + qz*qz)\n    return math.atan2(siny_cosp, cosy_cosp)  # [-pi, pi]\ndef circ_lerp_deg(a_deg, b_deg, k):\n    \"\"\"Zyklische Interpolation a->b in Grad, k in [0,1].\"\"\"\n    diff = wrap_deg(b_deg - a_deg)\n    return (a_deg + k*diff + 360.0) % 360.0\nclass PID:\n    def __init__(self, kp, ki, kd, out_min=-3.0, out_max=3.0):",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "circ_lerp_deg",
+        "kind": 2,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def circ_lerp_deg(a_deg, b_deg, k):\n    \"\"\"Zyklische Interpolation a->b in Grad, k in [0,1].\"\"\"\n    diff = wrap_deg(b_deg - a_deg)\n    return (a_deg + k*diff + 360.0) % 360.0\nclass PID:\n    def __init__(self, kp, ki, kd, out_min=-3.0, out_max=3.0):\n        self.kp, self.ki, self.kd = kp, ki, kd\n        self.out_min, self.out_max = out_min, out_max\n        self.prev_error = 0.0\n        self.integral = 0.0",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "blueboat_control.asv_pid_rc_node",
+        "description": "blueboat_control.asv_pid_rc_node",
+        "peekOfCode": "def main():\n    rclpy.init()\n    node = ASVPidRcNode()\n    try:\n        rclpy.spin(node)\n    except KeyboardInterrupt:\n        pass\n    finally:\n        node.destroy_node()\n        rclpy.shutdown()",
+        "detail": "blueboat_control.asv_pid_rc_node",
+        "documentation": {}
+    },
+    {
+        "label": "test_copyright",
+        "kind": 2,
+        "importPath": "test.test_copyright",
+        "description": "test.test_copyright",
+        "peekOfCode": "def test_copyright():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found errors'",
+        "detail": "test.test_copyright",
+        "documentation": {}
+    },
+    {
+        "label": "test_flake8",
+        "kind": 2,
+        "importPath": "test.test_flake8",
+        "description": "test.test_flake8",
+        "peekOfCode": "def test_flake8():\n    rc, errors = main_with_errors(argv=[])\n    assert rc == 0, \\\n        'Found %d code style errors / warnings:\\n' % len(errors) + \\\n        '\\n'.join(errors)",
+        "detail": "test.test_flake8",
+        "documentation": {}
+    },
+    {
+        "label": "test_pep257",
+        "kind": 2,
+        "importPath": "test.test_pep257",
+        "description": "test.test_pep257",
+        "peekOfCode": "def test_pep257():\n    rc = main(argv=['.', 'test'])\n    assert rc == 0, 'Found code style errors / warnings'",
+        "detail": "test.test_pep257",
+        "documentation": {}
+    },
+    {
+        "label": "package_name",
+        "kind": 5,
+        "importPath": "setup",
+        "description": "setup",
+        "peekOfCode": "package_name = 'blueboat_control'\nsetup(\n    name=package_name,\n    version='0.0.0',\n    packages=find_packages(exclude=['test']),\n    data_files=[\n        ('share/ament_index/resource_index/packages',\n            ['resource/' + package_name]),\n        ('share/' + package_name, ['package.xml']),\n    ],",
+        "detail": "setup",
+        "documentation": {}
+    }
+]
