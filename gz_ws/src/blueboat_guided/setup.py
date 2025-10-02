@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'guid = blueboat_guided.guid:main',
+            'guided = blueboat_guided.guided:main',
         ],
     },
 )
