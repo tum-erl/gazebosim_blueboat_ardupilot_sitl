@@ -113,10 +113,10 @@ class GuidedMeasureMissionNode(Node):
     def tick(self):
         # GPS / fertig?
         if not self.have_fix:
-            self.get_logger().warn_once('Warte auf GPS-Fix…')
+            self.get_logger().warn('Warte auf GPS-Fix…', once=True)
             return
         if self.wp_idx >= len(self.waypoints):
-            self.get_logger().info_once('Mission abgeschlossen.')
+            self.get_logger().info('Mission abgeschlossen.', once=True)
             return
 
         tgt_lat, tgt_lon, tgt_alt = self.waypoints[self.wp_idx]

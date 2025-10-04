@@ -1,0 +1,11 @@
+# Goal - target depth in centimeters (0 = fully up, 500 = max depth)
+int32 target_depth_cm
+---
+# Result - final depth achieved and success status
+int32 final_depth_cm
+bool success
+string message
+---
+# Feedback - current depth and progress during movement
+int32 current_depth_cm
+float32 progress_percent
