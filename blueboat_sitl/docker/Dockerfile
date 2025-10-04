@@ -106,7 +106,7 @@ RUN [ "/bin/bash" , "-c" , " \
   && mkdir build \
   && cd build \
   && cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  && make -j4" ]
+  && make -j1" ]
 
 # Create colcon workspace and copy workspace.repos file
 WORKDIR /home/$USERNAME
@@ -128,9 +128,10 @@ RUN rosdep install -y --from-paths . --ignore-src --skip-keys="gz-transport12 gz
 
 # Build everything so far
 WORKDIR /home/$USERNAME/colcon_ws
+ENV MAKEFLAGS="-j1 -l1"
 RUN [ "/bin/bash" , "-c" , "\
   source /opt/ros/humble/setup.bash \
-  && colcon build" ]
+  && colcon build --executor sequential" ]
 
 # Run rosdep over blueboat package.xml files
 RUN rosdep update \
@@ -148,7 +149,7 @@ COPY --chown=$USER_UID:$USER_GID . src/blueboat_sitl
 # Build everything
 RUN [ "/bin/bash" , "-c" , "\
   source /opt/ros/humble/setup.bash \
-  && colcon build" ]
+  && colcon build --executor sequential" ]
 
 # Set up the environment
 WORKDIR /home/$USERNAME/colcon_ws
