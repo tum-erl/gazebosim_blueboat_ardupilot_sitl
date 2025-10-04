@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'guided = blueboat_guided.guided:main',
+            'guided_measurement = blueboat_guided.guided_measurement:main',
         ],
     },
 )
