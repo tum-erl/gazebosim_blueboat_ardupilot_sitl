@@ -31,9 +31,9 @@ class GuidedMeasureMissionNode(Node):
         self.arrival_radius_m = 3.0           # Ab wann gilt der WP als erreicht
         self.hold_seconds = 10.0               # Halten nach Messung
         self.setpoint_rate_hz = 5.0            # Stream-Frequenz der Setpoints (GUIDED braucht kontinuierliche Ziele)
-        self.measure_depth_cm = 200            # Messtiefe für die Winde
+        self.measure_depth_cm = 20            # Messtiefe für die Winde
         self.waypoints: List[Tuple[float, float, float]] = [
-            (48.2525290, 11.6047148, 0.0),
+            (48.252222, 11.605111, 0.0),
             (48.2526000, 11.6049000, 0.0),
             (48.2527000, 11.6047000, 0.0),
             (48.2526500, 11.6045000, 0.0),
@@ -126,7 +126,7 @@ class GuidedMeasureMissionNode(Node):
         # Distanz & Statuslog
         dist = haversine_m(self.curr_lat, self.curr_lon, tgt_lat, tgt_lon)
         self.get_logger().debug(f'WP {self.wp_idx+1}/{len(self.waypoints)} | dist={dist:.1f} m | state={self.state}')
-
+        self.get_logger().info(self.state)
         # State Machine
         if self.state == 'NAVIGATE':
             if dist <= self.arrival_radius_m:
