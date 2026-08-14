@@ -17,6 +17,7 @@
         </material>
       </visual>
 
+      <!--
       <collision name="collision">
         <geometry>
           <sphere>
@@ -24,6 +25,7 @@
           </sphere>
         </geometry>
       </collision>
+      -->
     </link>
   </model>
 </sdf>

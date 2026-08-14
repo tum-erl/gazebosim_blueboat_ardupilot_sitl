@@ -14,11 +14,12 @@ then
     chmod a+r $XAUTH
 fi
 
-local_gz_ws="/home/lennart/Summer_School/gazebosim_blueboat_ardupilot_sitl/gz_ws"
-local_SITL_Models="/home/lennart/Summer_School/gazebosim_blueboat_ardupilot_sitl/SITL_Models"
+local_gz_ws="/home/krista/blueboat/gazebosim_blueboat_ardupilot_sitl/gz_ws"
+local_SITL_Models="/home/krista/blueboat/gazebosim_blueboat_ardupilot_sitl/SITL_Models"
 docker run -it \
     --rm \
     --name blueboat_sitl \
+    --gpus all \
     -e DISPLAY \
     -e QT_X11_NO_MITSHM=1 \
     -e XAUTHORITY=$XAUTH \
