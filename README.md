@@ -1,3 +1,7 @@
+**Edit Sept. 4 2026:** This branch contains unfinished/test code used to debug blueboat navigation to a stationary target, using Ardupilot Guided mode. One useful piece from this code may be the blueboat_telemetry.py file inside the blueboat_vehicle_interface node. This file contains functions to record various blueboat parameters (ex. target bearing and navigation bearing) as the blueboat is moving in the simulation, and save these parameters to a csv.
+
+After running SITL, the code to start a guided mode blueboat journey (with hardcoded waypoints) and generate a telemetry file can be run by running `ros2 run blueboat_vehicle_interface vehicle_interface` and `ros2 run blueboat_navigation_planner planner`. Note that the blueboat navigation will be poor (debugging unfinished).
+
 # BlueBoat simulation SITL with GazeboSim and QGC
 
 The following repository offers the BlueBoat simulation SITL with GazeboSim. Users can plan complex missions using QGroundControl by defining waypoints and survey grids.
